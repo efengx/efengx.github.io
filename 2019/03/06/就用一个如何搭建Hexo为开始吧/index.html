@@ -5,18 +5,21 @@
   
 
   
-  <title>就用一个如何搭建Hexo为开始吧 | Hexo</title>
+  <title>就用一个如何搭建Hexo为开始吧 | Feng Xiang Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="精力了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&amp;gt;.&amp;lt;基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&amp;gt;.&amp;lt;   之前">
+<meta property="og:type" content="article">
 <meta property="og:title" content="就用一个如何搭建Hexo为开始吧">
-<meta property="og:url" content="http://yoursite.com/2019/03/06/就用一个如何搭建Hexo为开始吧/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="http://efengx.github.io/2019/03/06/就用一个如何搭建Hexo为开始吧/index.html">
+<meta property="og:site_name" content="Feng Xiang Blog">
+<meta property="og:description" content="精力了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&amp;gt;.&amp;lt;基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&amp;gt;.&amp;lt;   之前">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-06T13:40:31.215Z">
+<meta property="og:updated_time" content="2019-03-06T14:34:52.119Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="就用一个如何搭建Hexo为开始吧">
+<meta name="twitter:description" content="精力了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&amp;gt;.&amp;lt;基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&amp;gt;.&amp;lt;   之前">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Feng Xiang Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -35,7 +38,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">Feng Xiang Blog</a>
       </h1>
       
     </div>
@@ -55,7 +58,7 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://efengx.github.io"></form>
       </div>
     </div>
   </div>
@@ -83,11 +86,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>精力了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。<br>随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&gt;.&lt;<br>基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。<br>今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&gt;.&lt;   之前一直也想基于github搭建一个blog毕竟被微软收购了，应该不会被关闭吧（为之前的博客默哀3秒…）刚好顺这股干劲走一个。</p>
+<h1 id="安装-hexo-cli"><a href="#安装-hexo-cli" class="headerlink" title="安装 hexo-cli"></a>安装 hexo-cli</h1><p><a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">可以点击我去hexo的github</a></p>
+<p>打开命令行界面window cmd/mac os terminal/linux (这个不用呢只要不是图形界面进入就是了，我很少在linux下用图形界面&gt;.&lt;)。<br>命令很简单一行就搞定，这里提供两种方式 npm 和 yarn 的方式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% npm install hexo-cli -g</span><br><span class="line"><span class="comment"># OR</span></span><br><span class="line">% yarn global add hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>安装需要一点时间，具体视网络情况而定，我大概用了5分钟吧（坑爹的网络…）<br>-g 和 global 代表全局安装，也就是其他所有项目中的都可以使用这个插件不需要在次安装了。<br>（补充下，用README.md写博客真心很舒服，总算脱离了富文本编辑框&gt;.&lt;）</p>
+<h1 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% hexo init blog</span><br><span class="line">% <span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
+<p>blog为博客的名称，可以根据自己的命名喜好自定义一个即可。<br>接下来可以直接在命令行界面下如上用 cd 命令进入blog目录，也可以下载一个<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">vscode点我进入下载页面</a>目前非常好用的Code编辑器，不得不说Microsoft还是很有几把刷子的。</p>
+<h1 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">% hexo server</span><br></pre></td></tr></table></figure>
+<p>启动之后在输出中找到url，copy到浏览器中即可。（居然不能自动打开浏览器，我等了一会以为在网络上飞，谁知道没这功能…）</p>
+<h1 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% hexo new <span class="string">"就用一个如何搭建Hexo为开始吧"</span></span><br><span class="line">% hexo generate</span><br></pre></td></tr></table></figure>
+<p><a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">点我查看更多的命令和其他相关文档</a></p>
+<h1 id="发布到github-page"><a href="#发布到github-page" class="headerlink" title="发布到github page"></a>发布到github page</h1><h2 id="将项目与github进行链接"><a href="#将项目与github进行链接" class="headerlink" title="将项目与github进行链接"></a>将项目与github进行链接</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">% git init</span><br><span class="line"><span class="comment"># 进行远程链接，请用自己的github地址。</span></span><br><span class="line">% git remote add origin https://github.com/efengx/efengx.github.io.git</span><br><span class="line"><span class="comment"># 查看关联情况</span></span><br><span class="line">% git remote -v</span><br></pre></td></tr></table></figure>
+<h2 id="安装-hexo-deployer-git"><a href="#安装-hexo-deployer-git" class="headerlink" title="安装 hexo-deployer-git"></a>安装 hexo-deployer-git</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% npm install hexo-deployer-git --save</span><br><span class="line"><span class="comment"># OR</span></span><br><span class="line">% yarn add hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<h2 id="修改-config-yml-配置"><a href="#修改-config-yml-配置" class="headerlink" title="修改_config.yml 配置"></a>修改_config.yml 配置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/efengx/efengx.github.io.git</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
+<p>repo 改成自己的github项目地址</p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">% hexo deploy</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/06/就用一个如何搭建Hexo为开始吧/" data-id="cjsx93u5q0001g75ve9xx83ei" class="article-share-link">Share</a>
+      <a data-url="http://efengx.github.io/2019/03/06/就用一个如何搭建Hexo为开始吧/" data-id="cjsxbbxfu0001o85vbk0eqib0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -155,7 +172,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019 John Doe<br>
+      &copy; 2019 Xiang Feng<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
