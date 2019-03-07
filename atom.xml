@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Feng Xiang Blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://blog.ofengx.com/"/>
+  <updated>2019-03-07T03:58:44.400Z</updated>
+  <id>https://blog.ofengx.com/</id>
+  
+  <author>
+    <name>Xiang Feng</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo 常用插件</title>
+    <link href="https://blog.ofengx.com/2019/03/07/hexo-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
+    <id>https://blog.ofengx.com/2019/03/07/hexo-常用插件/</id>
+    <published>2019-03-07T03:55:33.000Z</published>
+    <updated>2019-03-07T03:58:44.400Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;安装-rss&quot;&gt;&lt;a href=&quot;#安装-rss&quot; class=&quot;headerlink&quot; title=&quot;安装 rss&quot;&gt;&lt;/a&gt;安装 rss&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://blog.ofengx.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>好玩的live2d看板娘</title>
+    <link href="https://blog.ofengx.com/2019/03/06/%E5%A5%BD%E7%8E%A9%E7%9A%84live2d%E7%9C%8B%E6%9D%BF%E5%A8%98/"/>
+    <id>https://blog.ofengx.com/2019/03/06/好玩的live2d看板娘/</id>
+    <published>2019-03-06T15:20:27.000Z</published>
+    <updated>2019-03-07T03:55:56.335Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;创建blog的主要目的&amp;gt;.&amp;lt;&lt;/p&gt;
+&lt;h1 id=&quot;安装-live2d&quot;&gt;&lt;a href=&quot;#安装-live2d&quot; class=&quot;headerlink&quot; title=&quot;安装 live2d&quot;&gt;&lt;/a&gt;安装 live2d&lt;/h1&gt;&lt;figure
+        
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://blog.ofengx.com/tags/hexo/"/>
+    
+      <category term="live2d" scheme="https://blog.ofengx.com/tags/live2d/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>就用一个如何搭建Hexo为开始吧</title>
+    <link href="https://blog.ofengx.com/2019/03/06/%E5%B0%B1%E7%94%A8%E4%B8%80%E4%B8%AA%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAHexo%E4%B8%BA%E5%BC%80%E5%A7%8B%E5%90%A7/"/>
+    <id>https://blog.ofengx.com/2019/03/06/就用一个如何搭建Hexo为开始吧/</id>
+    <published>2019-03-06T13:40:31.000Z</published>
+    <updated>2019-03-07T03:56:02.045Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。&lt;br&gt;随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&amp;gt;.&amp;lt;&lt;br&gt;基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个
+        
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://blog.ofengx.com/tags/hexo/"/>
+    
+      <category term="blog" scheme="https://blog.ofengx.com/tags/blog/"/>
+    
+  </entry>
+  
+</feed>
