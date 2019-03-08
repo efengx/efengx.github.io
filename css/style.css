@@ -407,14 +407,15 @@ body {
 .nav-icon {
   font-family: FontAwesome;
   text-align: center;
-  font-size: 14px;
-  width: 14px;
-  height: 14px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
   padding: 20px 15px;
   position: relative;
   cursor: pointer;
 }
 .main-nav-link {
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: 1px;
 }
@@ -424,6 +425,7 @@ body {
   }
 }
 #main-nav-toggle {
+  font-size: 20px;
   display: none;
 }
 #main-nav-toggle:before {
@@ -437,6 +439,12 @@ body {
 #sub-nav {
   float: right;
   margin-right: -15px;
+}
+#nav-icon-github:before {
+  content: "\f09b";
+}
+#nav-icon-twitter:before {
+  content: "\f099";
 }
 #nav-rss-link:before {
   content: "\f09e";
@@ -715,9 +723,18 @@ a.article-title:hover {
 .article-tag-list-item {
   float: left;
   margin-right: 10px;
+  font-family: FontAwesome;
 }
-.article-tag-list-link:before {
-  content: "#";
+a.article-tag-list-link {
+  padding: 5px 10px;
+  background-color: #eee;
+  border: 1px solid #eee;
+  color: #212121;
+  border-radius: 3px;
+}
+a.article-tag-list-link:before {
+  margin-right: 5px;
+  content: "\f02b";
 }
 .article-comment-link {
   float: right;
