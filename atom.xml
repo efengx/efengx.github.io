@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.ofengx.com/"/>
-  <updated>2019-03-07T04:29:02.004Z</updated>
+  <updated>2019-05-14T05:07:30.168Z</updated>
   <id>https://blog.ofengx.com/</id>
   
   <author>
@@ -15,6 +15,143 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>离线搭建kubernetes 1.14.1</title>
+    <link href="https://blog.ofengx.com/2019/05/14/%E7%A6%BB%E7%BA%BF%E6%90%AD%E5%BB%BAkubernetes-1-14-1/"/>
+    <id>https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/</id>
+    <published>2019-05-14T05:06:43.000Z</published>
+    <updated>2019-05-14T05:07:30.168Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;linux-安装-kubernetes&quot;&gt;&lt;a href=&quot;#linux-安装-kubernetes&quot; class=&quot;headerlink&quot; title=&quot;linux 安装 kubernetes&quot;&gt;&lt;/a&gt;linux 安装 kubernetes&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="kubernetes" scheme="https://blog.ofengx.com/tags/kubernetes/"/>
+    
+      <category term="docker" scheme="https://blog.ofengx.com/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>prometheus 参数指标 spring boot</title>
+    <link href="https://blog.ofengx.com/2019/03/14/prometheus-%E5%8F%82%E6%95%B0%E6%8C%87%E6%A0%87-spring-boot/"/>
+    <id>https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/</id>
+    <published>2019-03-14T08:43:24.000Z</published>
+    <updated>2019-04-01T12:53:27.878Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Basic-Statistics&quot;&gt;&lt;a href=&quot;#Basic-Statistics&quot; class=&quot;headerlink&quot; title=&quot;Basic Statistics&quot;&gt;&lt;/a&gt;Basic
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>@RequestParam @RequestBody @ResponseBody 具体效果</title>
+    <link href="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-%E5%85%B7%E4%BD%93%E6%95%88%E6%9E%9C/"/>
+    <id>https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/</id>
+    <published>2019-03-14T07:30:18.000Z</published>
+    <updated>2019-03-14T08:40:24.080Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;REST API是最基本的接口调用规范，使用频率是非常之高。&lt;br&gt;注解是非常有效的技术，可以极大提高开发效率并且可以用简单的方式解决各种复杂的问题。&lt;br&gt;这里主要讲一下在REST API中经常需要使用的基本各种注解&lt;/p&gt;
+&lt;h1
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot 开启超神模式</title>
+    <link href="https://blog.ofengx.com/2019/03/13/Spring-Boot-%E5%BC%80%E5%90%AF%E8%B6%85%E7%A5%9E%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://blog.ofengx.com/2019/03/13/Spring-Boot-开启超神模式/</id>
+    <published>2019-03-13T10:57:09.000Z</published>
+    <updated>2019-03-13T10:57:09.870Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Spring cloud zuul 如何让性能提高1000%</title>
+    <link href="https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-%E5%A6%82%E4%BD%95%E8%AE%A9%E6%80%A7%E8%83%BD%E6%8F%90%E9%AB%981000/"/>
+    <id>https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/</id>
+    <published>2019-03-13T08:10:25.000Z</published>
+    <updated>2019-04-01T12:53:26.445Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;zuul-参数调优&quot;&gt;&lt;a href=&quot;#zuul-参数调优&quot; class=&quot;headerlink&quot; title=&quot;zuul 参数调优&quot;&gt;&lt;/a&gt;zuul 参数调优&lt;/h1&gt;&lt;h2 id=&quot;spring-boot-tomcat-参数优化&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="spring cloud" scheme="https://blog.ofengx.com/tags/spring-cloud/"/>
+    
+      <category term="zul" scheme="https://blog.ofengx.com/tags/zul/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitOps: 基于Kubernetes的高速CI/CD方式</title>
+    <link href="https://blog.ofengx.com/2019/03/13/GitOps-%E5%9F%BA%E4%BA%8EKubernetes%E7%9A%84%E9%AB%98%E9%80%9FCI-CD%E6%96%B9%E5%BC%8F/"/>
+    <id>https://blog.ofengx.com/2019/03/13/GitOps-基于Kubernetes的高速CI-CD方式/</id>
+    <published>2019-03-13T07:02:38.000Z</published>
+    <updated>2019-03-13T08:11:34.814Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;什么是GitOps&quot;&gt;&lt;a href=&quot;#什么是GitOps&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="CI/CD" scheme="https://blog.ofengx.com/tags/CI-CD/"/>
+    
+      <category term="GitOps" scheme="https://blog.ofengx.com/tags/GitOps/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo 必备的插件</title>
@@ -72,7 +209,7 @@
     <link href="https://blog.ofengx.com/2019/03/06/%E5%B0%B1%E7%94%A8%E4%B8%80%E4%B8%AA%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAHexo%E4%B8%BA%E5%BC%80%E5%A7%8B%E5%90%A7/"/>
     <id>https://blog.ofengx.com/2019/03/06/就用一个如何搭建Hexo为开始吧/</id>
     <published>2019-03-06T13:40:31.000Z</published>
-    <updated>2019-03-07T12:54:22.480Z</updated>
+    <updated>2019-04-01T12:35:00.628Z</updated>
     
     <summary type="html">
     

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>@RequestParam @RequestBody @ResponseBody 具体效果 | Feng Xiang Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="REST API是最基本的接口调用规范，使用频率是非常之高。注解是非常有效的技术，可以极大提高开发效率并且可以用简单的方式解决各种复杂的问题。这里主要讲一下在REST API中经常需要使用的基本各种注解 @RequestParam 正确使用姿势1234567891011@GetMapping(&quot;/search/findById&quot;)public String findById(    @Reques">
+<meta property="og:type" content="article">
+<meta property="og:title" content="@RequestParam @RequestBody @ResponseBody 具体效果">
+<meta property="og:url" content="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/index.html">
+<meta property="og:site_name" content="Feng Xiang Blog">
+<meta property="og:description" content="REST API是最基本的接口调用规范，使用频率是非常之高。注解是非常有效的技术，可以极大提高开发效率并且可以用简单的方式解决各种复杂的问题。这里主要讲一下在REST API中经常需要使用的基本各种注解 @RequestParam 正确使用姿势1234567891011@GetMapping(&quot;/search/findById&quot;)public String findById(    @Reques">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-14T08:40:24.080Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="@RequestParam @RequestBody @ResponseBody 具体效果">
+<meta name="twitter:description" content="REST API是最基本的接口调用规范，使用频率是非常之高。注解是非常有效的技术，可以极大提高开发效率并且可以用简单的方式解决各种复杂的问题。这里主要讲一下在REST API中经常需要使用的基本各种注解 @RequestParam 正确使用姿势1234567891011@GetMapping(&quot;/search/findById&quot;)public String findById(    @Reques">
+  
+    <link rel="alternate" href="/atom.xml" title="Feng Xiang Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Feng Xiang Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">首页</a>
+        
+          <a class="main-nav-link" href="/archives">归档</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          
+            <a id="nav-icon-github" class="nav-icon" href="https://github.com/efengx" title="GitHub"></a>
+          
+            <a id="nav-icon-twitter" class="nav-icon" href="https://twitter.com/heiyexinghai" title="Twitter"></a>
+          
+        
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://blog.ofengx.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-RequestParam-RequestBody-ResponseBody-具体效果" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" class="article-date">
+  <time datetime="2019-03-14T07:30:18.000Z" itemprop="datePublished">2019-03-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      @RequestParam @RequestBody @ResponseBody 具体效果
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>REST API是最基本的接口调用规范，使用频率是非常之高。<br>注解是非常有效的技术，可以极大提高开发效率并且可以用简单的方式解决各种复杂的问题。<br>这里主要讲一下在REST API中经常需要使用的基本各种注解</p>
+<h1 id="RequestParam-正确使用姿势"><a href="#RequestParam-正确使用姿势" class="headerlink" title="@RequestParam 正确使用姿势"></a>@RequestParam 正确使用姿势</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@GetMapping</span>(<span class="string">"/search/findById"</span>)</span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">findById</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">    @RequestParam(<span class="string">"id"</span>)</span> Long id</span></span><br><span class="line"><span class="function"># 如果 id 参数有可能不存在，请使用以下注解。否则程序将抛出异常</span></span><br><span class="line"><span class="function">    @<span class="title">RequestParam</span><span class="params">(value = <span class="string">"id"</span>, required = <span class="keyword">false</span>)</span></span></span><br><span class="line"><span class="function">) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello world"</span> + id;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># 对应的请求url</span><br><span class="line">curl http:<span class="comment">//127.0.0.1:8080/users/search/findById?id=1</span></span><br></pre></td></tr></table></figure>
+<h1 id="PathVariable-正确使用姿势"><a href="#PathVariable-正确使用姿势" class="headerlink" title="@PathVariable 正确使用姿势"></a>@PathVariable 正确使用姿势</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@GetMapping</span>(<span class="string">"/search/findById/&#123;id&#125;"</span>)</span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">findById</span><span class="params">(@PathVariable(<span class="string">"id"</span>)</span> Long id) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello world"</span> + id;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># 对应的请求url</span><br><span class="line">curl http:<span class="comment">//127.0.0.1:8080/users/search/findById/1</span></span><br></pre></td></tr></table></figure>
+<h1 id="RequestBody-正确使用姿势"><a href="#RequestBody-正确使用姿势" class="headerlink" title="@RequestBody 正确使用姿势"></a>@RequestBody 正确使用姿势</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@PostMapping</span>(<span class="string">"/search/findById"</span>)</span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">findById</span><span class="params">(@RequestBody User user)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello world"</span> + user.getId();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># 对应的请求url</span><br><span class="line">curl -H <span class="string">"Content-Type:application/json"</span> \</span><br><span class="line">     -X POST \</span><br><span class="line">     -d <span class="string">'&#123;"id":1&#125;'</span> \</span><br><span class="line">     http:<span class="comment">//127.0.0.1:8080/users/search/findById</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" data-id="cjvnc5chj0001jh5vnl4581wt" class="article-share-link">分享</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/03/14/prometheus-参数指标-spring-boot/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          prometheus 参数指标 spring boot
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/03/13/Spring-Boot-开启超神模式/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Spring Boot 开启超神模式</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CI-CD/">CI/CD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitOps/">GitOps</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kubernetes/">kubernetes</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/live2d/">live2d</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zul/">zul</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CI-CD/" style="font-size: 10px;">CI/CD</a> <a href="/tags/GitOps/" style="font-size: 10px;">GitOps</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/kubernetes/" style="font-size: 10px;">kubernetes</a> <a href="/tags/live2d/" style="font-size: 10px;">live2d</a> <a href="/tags/spring-cloud/" style="font-size: 10px;">spring cloud</a> <a href="/tags/zul/" style="font-size: 10px;">zul</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/05/14/离线搭建kubernetes-1-14-1/">离线搭建kubernetes 1.14.1</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/14/prometheus-参数指标-spring-boot/">prometheus 参数指标 spring boot</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/">@RequestParam @RequestBody @ResponseBody 具体效果</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/13/Spring-Boot-开启超神模式/">Spring Boot 开启超神模式</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/">Spring cloud zuul 如何让性能提高1000%</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Xiang Feng<br>
+      Powered by <a href="https://blog.ofengx.com" target="_blank">ofengx</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+</html>
