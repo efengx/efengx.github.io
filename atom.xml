@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.ofengx.com/"/>
-  <updated>2019-05-14T05:07:30.168Z</updated>
+  <updated>2019-07-15T05:48:53.138Z</updated>
   <id>https://blog.ofengx.com/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>设计模式</title>
+    <link href="https://blog.ofengx.com/2019/07/15/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://blog.ofengx.com/2019/07/15/设计模式/</id>
+    <published>2019-07-15T05:48:53.000Z</published>
+    <updated>2019-07-15T05:48:53.138Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>离线搭建kubernetes 1.14.1</title>
@@ -209,7 +223,7 @@
     <link href="https://blog.ofengx.com/2019/03/06/%E5%B0%B1%E7%94%A8%E4%B8%80%E4%B8%AA%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAHexo%E4%B8%BA%E5%BC%80%E5%A7%8B%E5%90%A7/"/>
     <id>https://blog.ofengx.com/2019/03/06/就用一个如何搭建Hexo为开始吧/</id>
     <published>2019-03-06T13:40:31.000Z</published>
-    <updated>2019-04-01T12:35:00.628Z</updated>
+    <updated>2019-05-15T01:07:11.269Z</updated>
     
     <summary type="html">
     
