@@ -69,6 +69,111 @@
       <div class="outer">
         <section id="main">
   
+    <article id="markdown-语法" class="article article-type-markdown" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/30/语法/" class="article-date">
+  <time datetime="2019-07-30T03:50:08.000Z" itemprop="datePublished">2019-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/30/语法/">markdown语法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是一级标题</span></span><br><span class="line"><span class="comment">## 这是二级标题</span></span><br><span class="line"><span class="comment">### 这是三级标题</span></span><br><span class="line"><span class="comment">#### 这是四级标题</span></span><br><span class="line"><span class="comment">##### 这是五级标题</span></span><br><span class="line"><span class="comment">###### 这是六级标题</span></span><br></pre></td></tr></table></figure></p>
+<p>效果：</p>
+<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><hr>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>示范：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**这是加粗的文字**</span><br><span class="line">*这是倾斜的文字*</span><br><span class="line">***这是斜体加粗的文字***</span><br><span class="line">~~这是加删除线的文字~~</span><br></pre></td></tr></table></figure></p>
+<p>效果：<br><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em><br><strong><em>这是斜体加粗的文字</em></strong></p>
+<h2 id="这是加删除线的文字"><a href="#这是加删除线的文字" class="headerlink" title="这是加删除线的文字"></a><del>这是加删除线的文字</del></h2><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是引用的内容</span><br><span class="line">&gt;&gt;这是引用的内容</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容</span><br></pre></td></tr></table></figure></p>
+<p>效果：</p>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>这是引用的内容</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">----</span><br><span class="line">***</span><br><span class="line">*****</span><br></pre></td></tr></table></figure></p>
+<h2 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h2><hr>
+<hr>
+<hr>
+<hr>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 <span class="string">''</span>图片title<span class="string">''</span>)</span><br><span class="line"></span><br><span class="line">图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</span><br></pre></td></tr></table></figure></p>
+<p>演示：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/</span><br><span class="line">u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg <span class="string">"区块链"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>效果：<br>![blockchain](<a href="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/" target="_blank" rel="noopener">https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/</a></p>
+<h2 id="u-702257389-1274025419-amp-fm-27-amp-gp-0-jpg-“区块链”"><a href="#u-702257389-1274025419-amp-fm-27-amp-gp-0-jpg-“区块链”" class="headerlink" title="u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg “区块链”)"></a>u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg “区块链”)</h2><h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[超链接名](超链接地址 <span class="string">"超链接title"</span>)</span><br><span class="line">title可加可不加</span><br></pre></td></tr></table></figure></p>
+<p>例子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[博客](http://blog.ofengx.com)</span><br></pre></td></tr></table></figure></p>
+<p>效果：</p>
+<h2 id="博客"><a href="#博客" class="headerlink" title="博客"></a><a href="http://blog.ofengx.com">博客</a></h2><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- 列表内容</span><br><span class="line">+ 列表内容</span><br><span class="line">* 列表内容</span><br><span class="line"></span><br><span class="line">注意：- + * 跟内容之间都要有一个空格</span><br></pre></td></tr></table></figure></p>
+<p>效果：</p>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<hr>
+<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.列表内容</span><br><span class="line">2.列表内容</span><br><span class="line">3.列表内容</span><br><span class="line"></span><br><span class="line">注意：序号跟内容之间要有空格</span><br></pre></td></tr></table></figure></p>
+<p>效果：<br>1.列表内容<br>2.列表内容</p>
+<h2 id="3-列表内容"><a href="#3-列表内容" class="headerlink" title="3.列表内容"></a>3.列表内容</h2><h2 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1.列表内容</span><br><span class="line">   1.列表内容</span><br><span class="line">   2.列表内容</span><br><span class="line">   3.列表内容</span><br><span class="line">2.列表内容</span><br><span class="line">   1.列表内容</span><br><span class="line">   2.列表内容</span><br><span class="line">   3.列表内容</span><br><span class="line">3.列表内容</span><br><span class="line">   1.列表内容</span><br><span class="line">   2.列表内容</span><br><span class="line">   3.列表内容</span><br></pre></td></tr></table></figure></p>
+<p>效果：<br>1.列表内容<br>   1.列表内容<br>   2.列表内容<br>   3.列表内容<br>2.列表内容<br>   1.列表内容<br>   2.列表内容<br>   3.列表内容<br>3.列表内容<br>   1.列表内容<br>   2.列表内容</p>
+<h2 id="3-列表内容-1"><a href="#3-列表内容-1" class="headerlink" title="   3.列表内容"></a>   3.列表内容</h2><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|:--:|---:</span><br><span class="line">内容|内容|内容</span><br><span class="line">内容|内容|内容</span><br><span class="line"></span><br><span class="line">第二行分割表头和内容。</span><br><span class="line">- 有一个就行，为了对齐，多加了几个</span><br><span class="line">文字默认居左</span><br><span class="line">-两边加：表示文字居中</span><br><span class="line">-右边加：表示文字居右</span><br><span class="line">注：原生的语法两边都要用 | 包起来。此处省略</span><br></pre></td></tr></table></figure></p>
+<p>例子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">姓名|技能|排行</span><br><span class="line">--|:--:|--:</span><br><span class="line">刘备|哭|大哥</span><br><span class="line">关羽|打|二哥</span><br><span class="line">张飞|骂|三弟</span><br></pre></td></tr></table></figure></p>
+<p>效果：<br>姓名|技能|排行<br>–|:–:|–:<br>刘备|哭|大哥<br>关羽|打|二哥</p>
+<h2 id="张飞-骂-三弟"><a href="#张飞-骂-三弟" class="headerlink" title="张飞|骂|三弟"></a>张飞|骂|三弟</h2><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">单行代码：代码之间分别用一个反引号包起来</span><br><span class="line">`代码内容`</span><br><span class="line"></span><br><span class="line">代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</span><br><span class="line">(```)</span><br><span class="line">  代码...</span><br><span class="line">  代码...</span><br><span class="line">  代码...</span><br><span class="line">(```)</span><br><span class="line">注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。</span><br></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">单行代码</span><br><span class="line">`create database hero;`</span><br><span class="line"></span><br><span class="line">代码块</span><br><span class="line">(```)</span><br><span class="line">    <span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>()&#123;</span><br><span class="line">         <span class="built_in">echo</span> <span class="string">"这是一句非常牛逼的代码"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    fun();</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure></p>
+<p>效果：<br>单行代码<br><code>create database hero;</code></p>
+<p>代码块<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function fun()&#123;</span><br><span class="line">     echo &quot;这是一句非常牛逼的代码&quot;;</span><br><span class="line">&#125;</span><br><span class="line">fun();</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(```flow)</span><br><span class="line">st=&gt;start: 开始</span><br><span class="line">op=&gt;operation: My Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">e=&gt;end</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br><span class="line">(&amp;```)</span><br></pre></td></tr></table></figure></p>
+<p>效果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 开始</span><br><span class="line">op=&gt;operation: My Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">e=&gt;end</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br><span class="line">&amp;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="cjypawnx9000jwf5v92t4mgm0" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-什么是springcloud" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/07/30/什么是springcloud/" class="article-date">
@@ -102,7 +207,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="cjypa6lb8000ac45vdlfm2jmm" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="cjypawnx8000hwf5vsbpjx93b" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SOA/">SOA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微服务/">微服务</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/架构/">架构</a></li></ul>
@@ -140,7 +245,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/15/设计模式/" data-id="cjypa6lbc000gc45v7pm7bkqg" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/15/设计模式/" data-id="cjypawnx6000fwf5vbd3lp0ps" class="article-share-link">分享</a>
       
       
     </footer>
@@ -198,7 +303,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/" data-id="cjypa6lbb000fc45vfw6j9ipc" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/" data-id="cjypawnx2000awf5v801cw1wa" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/kubernetes/">kubernetes</a></li></ul>
@@ -240,7 +345,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/" data-id="cjypa6lb50007c45vfd1f5r39" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/" data-id="cjypawnx00007wf5v2o51zj7p" class="article-share-link">分享</a>
       
       
     </footer>
@@ -280,7 +385,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" data-id="cjypa6lb30005c45v8fs8rjab" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" data-id="cjypawnwq0001wf5v5p2murai" class="article-share-link">分享</a>
       
       
     </footer>
@@ -316,7 +421,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-Boot-开启超神模式/" data-id="cjypa6lat0001c45v3s8u5xnp" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-Boot-开启超神模式/" data-id="cjypawnwt0003wf5vmbqdt97c" class="article-share-link">分享</a>
       
       
     </footer>
@@ -353,7 +458,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/" data-id="cjypa6lb00003c45v1x01wb3y" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/" data-id="cjypawnwz0005wf5vdk7bza2o" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zul/">zul</a></li></ul>
@@ -395,7 +500,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/13/GitOps-基于Kubernetes的高速CI-CD方式/" data-id="cjypa6lap0000c45v3f05v23h" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/13/GitOps-基于Kubernetes的高速CI-CD方式/" data-id="cjypawnwn0000wf5vpni36a8g" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CI-CD/">CI/CD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitOps/">GitOps</a></li></ul>
@@ -436,58 +541,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/07/hexo-常用插件/" data-id="cjypa6lb20004c45va7rupny5" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/07/hexo-常用插件/" data-id="cjypawnwy0004wf5vuyk3dkks" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-好玩的live2d看板娘" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/06/好玩的live2d看板娘/" class="article-date">
-  <time datetime="2019-03-06T15:20:27.000Z" itemprop="datePublished">2019-03-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/06/好玩的live2d看板娘/">好玩的live2d看板娘</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>创建blog的主要目的&gt;.&lt;</p>
-<h1 id="安装-live2d"><a href="#安装-live2d" class="headerlink" title="安装 live2d"></a>安装 live2d</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% npm install --save hexo-helper-live2d</span><br><span class="line"><span class="comment"># OR</span></span><br><span class="line">% yarn add hexo-helper-live2d</span><br></pre></td></tr></table></figure>
-<p><a href="https://github.com/EYHN/hexo-helper-live2d" target="_blank" rel="noopener">点我查看live2d项目</a></p>
-<h1 id="修改-config-xml-配置"><a href="#修改-config-xml-配置" class="headerlink" title="修改 _config.xml 配置"></a>修改 _config.xml 配置</h1><p>将以下内容添加到 _config.xml 配置文件中<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  scriptFrom: <span class="built_in">local</span></span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: <span class="literal">false</span></span><br><span class="line">  debug: <span class="literal">false</span></span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-shizuku</span><br><span class="line">  display:</span><br><span class="line">    position: right</span><br><span class="line">    width: 150</span><br><span class="line">    height: 300</span><br><span class="line">  mobile:</span><br><span class="line">    show: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
-<p>此时还没有看板娘，只是加了一个显示模块。还需要下载看板娘</p>
-<h1 id="下载看板娘-live2d-widget-models"><a href="#下载看板娘-live2d-widget-models" class="headerlink" title="下载看板娘 live2d-widget-models"></a>下载看板娘 live2d-widget-models</h1><p><a href="https://github.com/xiazeyu/live2d-widget-models" target="_blank" rel="noopener">点我下载看板娘资源</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% npm install &#123;packagename&#125;</span><br><span class="line"><span class="comment"># OR</span></span><br><span class="line">% yarn add &#123;packagename&#125;</span><br></pre></td></tr></table></figure></p>
-<p>packagename 中的可选资源本站采用的是以下资源</p>
-<ul>
-<li>live2d-widget-model-shizuku<br><a href="https://github.com/xiazeyu/live2d-widget-models/tree/master/packages" target="_blank" rel="noopener">点我查看其他跟多看板娘资源</a><br><a href="https://huaji8.top/post/live2d-plugin-2.0/" target="_blank" rel="noopener">点我查看模块与看板娘实际对照表, 名字在上图片在下</a><br>(注意安装之后需要重启运行 hexo server 命令之后看板娘才会加载出来)</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/06/好玩的live2d看板娘/" data-id="cjypa6lb60008c45vzvnkdm9j" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/live2d/">live2d</a></li></ul>
 
     </footer>
   </div>
@@ -514,7 +571,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CI-CD/">CI/CD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitOps/">GitOps</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SOA/">SOA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kubernetes/">kubernetes</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/live2d/">live2d</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zul/">zul</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/微服务/">微服务</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/架构/">架构</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CI-CD/">CI/CD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitOps/">GitOps</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SOA/">SOA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kubernetes/">kubernetes</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/live2d/">live2d</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zul/">zul</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/微服务/">微服务</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/架构/">架构</a></li></ul>
     </div>
   </div>
 
@@ -524,7 +581,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/CI-CD/" style="font-size: 10px;">CI/CD</a> <a href="/tags/GitOps/" style="font-size: 10px;">GitOps</a> <a href="/tags/SOA/" style="font-size: 10px;">SOA</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/kubernetes/" style="font-size: 10px;">kubernetes</a> <a href="/tags/live2d/" style="font-size: 10px;">live2d</a> <a href="/tags/spring-cloud/" style="font-size: 15px;">spring cloud</a> <a href="/tags/zul/" style="font-size: 10px;">zul</a> <a href="/tags/微服务/" style="font-size: 10px;">微服务</a> <a href="/tags/架构/" style="font-size: 10px;">架构</a>
+      <a href="/tags/CI-CD/" style="font-size: 10px;">CI/CD</a> <a href="/tags/GitOps/" style="font-size: 10px;">GitOps</a> <a href="/tags/SOA/" style="font-size: 10px;">SOA</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/kubernetes/" style="font-size: 10px;">kubernetes</a> <a href="/tags/live2d/" style="font-size: 10px;">live2d</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/spring-cloud/" style="font-size: 15px;">spring cloud</a> <a href="/tags/zul/" style="font-size: 10px;">zul</a> <a href="/tags/微服务/" style="font-size: 10px;">微服务</a> <a href="/tags/架构/" style="font-size: 10px;">架构</a>
     </div>
   </div>
 
@@ -546,6 +603,10 @@
       <ul>
         
           <li>
+            <a href="/2019/07/30/语法/">markdown语法</a>
+          </li>
+        
+          <li>
             <a href="/2019/07/30/什么是springcloud/">什么是springcloud</a>
           </li>
         
@@ -559,10 +620,6 @@
         
           <li>
             <a href="/2019/03/14/prometheus-参数指标-spring-boot/">prometheus 参数指标 spring boot</a>
-          </li>
-        
-          <li>
-            <a href="/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/">@RequestParam @RequestBody @ResponseBody 具体效果</a>
           </li>
         
       </ul>
