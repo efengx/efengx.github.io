@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.ofengx.com/"/>
-  <updated>2019-07-30T06:02:56.532Z</updated>
+  <updated>2019-07-30T12:58:07.982Z</updated>
   <id>https://blog.ofengx.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建最小springcloud</title>
+    <link href="https://blog.ofengx.com/2019/07/30/%E6%90%AD%E5%BB%BA%E6%9C%80%E5%B0%8Fspringcloud/"/>
+    <id>https://blog.ofengx.com/2019/07/30/搭建最小springcloud/</id>
+    <published>2019-07-30T09:17:13.000Z</published>
+    <updated>2019-07-30T12:58:07.982Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;配置最小可运行spring cloud&lt;/p&gt;
+&lt;h1 id=&quot;erueka&quot;&gt;&lt;a href=&quot;#erueka&quot; class=&quot;headerlink&quot; title=&quot;erueka&quot;&gt;&lt;/a&gt;erueka&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;点击 &lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="springcloud" scheme="https://blog.ofengx.com/tags/springcloud/"/>
+    
+      <category term="simple" scheme="https://blog.ofengx.com/tags/simple/"/>
+    
+  </entry>
   
   <entry>
     <title>markdown语法</title>
@@ -45,7 +73,7 @@
     <link href="https://blog.ofengx.com/2019/07/30/%E4%BB%80%E4%B9%88%E6%98%AFspringcloud/"/>
     <id>https://blog.ofengx.com/2019/07/30/什么是springcloud/</id>
     <published>2019-07-30T03:21:21.000Z</published>
-    <updated>2019-07-30T07:25:35.927Z</updated>
+    <updated>2019-07-30T09:16:27.694Z</updated>
     
     <summary type="html">
     
