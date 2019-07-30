@@ -175,7 +175,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="cjyphqw65000fvx5vzzy20l4q" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="cjyphuuq3000i095v4l04lim2" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
@@ -209,24 +209,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="架构发展历程"><a href="#架构发展历程" class="headerlink" title="架构发展历程"></a>架构发展历程</h1><blockquote>
+        <h1 id="一-架构发展历程"><a href="#一-架构发展历程" class="headerlink" title="一. 架构发展历程"></a>一. 架构发展历程</h1><blockquote>
 <p>单体架构 -&gt; SOA架构 -&gt; 微服务架构</p>
 </blockquote>
 <h2 id="单体架构"><a href="#单体架构" class="headerlink" title="单体架构"></a>单体架构</h2><p><img src="monolithicApplication.jpg" alt><br><strong>这种将所有功能都部署在一个web容器中运行的系统就叫做单体架构（也叫：巨石型应用）。</strong></p>
 <h2 id="SOA架构（面向服务的体系结构）"><a href="#SOA架构（面向服务的体系结构）" class="headerlink" title="SOA架构（面向服务的体系结构）"></a>SOA架构（面向服务的体系结构）</h2><p><img src="soa.gif" alt><br><strong>面向服务的体系结构不是关于如何模块化应用程序，而是关于如何通过集成分布式，单独维护和部署的软件组件来组合应用程序。它通过技术和标准实现，使组件更容易通过网络进行通信和协作，尤其是IP网络。</strong></p>
 <h2 id="微服务架构-spring-cloud"><a href="#微服务架构-spring-cloud" class="headerlink" title="微服务架构(spring cloud)"></a>微服务架构(spring cloud)</h2><p><img src="microservices.jpg" alt><br><strong>微服务的好处有：服务独立、扩展性好、可靠性强，但同时，也面临一些新的问题，比如运维复杂性，分布式复杂性、监控复杂性等等</strong></p>
-<h2 id="微服务与SOA区别"><a href="#微服务与SOA区别" class="headerlink" title="微服务与SOA区别"></a>微服务与SOA区别</h2><p><img src="soa-vs-microservices.png" alt></p>
-<h1 id="spring-cloud"><a href="#spring-cloud" class="headerlink" title="spring cloud"></a>spring cloud</h1><h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><p><img src="modern.jpg" alt></p>
-<ol>
+<h2 id="微服务与SOA区别"><a href="#微服务与SOA区别" class="headerlink" title="微服务与SOA区别"></a>微服务与SOA区别</h2><h2 id><a href="#" class="headerlink" title></a><img src="soa-vs-microservices.png" alt></h2><h1 id="二-spring-cloud"><a href="#二-spring-cloud" class="headerlink" title="二. spring cloud"></a>二. spring cloud</h1><h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><p><img src="modern.jpg" alt></p>
+<ul>
 <li>快速开始和快速启动</li>
 <li>协调任何事情</li>
-<li>快速建立连接<br><img src="modern2.jpg" alt><br><strong>协调任何事情：简化的分布式系统</strong></li>
-</ol>
+<li>快速建立连接<br><img src="modern2.jpg" alt></li>
+<li>协调任何事情：简化的分布式系统</li>
+</ul>
 <h2 id="核心组件"><a href="#核心组件" class="headerlink" title="核心组件"></a>核心组件</h2><h3 id="SpringCloudNetflix"><a href="#SpringCloudNetflix" class="headerlink" title="SpringCloudNetflix"></a>SpringCloudNetflix</h3><ul>
-<li><p>Eureka</p>
-<blockquote>
-<p>eureka主要组件：Eureka系统本身由一个写和读集群组成。写集群是一个有状态子系统，它处理客户端注册并维护内部服务注册表。注册表内容以最终一致的方式在所有写入服务器节点之间复制。写集群的注册表内容由读集群读取，最终由Eureka客户端使用。由于读取群集实际上是缓存层，因此可以根据流量的大小轻松地快速扩展和缩小。写集群应该预先调整，其容量足以处理偷看/繁忙的小时流量。虽然可以动态扩展和缩小，但需要进行更多协调。向上扩展将需要流量重新平衡，这最终会发生，但不会立即发生。向下缩小将强制关闭节点的客户端重新注册。<br><img src="eureka1.png" alt><br>eureka客户端：通过注册，心跳和更新来注册自己。注册包括可发现的标识符和服务状态，以及可选的自由格式元数据。负责处理这些操作的Eureka 2.0服务器构成写集群。<br><img src="eureka2.png" alt><br>注册表发现：Eureka客户可以订阅Eureka服务器上的兴趣集。订阅成功后，服务器会将对订阅兴趣的所有更改推送到客户端。负责处理这些操作的Eureka服务器构成了读集群。<br><img src="eureka3.png" alt><br>从CAP定理的角度来看，Eureka写集群是一个AP系统（高可用性和分区容错）。此选择由基于云的发现服务的主要要求驱动。在云中，特别是对于大型部署，故障始终发生。这可能是Eureka服务器本身，注册客户端或网络分区的失败。在所有这些情况下，Eureka仍然可以通过提供注册表信息并单独接受来自每个可用节点的新注册来获得。由于Eureka选择了可用性，因此这种情况下的数据在这些节点之间并不一致。由于此模型导致注册表数据始终存在某种程度的陈旧性，因此应通过适当的客户端负载平衡和故障转移机制进行补充。</p>
-</blockquote>
+<li>Eureka</li>
+<li>eureka主要组件：Eureka系统本身由一个写和读集群组成。写集群是一个有状态子系统，它处理客户端注册并维护内部服务注册表。注册表内容以最终一致的方式在所有写入服务器节点之间复制。写集群的注册表内容由读集群读取，最终由Eureka客户端使用。由于读取群集实际上是缓存层，因此可以根据流量的大小轻松地快速扩展和缩小。写集群应该预先调整，其容量足以处理偷看/繁忙的小时流量。虽然可以动态扩展和缩小，但需要进行更多协调。向上扩展将需要流量重新平衡，这最终会发生，但不会立即发生。向下缩小将强制关闭节点的客户端重新注册。<br><img src="eureka1.png" alt></li>
+<li>eureka客户端：通过注册，心跳和更新来注册自己。注册包括可发现的标识符和服务状态，以及可选的自由格式元数据。负责处理这些操作的Eureka 2.0服务器构成写集群。<br><img src="eureka2.png" alt></li>
+<li>注册表发现：Eureka客户可以订阅Eureka服务器上的兴趣集。订阅成功后，服务器会将对订阅兴趣的所有更改推送到客户端。负责处理这些操作的Eureka服务器构成了读集群。<br><img src="eureka3.png" alt></li>
+<li><p>从CAP定理的角度来看，Eureka写集群是一个AP系统（高可用性和分区容错）。此选择由基于云的发现服务的主要要求驱动。在云中，特别是对于大型部署，故障始终发生。这可能是Eureka服务器本身，注册客户端或网络分区的失败。在所有这些情况下，Eureka仍然可以通过提供注册表信息并单独接受来自每个可用节点的新注册来获得。由于Eureka选择了可用性，因此这种情况下的数据在这些节点之间并不一致。由于此模型导致注册表数据始终存在某种程度的陈旧性，因此应通过适当的客户端负载平衡和故障转移机制进行补充。</p>
 </li>
 <li><p>Hystrix<br><img src="hystrix-command-flow-chart.png" alt></p>
 </li>
@@ -244,18 +245,16 @@
 </ol>
 <ul>
 <li>Zuul<h3 id="SpringCloudGateway"><a href="#SpringCloudGateway" class="headerlink" title="SpringCloudGateway"></a>SpringCloudGateway</h3><img src="gateway.png" alt></li>
-</ul>
-<ol>
 <li>路由：将此视为我们希望特定请求路由到的目的地。它包含目标URI，必须满足的条件 - 或者在技术术语方面，Predicates和一个或多个过滤器。</li>
 <li>谓词：这实际上是一个匹配的条件。即一种“if”条件..如果请求有某些东西 - 例如path = blah或请求头包含foo-bar等。在技术术语中，它是Java 8 Function Predicate</li>
 <li>过滤器：这些是Spring Framework WebFilter的实例。您可以在这里应用修改请求或响应的魔力。框架提供了很多开箱即用的WebFilter。但当然，我们正在谈论Spring Framework。所以，休息好人！您始终可以使用自己的逻辑添加自己的过滤器:)</li>
-</ol>
+</ul>
 <h3 id="SpringCloudConfig"><a href="#SpringCloudConfig" class="headerlink" title="SpringCloudConfig"></a>SpringCloudConfig</h3><p><img src="config1.png" alt></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="cjyphqw5y0008vx5vrrxt4fni" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="cjyphuupt0008095vmz39a4l3" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SOA/">SOA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微服务/">微服务</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/架构/">架构</a></li></ul>
@@ -293,7 +292,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/15/设计模式/" data-id="cjyphqw66000hvx5vgk10nnrf" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/15/设计模式/" data-id="cjyphuuq1000g095vgo7o28de" class="article-share-link">分享</a>
       
       
     </footer>
@@ -351,7 +350,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/" data-id="cjyphqw6t0011vx5vs94r1oaw" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/" data-id="cjyphuuq0000f095vk6jzgc2i" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/kubernetes/">kubernetes</a></li></ul>
@@ -393,7 +392,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/" data-id="cjyphqw5x0007vx5vrc4wtjb8" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/" data-id="cjyphuupr0007095vt4iv6ng8" class="article-share-link">分享</a>
       
       
     </footer>
@@ -433,7 +432,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" data-id="cjyphqw5p0003vx5vzfoiqntc" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" data-id="cjyphuup70003095vkrltcydb" class="article-share-link">分享</a>
       
       
     </footer>
@@ -469,7 +468,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-Boot-开启超神模式/" data-id="cjyphqw5u0005vx5vv65y504p" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-Boot-开启超神模式/" data-id="cjyphuup10001095v4j6i4mij" class="article-share-link">分享</a>
       
       
     </footer>
@@ -506,7 +505,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/" data-id="cjyphqw5s0004vx5vr3kr123n" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/" data-id="cjyphuupg0004095v1s5k0uix" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zul/">zul</a></li></ul>
@@ -548,7 +547,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/13/GitOps-基于Kubernetes的高速CI-CD方式/" data-id="cjyphqw5c0000vx5vyrnew8e3" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/13/GitOps-基于Kubernetes的高速CI-CD方式/" data-id="cjyphuuou0000095vj1khj62c" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CI-CD/">CI/CD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitOps/">GitOps</a></li></ul>
@@ -589,7 +588,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/07/hexo-常用插件/" data-id="cjyphqw5h0001vx5vgwhy1v3n" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/07/hexo-常用插件/" data-id="cjyphuupl0005095vygrvimvh" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
