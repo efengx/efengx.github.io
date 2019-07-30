@@ -16,7 +16,7 @@
 <meta property="og:description" content="标题示例：123456# 这是一级标题## 这是二级标题### 这是三级标题#### 这是四级标题##### 这是五级标题###### 这是六级标题 效果： 这是一级标题这是二级标题这是三级标题这是四级标题这是五级标题这是六级标题 字体示例：1234**这是加粗的文字***这是倾斜的文字****这是斜体加粗的文字***~~这是加删除线的文字~~ 效果：这是加粗的文字这是倾斜的文字这是斜体加粗的文字">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&fm=27&gp=0.jpg">
-<meta property="og:updated_time" content="2019-07-30T05:41:58.258Z">
+<meta property="og:updated_time" content="2019-07-30T05:43:23.447Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="markdown语法">
 <meta name="twitter:description" content="标题示例：123456# 这是一级标题## 这是二级标题### 这是三级标题#### 这是四级标题##### 这是五级标题###### 这是六级标题 效果： 这是一级标题这是二级标题这是三级标题这是四级标题这是五级标题这是六级标题 字体示例：1234**这是加粗的文字***这是倾斜的文字****这是斜体加粗的文字***~~这是加删除线的文字~~ 效果：这是加粗的文字这是倾斜的文字这是斜体加粗的文字">
@@ -135,30 +135,36 @@
 <li>列表内容</li>
 </ul>
 <hr>
-<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.列表内容</span><br><span class="line">2.列表内容</span><br><span class="line">3.列表内容</span><br><span class="line"></span><br><span class="line">注意：序号跟内容之间要有空格</span><br></pre></td></tr></table></figure></p>
-<p>效果：<br>1.列表内容<br>2.列表内容</p>
-<h2 id="3-列表内容"><a href="#3-列表内容" class="headerlink" title="3.列表内容"></a>3.列表内容</h2><h2 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1.列表内容</span><br><span class="line">   1.列表内容</span><br><span class="line">   2.列表内容</span><br><span class="line">   3.列表内容</span><br><span class="line">2.列表内容</span><br><span class="line">   1.列表内容</span><br><span class="line">   2.列表内容</span><br><span class="line">   3.列表内容</span><br><span class="line">3.列表内容</span><br><span class="line">   1.列表内容</span><br><span class="line">   2.列表内容</span><br><span class="line">   3.列表内容</span><br></pre></td></tr></table></figure></p>
+<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 列表内容</span><br><span class="line">2. 列表内容</span><br><span class="line">3. 列表内容</span><br><span class="line"></span><br><span class="line">注意：序号跟内容之间要有空格</span><br></pre></td></tr></table></figure></p>
 <p>效果：</p>
-<ul>
-<li>1.列表内容<ul>
+<ol>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
+<hr>
+<h2 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">- 1.列表内容</span><br><span class="line">   - 1.列表内容</span><br><span class="line">   - 2.列表内容</span><br><span class="line">   - 3.列表内容</span><br><span class="line">- 2.列表内容</span><br><span class="line">   - 1.列表内容</span><br><span class="line">   - 2.列表内容</span><br><span class="line">   - 3.列表内容</span><br><span class="line">- 3.列表内容</span><br><span class="line">   - 1.列表内容</span><br><span class="line">   - 2.列表内容</span><br><span class="line">   - 3.列表内容</span><br></pre></td></tr></table></figure></p>
+<p>效果：</p>
+<ol>
+<li>列表内容<ul>
 <li>1.列表内容</li>
 <li>2.列表内容</li>
 <li>3.列表内容</li>
 </ul>
 </li>
-<li>2.列表内容<ul>
+<li>列表内容<ul>
 <li>1.列表内容</li>
 <li>2.列表内容</li>
 <li>3.列表内容</li>
 </ul>
 </li>
-<li>3.列表内容<ul>
-<li>1.列表内容</li>
-<li>2.列表内容</li>
-<li>3.列表内容</li>
-</ul>
+<li>列表内容<ol>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
 </li>
-</ul>
+</ol>
 <hr>
 <h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|:--:|---:</span><br><span class="line">内容|内容|内容</span><br><span class="line">内容|内容|内容</span><br><span class="line"></span><br><span class="line">第二行分割表头和内容。</span><br><span class="line">- 有一个就行，为了对齐，多加了几个</span><br><span class="line">文字默认居左</span><br><span class="line">-两边加：表示文字居中</span><br><span class="line">-右边加：表示文字居右</span><br><span class="line">注：原生的语法两边都要用 | 包起来。此处省略</span><br></pre></td></tr></table></figure></p>
 <p>例子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">姓名|技能|排行</span><br><span class="line">--|:--:|--:</span><br><span class="line">刘备|哭|大哥</span><br><span class="line">关羽|打|二哥</span><br><span class="line">张飞|骂|三弟</span><br></pre></td></tr></table></figure></p>
@@ -174,7 +180,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="cjype9br5000f5q5vv03f4p3k" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="cjypeb4x8000i825v8cbk9uhp" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
