@@ -7,13 +7,13 @@
   
   <title>什么是springcloud | Feng Xiang Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一. 架构发展历程 单体架构 -&amp;gt; SOA架构 -&amp;gt; 微服务架构  单体架构这种将所有功能都部署在一个web容器中运行的系统就叫做单体架构（也叫：巨石型应用）。 SOA架构（面向服务的体系结构）面向服务的体系结构不是关于如何模块化应用程序，而是关于如何通过集成分布式，单独维护和部署的软件组件来组合应用程序。它通过技术和标准实现，使组件更容易通过网络进行通信和协作，尤其是IP网络。 微服">
+  <meta name="description" content="一. 架构发展历程 单体架构 -&amp;gt; SOA架构 -&amp;gt; 微服务架构  单体架构  这种将所有功能都部署在一个web容器中运行的系统就叫做单体架构（也叫：巨石型应用）。**SOA架构（面向服务的体系结构） 面向服务的体系结构不是关于如何模块化应用程序，而是关于如何通过集成分布式，单独维护和部署的软件组件来组合应用程序。它通过技术和标准实现，使组件更容易通过网络进行通信和协作，尤其是IP网络">
 <meta name="keywords" content="spring cloud,SOA,微服务,架构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="什么是springcloud">
 <meta property="og:url" content="https://blog.ofengx.com/2019/07/30/什么是springcloud/index.html">
 <meta property="og:site_name" content="Feng Xiang Blog">
-<meta property="og:description" content="一. 架构发展历程 单体架构 -&amp;gt; SOA架构 -&amp;gt; 微服务架构  单体架构这种将所有功能都部署在一个web容器中运行的系统就叫做单体架构（也叫：巨石型应用）。 SOA架构（面向服务的体系结构）面向服务的体系结构不是关于如何模块化应用程序，而是关于如何通过集成分布式，单独维护和部署的软件组件来组合应用程序。它通过技术和标准实现，使组件更容易通过网络进行通信和协作，尤其是IP网络。 微服">
+<meta property="og:description" content="一. 架构发展历程 单体架构 -&amp;gt; SOA架构 -&amp;gt; 微服务架构  单体架构  这种将所有功能都部署在一个web容器中运行的系统就叫做单体架构（也叫：巨石型应用）。**SOA架构（面向服务的体系结构） 面向服务的体系结构不是关于如何模块化应用程序，而是关于如何通过集成分布式，单独维护和部署的软件组件来组合应用程序。它通过技术和标准实现，使组件更容易通过网络进行通信和协作，尤其是IP网络">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://blog.ofengx.com/2019/07/30/什么是springcloud/monolithicApplication.jpg">
 <meta property="og:image" content="https://blog.ofengx.com/2019/07/30/什么是springcloud/soa.gif">
@@ -27,10 +27,10 @@
 <meta property="og:image" content="https://blog.ofengx.com/2019/07/30/什么是springcloud/hystrix-command-flow-chart.png">
 <meta property="og:image" content="https://blog.ofengx.com/2019/07/30/什么是springcloud/gateway.png">
 <meta property="og:image" content="https://blog.ofengx.com/2019/07/30/什么是springcloud/config1.png">
-<meta property="og:updated_time" content="2019-07-30T07:22:19.776Z">
+<meta property="og:updated_time" content="2019-07-30T07:25:07.318Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="什么是springcloud">
-<meta name="twitter:description" content="一. 架构发展历程 单体架构 -&amp;gt; SOA架构 -&amp;gt; 微服务架构  单体架构这种将所有功能都部署在一个web容器中运行的系统就叫做单体架构（也叫：巨石型应用）。 SOA架构（面向服务的体系结构）面向服务的体系结构不是关于如何模块化应用程序，而是关于如何通过集成分布式，单独维护和部署的软件组件来组合应用程序。它通过技术和标准实现，使组件更容易通过网络进行通信和协作，尤其是IP网络。 微服">
+<meta name="twitter:description" content="一. 架构发展历程 单体架构 -&amp;gt; SOA架构 -&amp;gt; 微服务架构  单体架构  这种将所有功能都部署在一个web容器中运行的系统就叫做单体架构（也叫：巨石型应用）。**SOA架构（面向服务的体系结构） 面向服务的体系结构不是关于如何模块化应用程序，而是关于如何通过集成分布式，单独维护和部署的软件组件来组合应用程序。它通过技术和标准实现，使组件更容易通过网络进行通信和协作，尤其是IP网络">
 <meta name="twitter:image" content="https://blog.ofengx.com/2019/07/30/什么是springcloud/monolithicApplication.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Feng Xiang Blog" type="application/atom+xml">
@@ -110,10 +110,14 @@
         <h1 id="一-架构发展历程"><a href="#一-架构发展历程" class="headerlink" title="一. 架构发展历程"></a>一. 架构发展历程</h1><blockquote>
 <p>单体架构 -&gt; SOA架构 -&gt; 微服务架构</p>
 </blockquote>
-<h2 id="单体架构"><a href="#单体架构" class="headerlink" title="单体架构"></a>单体架构</h2><p><img src="monolithicApplication.jpg" alt><br><strong>这种将所有功能都部署在一个web容器中运行的系统就叫做单体架构（也叫：巨石型应用）。</strong></p>
-<h2 id="SOA架构（面向服务的体系结构）"><a href="#SOA架构（面向服务的体系结构）" class="headerlink" title="SOA架构（面向服务的体系结构）"></a>SOA架构（面向服务的体系结构）</h2><p><img src="soa.gif" alt><br><strong>面向服务的体系结构不是关于如何模块化应用程序，而是关于如何通过集成分布式，单独维护和部署的软件组件来组合应用程序。它通过技术和标准实现，使组件更容易通过网络进行通信和协作，尤其是IP网络。</strong></p>
-<h2 id="微服务架构-spring-cloud"><a href="#微服务架构-spring-cloud" class="headerlink" title="微服务架构(spring cloud)"></a>微服务架构(spring cloud)</h2><p><img src="microservices.jpg" alt><br><strong>微服务的好处有：服务独立、扩展性好、可靠性强，但同时，也面临一些新的问题，比如运维复杂性，分布式复杂性、监控复杂性等等</strong></p>
-<h2 id="微服务与SOA区别"><a href="#微服务与SOA区别" class="headerlink" title="微服务与SOA区别"></a>微服务与SOA区别</h2><h2 id><a href="#" class="headerlink" title></a><img src="soa-vs-microservices.png" alt></h2><h1 id="二-spring-cloud"><a href="#二-spring-cloud" class="headerlink" title="二. spring cloud"></a>二. spring cloud</h1><h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><p><img src="modern.jpg" alt></p>
+<h2 id="单体架构"><a href="#单体架构" class="headerlink" title="单体架构"></a>单体架构</h2><p><img src="monolithicApplication.jpg" alt></p>
+<ul>
+<li>这种将所有功能都部署在一个web容器中运行的系统就叫做单体架构（也叫：巨石型应用）。**<h2 id="SOA架构（面向服务的体系结构）"><a href="#SOA架构（面向服务的体系结构）" class="headerlink" title="SOA架构（面向服务的体系结构）"></a>SOA架构（面向服务的体系结构）</h2><img src="soa.gif" alt></li>
+<li>面向服务的体系结构不是关于如何模块化应用程序，而是关于如何通过集成分布式，单独维护和部署的软件组件来组合应用程序。它通过技术和标准实现，使组件更容易通过网络进行通信和协作，尤其是IP网络。**<h2 id="微服务架构-spring-cloud"><a href="#微服务架构-spring-cloud" class="headerlink" title="微服务架构(spring cloud)"></a>微服务架构(spring cloud)</h2><img src="microservices.jpg" alt></li>
+<li>微服务的好处有：服务独立、扩展性好、可靠性强，但同时，也面临一些新的问题，比如运维复杂性，分布式复杂性、监控复杂性等等<h2 id="微服务与SOA区别"><a href="#微服务与SOA区别" class="headerlink" title="微服务与SOA区别"></a>微服务与SOA区别</h2><img src="soa-vs-microservices.png" alt></li>
+</ul>
+<hr>
+<h1 id="二-spring-cloud"><a href="#二-spring-cloud" class="headerlink" title="二. spring cloud"></a>二. spring cloud</h1><h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><p><img src="modern.jpg" alt></p>
 <ul>
 <li>快速开始和快速启动</li>
 <li>协调任何事情</li>
@@ -152,7 +156,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="cjyphwj8j00092o5vl948jasf" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="cjyphxyrb000a5m5vwf88fruz" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SOA/">SOA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微服务/">微服务</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/架构/">架构</a></li></ul>
