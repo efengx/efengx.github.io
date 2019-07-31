@@ -110,13 +110,14 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@SpringBootApplication</span><br><span class="line">public class GatewayApplication &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		SpringApplication.run(GatewayApplication.class, args);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>application.yml 配置</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">server:</span><br><span class="line">  port: 8080</span><br><span class="line">spring:</span><br><span class="line">  cloud:</span><br><span class="line">    gateway:</span><br><span class="line">      routes:</span><br><span class="line">      - id: route_one</span><br><span class="line">        uri: https://start.spring.io/</span><br><span class="line">        predicates:</span><br><span class="line">        - Path=/spring-cloud</span><br><span class="line">        filters:</span><br><span class="line">        - name: Retry</span><br><span class="line">          args:</span><br><span class="line">            retries: 3</span><br><span class="line">            statuses: BAD_GATEWAY</span><br><span class="line"><span class="comment"># 配置服务发现</span></span><br><span class="line">eureka:</span><br><span class="line">  client:</span><br><span class="line">    serviceUrl:</span><br><span class="line">      defaultZone: http://localhost:8761/eureka/</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">server:</span><br><span class="line">  port: 8080</span><br><span class="line">spring:</span><br><span class="line">  cloud:</span><br><span class="line">    gateway:</span><br><span class="line">      routes:</span><br><span class="line">      - id: route_one</span><br><span class="line">        uri: https://start.spring.io/</span><br><span class="line">        predicates:</span><br><span class="line">        - Path=/spring-cloud</span><br><span class="line">        filters:</span><br><span class="line">        - name: Retry</span><br><span class="line">          args:</span><br><span class="line">            retries: 3</span><br><span class="line">            statuses: BAD_GATEWAY</span><br><span class="line"><span class="comment"># 配置服务发现</span></span><br><span class="line">eureka:</span><br><span class="line">  client:</span><br><span class="line">    serviceUrl:</span><br><span class="line">      defaultZone: http://localhost:8761/eureka/</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/搭建最小springcloud/" data-id="cjyqidqkt000ayn5v1vwyp8rl" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/搭建最小springcloud/" data-id="cjyqifg6n000j0z5vs9zuayf5" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/simple/">simple</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/springcloud/">springcloud</a></li></ul>
@@ -234,7 +235,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="cjyqidqkx000gyn5v50v8xgsa" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="cjyqifg6o000k0z5v3v3mkp1l" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
@@ -317,7 +318,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="cjyqidqkv000cyn5v8g9kw72q" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="cjyqifg6h00080z5vleyo2yky" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SOA/">SOA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微服务/">微服务</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/架构/">架构</a></li></ul>
@@ -355,7 +356,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/15/设计模式/" data-id="cjyqidqky000iyn5vl0qpk0xl" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/15/设计模式/" data-id="cjyqifg6m000h0z5vnybzh3ja" class="article-share-link">分享</a>
       
       
     </footer>
@@ -413,7 +414,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/" data-id="cjyqidqkz000kyn5v67z9oiis" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/" data-id="cjyqifg6l000f0z5vjmyaas9r" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/kubernetes/">kubernetes</a></li></ul>
@@ -455,7 +456,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/" data-id="cjyqidqkr0007yn5vx9ur6y6w" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/" data-id="cjyqifg6b00040z5vl7yqa6ya" class="article-share-link">分享</a>
       
       
     </footer>
@@ -495,7 +496,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" data-id="cjyqidqko0005yn5v8bpq3tec" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" data-id="cjyqifg6500010z5vdmhf2oh3" class="article-share-link">分享</a>
       
       
     </footer>
@@ -531,7 +532,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-Boot-开启超神模式/" data-id="cjyqidqkg0001yn5v1lmamfzl" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-Boot-开启超神模式/" data-id="cjyqifg6900030z5vrml1elp7" class="article-share-link">分享</a>
       
       
     </footer>
@@ -568,7 +569,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/" data-id="cjyqidqkj0003yn5v99ia0mjd" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/" data-id="cjyqifg6g00070z5vk94oqh5j" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zul/">zul</a></li></ul>
@@ -610,7 +611,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/13/GitOps-基于Kubernetes的高速CI-CD方式/" data-id="cjyqidqka0000yn5v747uooqu" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/13/GitOps-基于Kubernetes的高速CI-CD方式/" data-id="cjyqifg5y00000z5vwrgocy4t" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CI-CD/">CI/CD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitOps/">GitOps</a></li></ul>
