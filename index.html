@@ -94,14 +94,13 @@
         <p>消息中间件是软件设计中非常好用的一个组件，如何确保消息中间件的可靠性一直是一个很大的问题。</p>
 <h2 id="消息丢失场景"><a href="#消息丢失场景" class="headerlink" title="消息丢失场景"></a>消息丢失场景</h2><p><img src="rabbitmq2.png" alt><br>以上图片为rabbitmq消息推送的流程图，通过该图我们可以判断出消息有以下几种可能会存在丢失场景：</p>
 <ol>
-<li>生产者生产消息到RabbitMQ Server消息丢失</li>
-</ol>
-<blockquote>
-<ul>
+<li><p>生产者生产消息到RabbitMQ Server消息丢失</p>
+<ol>
 <li>外界环境问题导致：发生网络丢包、网络故障等造成RabbitMQ Server端收不到消息，因为生产环境的网络是很复杂的，网络抖动，丢包现象很常见。  </li>
 <li>代码层面、配置层面、考虑不全导致消息丢失。<br>场景1: 生产者使用Confirm模式投递消息，RabbitMQ Server接收失败后会发送nack消息通知生产者，如果此时生产者监听消息失败或没做任何事情，该消息将丢失。<br>场景2: 生产者发送消息到exchange后，发送的路由和queue没有绑定，此时消息将会丢失。</li>
-</ul>
-</blockquote>
+</ol>
+</li>
+</ol>
 <p>解决方法：发送方确认机制（publisher confirm）<br>生产者通过调用channel.confirmSelect方法将信道设置为confirm模式，一旦信道进入confirm模式，所有该信道上面发布的消息都会被指派一个唯一的ID(从1开始)，一旦消息被投递道所有匹配的队列之后，RabbitMQ就会发送一个确认（Basic.Ack）给生产者（包含消息的唯一deliveryTag和multiple参数），这就使得生产者知晓消息已经正确到达了目的地了。</p>
 <p>confirm模式的三种实现方式：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 串行confirm模式：producer每发送一条消息后，调用waitForConfirms()方法，等待broker端confirm，如果服务器端返回false或者超时时间内未返回，客户端进行消息重传。</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">50</span>; i++) &#123;</span><br><span class="line">    channel.basicPublish(</span><br><span class="line">        exchange, routingKey,</span><br><span class="line">        mandatory, immediate,</span><br><span class="line">        messageProperties,</span><br><span class="line">        message.getContent()</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">if</span> (channel.waitForConfirms) &#123;</span><br><span class="line">        System.out.println(<span class="string">"发送成功"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">// 在这里进行重新发送</span></span><br><span class="line">        System.out.println(<span class="string">"发送失败"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 批量confirm模式：producer每发送一批消息后，调用waitForConfirms()方法，等待broker端confirm</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">50</span>; i++&gt;) &#123;</span><br><span class="line">    channel.basicPublish(</span><br><span class="line">        exchange, routingKey,</span><br><span class="line">        mandatory, immediate,</span><br><span class="line">        messageProperties,</span><br><span class="line">        message.getContent()</span><br><span class="line">    );</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (channel.waitForConfirms()) &#123;</span><br><span class="line">    System.out.println(<span class="string">"发送成功"</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">"发送失败"</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 3. 异步confirm模式：提供一个回调方法，broker confirm了一条或者多条消息后producer端会回调这个方法。</span></span><br><span class="line">Channel channel = channelManager.getPublisherChannel(namespaceName);</span><br><span class="line"><span class="comment">// 监听类</span></span><br><span class="line">ProxiedConfirmListener confirmListener = <span class="keyword">new</span> ProxiedConfirmListener();</span><br><span class="line">confirmListener.setChannelManager(channelManager);</span><br><span class="line">confirmListener.setChannel(channel);</span><br><span class="line">confirmListener.setNamespace(namespaceName);</span><br><span class="line">confirmListener.addSuccessCallbacks(successCallbacks);</span><br><span class="line">channel.addConfirmListener(confirmListener);</span><br><span class="line"><span class="comment">// 开启confirm模式</span></span><br><span class="line">channel.confirmSelect();</span><br><span class="line">AMQP.BasicProperties messageProperties = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">if</span> (message.getProperty() <span class="keyword">instanceof</span> AMQP.BasicProperties) &#123;</span><br><span class="line">    messageProperties = (AMQP.BasicProperties)message.getProperty();</span><br><span class="line">&#125;</span><br><span class="line">confirmListener.toConfirm(channel.getNextPublishSeqNo(), rawMsg);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">50</span>; i++) &#123;</span><br><span class="line">    channel.basicPublish(</span><br><span class="line">        exchange, routingKey,</span><br><span class="line">        mandatory, immediate,</span><br><span class="line">        messageProperties,</span><br><span class="line">        message.getContent()</span><br><span class="line">    );</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 异步模式需要监听类，监听server端的通知消息，异步的好处是性能回大幅提升（非柱塞式）</span></span><br><span class="line"><span class="comment">// ...略过继承类代码，以下是需要实现的接口：</span></span><br><span class="line"><span class="keyword">package</span> com.rabbitmq.client;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">ConfirmListener</span> </span>&#123;</span><br><span class="line">    <span class="comment">// handleAck RabbitMQ消息接收成功后的实现方法</span></span><br><span class="line">    <span class="comment">// 例如：发送端投递消息前，需要把消息先存起来，比如用KV存储，接收到ack后删除</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">handleAck</span><span class="params">(<span class="keyword">long</span> deliveryTag, <span class="keyword">boolean</span> multiple)</span> <span class="keyword">throws</span> IOException</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// handleNack RabbitMQ 消息接收失败的通知方法，用户可以在这里重新投递消息</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">handleNack</span><span class="params">(<span class="keyword">long</span> deliveryTag, <span class="keyword">boolean</span> multiple)</span> <span class="keyword">throws</span> IOException</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -127,7 +126,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/17/rabbitmq消息丢失情况分析及解决方法/" data-id="ck1ueey9w00087a5vlx5dm4w7" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/17/rabbitmq消息丢失情况分析及解决方法/" data-id="ck1ueg7kr0007ii5vnt4wbiuy" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rabbitmq/">rabbitmq</a></li></ul>
@@ -173,7 +172,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/15/设计模式及实现/" data-id="ck1ueeya5000m7a5vpjohxusg" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/15/设计模式及实现/" data-id="ck1ueg7kz000kii5vbj3u85he" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/设计模式/">设计模式</a></li></ul>
@@ -260,7 +259,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/10/系统架构设计学习资料二/" data-id="ck1ueeya4000k7a5vgpis092b" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/10/系统架构设计学习资料二/" data-id="ck1ueg7ky000iii5vay1ewxp9" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统架构/">系统架构</a></li></ul>
@@ -344,7 +343,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/搭建最小springcloud/" data-id="ck1ueeya1000g7a5vyyosml6o" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/搭建最小springcloud/" data-id="ck1ueg7kw000eii5v4lehrp7k" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/simple/">simple</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/springcloud/">springcloud</a></li></ul>
@@ -458,7 +457,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="ck1ueeya6000p7a5vg2kuwqdi" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="ck1ueg7l0000mii5v3d7q96it" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
@@ -551,7 +550,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="ck1ueey9y000a7a5vj0zv78z9" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="ck1ueg7kt0009ii5v7ddkigg6" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SOA/">SOA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微服务/">微服务</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/架构/">架构</a></li></ul>
@@ -610,7 +609,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/" data-id="ck1ueeya3000i7a5v6s8896wz" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/" data-id="ck1ueg7ky000hii5v7wy2dsez" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/kubernetes/">kubernetes</a></li></ul>
@@ -652,7 +651,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/" data-id="ck1ueey9v00077a5v2glhz7e4" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/" data-id="ck1ueg7ko0006ii5vn6sfe0v5" class="article-share-link">分享</a>
       
       
     </footer>
@@ -692,7 +691,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" data-id="ck1ueey9m00037a5vqecolpz6" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" data-id="ck1ueg7ka0001ii5vbb8qwltt" class="article-share-link">分享</a>
       
       
     </footer>
@@ -728,7 +727,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-Boot-开启超神模式/" data-id="ck1ueey9j00017a5vi09prpkk" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-Boot-开启超神模式/" data-id="ck1ueg7k60000ii5voif6t0e9" class="article-share-link">分享</a>
       
       
     </footer>
