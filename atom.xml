@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.ofengx.com/"/>
-  <updated>2019-10-17T14:29:50.259Z</updated>
+  <updated>2019-10-17T14:31:15.436Z</updated>
   <id>https://blog.ofengx.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.ofengx.com/2019/10/17/rabbitmq%E6%B6%88%E6%81%AF%E4%B8%A2%E5%A4%B1%E6%83%85%E5%86%B5%E5%88%86%E6%9E%90%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
     <id>https://blog.ofengx.com/2019/10/17/rabbitmq消息丢失情况分析及解决方法/</id>
     <published>2019-10-17T06:07:22.000Z</published>
-    <updated>2019-10-17T14:29:50.259Z</updated>
+    <updated>2019-10-17T14:31:15.436Z</updated>
     
     <summary type="html">
     
@@ -39,17 +39,11 @@
     <link href="https://blog.ofengx.com/2019/10/15/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%8F%8A%E5%AE%9E%E7%8E%B0/"/>
     <id>https://blog.ofengx.com/2019/10/15/设计模式及实现/</id>
     <published>2019-10-15T00:54:13.000Z</published>
-    <updated>2019-10-17T07:32:47.220Z</updated>
+    <updated>2019-10-17T14:42:14.039Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;设计模式&quot;&gt;&lt;a href=&quot;#设计模式&quot; class=&quot;headerlink&quot; title=&quot;设计模式&quot;&gt;&lt;/a&gt;设计模式&lt;/h2&gt;&lt;h3 id=&quot;Facade-Session-Facade-模式&quot;&gt;&lt;a
-        
-      
+      &lt;p&gt;设计模式，未完待续！！！&lt;br&gt;
     
     </summary>
     
@@ -63,17 +57,11 @@
     <link href="https://blog.ofengx.com/2019/10/10/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E4%BA%8C/"/>
     <id>https://blog.ofengx.com/2019/10/10/系统架构设计学习资料二/</id>
     <published>2019-10-10T03:05:11.000Z</published>
-    <updated>2019-10-17T06:05:28.961Z</updated>
+    <updated>2019-10-17T14:41:44.264Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;软件架构风格分类&quot;&gt;&lt;a href=&quot;#软件架构风格分类&quot; class=&quot;headerlink&quot; title=&quot;软件架构风格分类&quot;&gt;&lt;/a&gt;软件架构风格分类&lt;/h3&gt;&lt;h4 id=&quot;数据流风格&quot;&gt;&lt;a href=&quot;#数据流风格&quot;
-        
-      
+      &lt;p&gt;学习资料，慎入！！！&lt;br&gt;
     
     </summary>
     
@@ -87,18 +75,11 @@
     <link href="https://blog.ofengx.com/2019/07/30/%E6%90%AD%E5%BB%BA%E6%9C%80%E5%B0%8Fspringcloud/"/>
     <id>https://blog.ofengx.com/2019/07/30/搭建最小springcloud/</id>
     <published>2019-07-30T09:17:13.000Z</published>
-    <updated>2019-10-17T14:19:01.738Z</updated>
+    <updated>2019-10-17T14:40:27.322Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;erueka&quot;&gt;&lt;a href=&quot;#erueka&quot; class=&quot;headerlink&quot; title=&quot;erueka&quot;&gt;&lt;/a&gt;erueka&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;点击 &lt;a href=&quot;https://start.spring.io/&quot;
-        
-      
+      &lt;p&gt;快速搭建springcloud三件客&lt;br&gt;
     
     </summary>
     
@@ -114,18 +95,11 @@
     <link href="https://blog.ofengx.com/2019/07/30/%E8%AF%AD%E6%B3%95/"/>
     <id>https://blog.ofengx.com/2019/07/30/语法/</id>
     <published>2019-07-30T03:50:08.000Z</published>
-    <updated>2019-10-10T03:01:45.659Z</updated>
+    <updated>2019-10-17T14:43:13.430Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot; title=&quot;标题&quot;&gt;&lt;/a&gt;标题&lt;/h2&gt;&lt;p&gt;示例：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
+      &lt;p&gt;Markdown语法结构&lt;br&gt;
     
     </summary>
     
@@ -139,18 +113,11 @@
     <link href="https://blog.ofengx.com/2019/07/30/%E4%BB%80%E4%B9%88%E6%98%AFspringcloud/"/>
     <id>https://blog.ofengx.com/2019/07/30/什么是springcloud/</id>
     <published>2019-07-30T03:21:21.000Z</published>
-    <updated>2019-10-10T02:10:34.124Z</updated>
+    <updated>2019-10-17T14:38:31.705Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;架构发展历程&quot;&gt;&lt;a href=&quot;#架构发展历程&quot; class=&quot;headerlink&quot; title=&quot;架构发展历程&quot;&gt;&lt;/a&gt;架构发展历程&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;单体架构 -&amp;gt; SOA架构 -&amp;gt;
-        
-      
+      &lt;p&gt;通过整个架构的演变过程来理解微服务架构springcloud&lt;br&gt;
     
     </summary>
     
@@ -170,17 +137,11 @@
     <link href="https://blog.ofengx.com/2019/05/14/%E7%A6%BB%E7%BA%BF%E6%90%AD%E5%BB%BAkubernetes-1-14-1/"/>
     <id>https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/</id>
     <published>2019-05-14T05:06:43.000Z</published>
-    <updated>2019-10-10T02:20:53.045Z</updated>
+    <updated>2019-10-17T14:41:10.443Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;linux-安装-kubernetes&quot;&gt;&lt;a href=&quot;#linux-安装-kubernetes&quot; class=&quot;headerlink&quot; title=&quot;linux 安装 kubernetes&quot;&gt;&lt;/a&gt;linux 安装 kubernetes&lt;/h2&gt;&lt;h3
-        
-      
+      &lt;p&gt;对于私有云来讲，如何离线安装kubernetes是个关键性的问题。&lt;br&gt;
     
     </summary>
     
@@ -196,17 +157,11 @@
     <link href="https://blog.ofengx.com/2019/03/14/prometheus-%E5%8F%82%E6%95%B0%E6%8C%87%E6%A0%87-spring-boot/"/>
     <id>https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/</id>
     <published>2019-03-14T08:43:24.000Z</published>
-    <updated>2019-10-10T03:05:45.861Z</updated>
+    <updated>2019-10-17T14:34:06.580Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;Basic-Statistics&quot;&gt;&lt;a href=&quot;#Basic-Statistics&quot; class=&quot;headerlink&quot; title=&quot;Basic Statistics&quot;&gt;&lt;/a&gt;Basic
-        
-      
+      &lt;p&gt;springboot的prometheus参数指标说明&lt;br&gt;
     
     </summary>
     
@@ -218,32 +173,11 @@
     <link href="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-%E5%85%B7%E4%BD%93%E6%95%88%E6%9E%9C/"/>
     <id>https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/</id>
     <published>2019-03-14T07:30:18.000Z</published>
-    <updated>2019-10-17T14:19:57.021Z</updated>
+    <updated>2019-10-17T14:35:56.839Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;REST API是最基本的接口调用规范，使用频率是非常之高。&lt;br&gt;注解是非常有效的技术，可以极大提高开发效率并且可以用简单的方式解决各种复杂的问题。&lt;br&gt;这里主要讲一下在REST API中经常需要使用的基本各种注解&lt;/p&gt;
-&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Spring Boot 开启超神模式</title>
-    <link href="https://blog.ofengx.com/2019/03/13/Spring-Boot-%E5%BC%80%E5%90%AF%E8%B6%85%E7%A5%9E%E6%A8%A1%E5%BC%8F/"/>
-    <id>https://blog.ofengx.com/2019/03/13/Spring-Boot-开启超神模式/</id>
-    <published>2019-03-13T10:57:09.000Z</published>
-    <updated>2019-03-13T10:57:09.870Z</updated>
-    
-    <summary type="html">
+      &lt;p&gt;REST API是最基本的接口调用规范，使用频率是非常之高。&lt;br&gt;注解是非常有效的技术，可以极大提高开发效率并且可以用简单的方式解决各种复杂的问题。&lt;br&gt;这里主要讲一下在REST API中经常需要使用的基本各种注解&lt;br&gt;
     
     </summary>
     
@@ -255,17 +189,11 @@
     <link href="https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-%E5%A6%82%E4%BD%95%E8%AE%A9%E6%80%A7%E8%83%BD%E6%8F%90%E9%AB%981000/"/>
     <id>https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/</id>
     <published>2019-03-13T08:10:25.000Z</published>
-    <updated>2019-10-10T02:11:28.932Z</updated>
+    <updated>2019-10-17T14:37:06.848Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;zuul-参数调优&quot;&gt;&lt;a href=&quot;#zuul-参数调优&quot; class=&quot;headerlink&quot; title=&quot;zuul 参数调优&quot;&gt;&lt;/a&gt;zuul 参数调优&lt;/h2&gt;&lt;h3 id=&quot;spring-boot-tomcat-参数优化&quot;&gt;&lt;a
-        
-      
+      &lt;p&gt;zuul作为springcloud中的核心路由组件，如何更大的压榨性能一直是一个非常关键的问题。&lt;br&gt;
     
     </summary>
     
@@ -281,17 +209,13 @@
     <link href="https://blog.ofengx.com/2019/03/13/GitOps-%E5%9F%BA%E4%BA%8EKubernetes%E7%9A%84%E9%AB%98%E9%80%9FCI-CD%E6%96%B9%E5%BC%8F/"/>
     <id>https://blog.ofengx.com/2019/03/13/GitOps-基于Kubernetes的高速CI-CD方式/</id>
     <published>2019-03-13T07:02:38.000Z</published>
-    <updated>2019-03-13T08:11:34.814Z</updated>
+    <updated>2019-10-17T14:32:19.482Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;什么是GitOps&quot;&gt;&lt;a href=&quot;#什么是GitOps&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;p&gt;GitOps是一种持续交互方式。它的工作原理是使用Git作为声明性基础结构和应用程序的单一事实来源。&lt;/p&gt;
+&lt;p&gt;将Git作为交付管道的中心，每个开发人员都可以发出拉取请求，并使用Git加速并简化Kubernetes的应用程序部署和操作任务。&lt;/p&gt;
+&lt;p&gt;通过GitOps，自动化的交付管道可以在对Git进行更改时对您的基础架构进行更改。它使用工具将整个应用程序的实际生产状态与源代码控制下的内容进行比较，然后它会告诉您集群何时与现实世界不匹配。&lt;br&gt;
     
     </summary>
     
@@ -307,17 +231,12 @@
     <link href="https://blog.ofengx.com/2019/03/07/hexo-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
     <id>https://blog.ofengx.com/2019/03/07/hexo-常用插件/</id>
     <published>2019-03-07T03:55:33.000Z</published>
-    <updated>2019-10-10T03:06:03.078Z</updated>
+    <updated>2019-10-17T14:33:06.190Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;安装-rss&quot;&gt;&lt;a href=&quot;#安装-rss&quot; class=&quot;headerlink&quot; title=&quot;安装 rss&quot;&gt;&lt;/a&gt;安装 rss&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
+      &lt;h2 id=&quot;安装-rss&quot;&gt;&lt;a href=&quot;#安装-rss&quot; class=&quot;headerlink&quot; title=&quot;安装 rss&quot;&gt;&lt;/a&gt;安装 rss&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;% npm install hexo-generator-feed --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# OR&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;% yarn add hexo-generator-feed&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;修改-config-yml-配置&quot;&gt;&lt;a href=&quot;#修改-config-yml-配置&quot; class=&quot;headerlink&quot; title=&quot;修改 _config.yml 配置&quot;&gt;&lt;/a&gt;修改 _config.yml 配置&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;feed:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;: atom&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  path: atom.xml&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;limit&lt;/span&gt;: 20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  hub:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  content:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  content_limit: 140&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  content_limit_delim: &lt;span class=&quot;string&quot;&gt;&#39; &#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  order_by: -date&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  icon: icon.png&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -331,18 +250,11 @@
     <link href="https://blog.ofengx.com/2019/03/06/%E5%A5%BD%E7%8E%A9%E7%9A%84live2d%E7%9C%8B%E6%9D%BF%E5%A8%98/"/>
     <id>https://blog.ofengx.com/2019/03/06/好玩的live2d看板娘/</id>
     <published>2019-03-06T15:20:27.000Z</published>
-    <updated>2019-10-10T03:02:46.503Z</updated>
+    <updated>2019-10-17T14:39:02.183Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;创建blog的主要目的&amp;gt;.&amp;lt;&lt;/p&gt;
-&lt;h2 id=&quot;安装-live2d&quot;&gt;&lt;a href=&quot;#安装-live2d&quot; class=&quot;headerlink&quot; title=&quot;安装 live2d&quot;&gt;&lt;/a&gt;安装 live2d&lt;/h2&gt;&lt;figure
-        
-      
+      &lt;p&gt;创建blog的主要目的 &amp;gt;.&amp;lt;&lt;br&gt;确实好玩 &amp;gt;.&amp;lt;&lt;br&gt;
     
     </summary>
     
@@ -358,17 +270,11 @@
     <link href="https://blog.ofengx.com/2019/03/06/%E5%B0%B1%E7%94%A8%E4%B8%80%E4%B8%AA%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAHexo%E4%B8%BA%E5%BC%80%E5%A7%8B%E5%90%A7/"/>
     <id>https://blog.ofengx.com/2019/03/06/就用一个如何搭建Hexo为开始吧/</id>
     <published>2019-03-06T13:40:31.000Z</published>
-    <updated>2019-10-10T03:04:38.210Z</updated>
+    <updated>2019-10-17T14:31:24.982Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。&lt;br&gt;随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&amp;gt;.&amp;lt;&lt;br&gt;基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个
-        
-      
+      &lt;p&gt;经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。&lt;br&gt;随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&amp;gt;.&amp;lt;&lt;br&gt;基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。&lt;br&gt;今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&amp;gt;.&amp;lt;   之前一直也想基于github搭建一个blog毕竟被微软收购了，应该不会被关闭吧（为之前的博客默哀3秒…）刚好顺这股干劲走一个。&lt;br&gt;
     
     </summary>
     
