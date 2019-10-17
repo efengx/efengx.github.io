@@ -127,7 +127,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/17/rabbitmq消息丢失情况分析及解决方法/" data-id="ck1ue072r000am95vtzre5vy8" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/17/rabbitmq消息丢失情况分析及解决方法/" data-id="ck1ue1n0u0008os5vlaktdg30" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rabbitmq/">rabbitmq</a></li></ul>
@@ -173,7 +173,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/15/设计模式及实现/" data-id="ck1ue072x000mm95voq9om50c" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/15/设计模式及实现/" data-id="ck1ue1n13000mos5vg09jv75g" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/设计模式/">设计模式</a></li></ul>
@@ -260,7 +260,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/10/系统架构设计学习资料二/" data-id="ck1ue072w000km95vre6km49g" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/10/系统架构设计学习资料二/" data-id="ck1ue1n12000kos5vhnumol4o" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统架构/">系统架构</a></li></ul>
@@ -297,9 +297,9 @@
         <h2 id="erueka"><a href="#erueka" class="headerlink" title="erueka"></a>erueka</h2><ul>
 <li><p>点击 <a href="https://start.spring.io/" target="_blank" rel="noopener">https://start.spring.io/</a>  </p>
 <ol>
-<li>项目配置<br><img src="springcloud.jpg" alt="springcloud">  </li>
-<li>eureka 项目目录结构<br><img src="eureka-project-structure.jpg" alt="eurke-project-structure">  </li>
-<li>eureka 控制台<br><img src="springcloudeureka.png" alt="springcloudeureka">  </li>
+<li>项目配置<br><img src="springcloud.jpg" alt></li>
+<li>eureka 项目目录结构<br><img src="eureka-project-structure.jpg" alt></li>
+<li>eureka 控制台<br><img src="springcloudeureka.png" alt></li>
 </ol>
 </li>
 <li><p>EurekaApplication.java</p>
@@ -314,7 +314,7 @@
 <li>测试springcloud eureka是否安装成功<br>访问：<a href="http://localhost:8761/" target="_blank" rel="noopener">http://localhost:8761/</a></li>
 </ul>
 <h2 id="getway"><a href="#getway" class="headerlink" title="getway"></a>getway</h2><ul>
-<li><p>创建 gateway 项目<br><img src="gateway.jpg" alt="gateway"><br><img src="gateway-project-structure.jpg" alt="gateway-project-structure"></p>
+<li><p>创建 gateway 项目<br><img src="gateway.jpg" alt><br><img src="gateway-project-structure.jpg" alt></p>
 </li>
 <li><p>GatewayApplication.java</p>
 </li>
@@ -325,14 +325,14 @@
 </ul>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line"><span class="attr">  port:</span> <span class="number">8080</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  application:</span></span><br><span class="line"><span class="attr">    name:</span> <span class="string">gateway</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">route_one</span></span><br><span class="line"><span class="comment">#        uri: lb://fsh-house</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">https://start.spring.io/</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">Path=/spring-cloud</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="attr">        - name:</span> <span class="string">Retry</span></span><br><span class="line"><span class="attr">          args:</span></span><br><span class="line"><span class="attr">            retries:</span> <span class="number">3</span></span><br><span class="line"><span class="attr">            statuses:</span> <span class="string">BAD_GATEWAY</span></span><br><span class="line"><span class="comment"># 配置服务发现</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line"><span class="attr">  client:</span></span><br><span class="line"><span class="attr">    serviceUrl:</span></span><br><span class="line"><span class="attr">      defaultZone:</span> <span class="attr">http://localhost:8761/eureka/</span></span><br></pre></td></tr></table></figure>
 <h2 id="config"><a href="#config" class="headerlink" title="config"></a>config</h2><ul>
-<li><p>创建一个 config 项目<br><img src="config.jpg" alt="config"><br><img src="config-structure.jpg" alt="config-structure"></p>
+<li><p>创建一个 config 项目<br><img src="config.jpg" alt><br><img src="config-structure.jpg" alt></p>
 </li>
 <li><p>application.yml 配置</p>
 </li>
 </ul>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitlab</span></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line"><span class="attr">  port:</span> <span class="number">8888</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  application:</span></span><br><span class="line"><span class="attr">    name:</span> <span class="string">config</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    config:</span></span><br><span class="line"><span class="attr">      server:</span></span><br><span class="line"><span class="attr">        git:</span></span><br><span class="line"><span class="attr">          uri:</span> <span class="attr">https://gitee.com/ofengx/config.git</span></span><br></pre></td></tr></table></figure>
 <h2 id="boot"><a href="#boot" class="headerlink" title="boot"></a>boot</h2><ul>
-<li>创建一个简单 boot 项目<br><img src="boot.jpg" alt="boot"><br><img src="boot-structure.jpg" alt="boot-structure"></li>
+<li>创建一个简单 boot 项目<br><img src="boot.jpg" alt><br><img src="boot-structure.jpg" alt></li>
 </ul>
 <h2 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h2><ul>
 <li>项目启动顺序<blockquote>
@@ -344,7 +344,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/搭建最小springcloud/" data-id="ck1ue072u000gm95v6m857xjr" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/搭建最小springcloud/" data-id="ck1ue1n0y000gos5vpmd9i17c" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/simple/">simple</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/springcloud/">springcloud</a></li></ul>
@@ -458,7 +458,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="ck1ue0730000pm95vsolzevmz" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="ck1ue1n14000pos5vi95tkwia" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
@@ -551,7 +551,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="ck1ue072q0008m95volcrep55" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="ck1ue1n0v000aos5vs6bxk1kg" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SOA/">SOA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微服务/">微服务</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/架构/">架构</a></li></ul>
@@ -610,7 +610,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/" data-id="ck1ue072v000im95v3lz2p8up" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/" data-id="ck1ue1n10000ios5vfi3zsma7" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/kubernetes/">kubernetes</a></li></ul>
@@ -652,7 +652,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/" data-id="ck1ue072j0005m95vxruidezd" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/" data-id="ck1ue1n0t0007os5v50pkn97r" class="article-share-link">分享</a>
       
       
     </footer>
@@ -692,7 +692,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" data-id="ck1ue072b0001m95v6z7vyhz9" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" data-id="ck1ue1n0g0001os5vnezfy1dv" class="article-share-link">分享</a>
       
       
     </footer>
@@ -728,7 +728,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-Boot-开启超神模式/" data-id="ck1ue072e0003m95vdcylxaqb" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-Boot-开启超神模式/" data-id="ck1ue1n0j0003os5vufai4fjf" class="article-share-link">分享</a>
       
       
     </footer>
