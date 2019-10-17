@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>系统架构设计学习资料二 | Feng Xiang Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="软件架构风格分类数据流风格调用/返回风格调用/返回实际是一种分而治之的策略，其主题思想是将一个大系统分解成多个不同的子系统，以便降低复杂性，并增加可修改性。主要有以下三种架构设计风格：  主程序/子程序这是一种在结构化开发时期的经典架构风格。这种风格一般采用单线程控制，把问题分解成若干个处理步骤，构件即为主程序和子程序，过程调用作为交互机制，即充当连接件。  面向对象风格抽象数据概念对软件系统有着">
+<meta name="keywords" content="系统架构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="系统架构设计学习资料二">
+<meta property="og:url" content="https://blog.ofengx.com/2019/10/10/系统架构设计学习资料二/index.html">
+<meta property="og:site_name" content="Feng Xiang Blog">
+<meta property="og:description" content="软件架构风格分类数据流风格调用/返回风格调用/返回实际是一种分而治之的策略，其主题思想是将一个大系统分解成多个不同的子系统，以便降低复杂性，并增加可修改性。主要有以下三种架构设计风格：  主程序/子程序这是一种在结构化开发时期的经典架构风格。这种风格一般采用单线程控制，把问题分解成若干个处理步骤，构件即为主程序和子程序，过程调用作为交互机制，即充当连接件。  面向对象风格抽象数据概念对软件系统有着">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-17T06:05:28.961Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="系统架构设计学习资料二">
+<meta name="twitter:description" content="软件架构风格分类数据流风格调用/返回风格调用/返回实际是一种分而治之的策略，其主题思想是将一个大系统分解成多个不同的子系统，以便降低复杂性，并增加可修改性。主要有以下三种架构设计风格：  主程序/子程序这是一种在结构化开发时期的经典架构风格。这种风格一般采用单线程控制，把问题分解成若干个处理步骤，构件即为主程序和子程序，过程调用作为交互机制，即充当连接件。  面向对象风格抽象数据概念对软件系统有着">
+  
+    <link rel="alternate" href="/atom.xml" title="Feng Xiang Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Feng Xiang Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">首页</a>
+        
+          <a class="main-nav-link" href="/archives">归档</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          
+            <a id="nav-icon-github" class="nav-icon" href="https://github.com/efengx" title="GitHub"></a>
+          
+            <a id="nav-icon-twitter" class="nav-icon" href="https://twitter.com/heiyexinghai" title="Twitter"></a>
+          
+        
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://blog.ofengx.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-系统架构设计学习资料二" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/10/系统架构设计学习资料二/" class="article-date">
+  <time datetime="2019-10-10T03:05:11.000Z" itemprop="datePublished">2019-10-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      系统架构设计学习资料二
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="软件架构风格分类"><a href="#软件架构风格分类" class="headerlink" title="软件架构风格分类"></a>软件架构风格分类</h3><h4 id="数据流风格"><a href="#数据流风格" class="headerlink" title="数据流风格"></a>数据流风格</h4><h3 id="调用-返回风格"><a href="#调用-返回风格" class="headerlink" title="调用/返回风格"></a>调用/返回风格</h3><p>调用/返回实际是一种分而治之的策略，其主题思想是将一个大系统分解成多个不同的子系统，以便降低复杂性，并增加可修改性。主要有以下三种架构设计风格：</p>
+<ol>
+<li><p>主程序/子程序<br>这是一种在结构化开发时期的经典架构风格。这种风格一般采用单线程控制，把问题分解成若干个处理步骤，构件即为主程序和子程序，过程调用作为交互机制，即充当连接件。</p>
+</li>
+<li><p>面向对象风格<br>抽象数据概念对软件系统有着重要作用，目前软件届以普遍使用面向对象系统。这种风格建立在数据抽象和面向对象的基础上，数据的表示方法和他们响应的操作被封装抽象数据类型或对象中。构件即为对象，或是说是抽象数据类型的实例。对象是一种被称作管理者的构件，因为它负责保持资源的完整性。对象是通过函数和过程的调用来交互的。<br>这种风格有两个主要的特征：</p>
+<ul>
+<li>对象负责维护其表示的完整性。</li>
+<li>对象的表示对其他对象而言是隐藏的，因为一个对象对其它的客户隐藏了自己的表示，所以这些对象可以不影响其他客户就能改变其实现方法。<br>面向对象系统也存在着某些问题：</li>
+<li>为了使一个对象与另一个对象通过过程调用等进行交互，必须知道对象的标示。只要一个对象的标示发生了改变，就必须修改所有其他明确调用它的对象。</li>
+<li>必须修改所有显示调用它的对象，并消除由此带来的一些副作用。例如A使用了对象B,C也使用了对象B,那么C对B的使用所造成的对A的影响可能是料想不到的。</li>
+</ul>
+</li>
+<li><p>层次结构风格<br>层次结构系统组成了一个层次结构，每一层为上层服务，作为下层的客户。在一些层次系统中，除了一些精心挑选的输出函数外，内层的层只对相邻层可见。这样的系统中构件在一些层形成了虚拟机。连接件通过决定层间如何交互的协议来定义，拓扑约束包括对相邻层间的交互约束。<br>这种风格基于可增加抽象层的设计。这样允许将一个复杂的问题分解成一个增量步骤序列的实现。由于每一层最多只影响两层，同时只要给相邻层提供相同的接口，允许每层用不同的方法实现，同样为软件重用性提供了强大的支持。</p>
+</li>
+</ol>
+<h4 id="独立构件设计风格"><a href="#独立构件设计风格" class="headerlink" title="独立构件设计风格"></a>独立构件设计风格</h4><p>独立构件设计风格主要强调系统中的每个构件都是相对独立的个体，它们之间不直接通信，以降低耦合度。提升灵活性。独立构件风格主要包括：进程通信和事件系统风格</p>
+<ol>
+<li>进程通信架构风格：构件是独立的进程，连接件是消息传递。这种风格的特点是构件通常是命名过程，消息传递的方式可以是点对点、异步方式和同步方式及远程过程调用等。</li>
+<li>事件系统风格：这种风格的思想是构件不直接调用一个过程，而是触发或广播一个事件。系统中的其他构件在一个或多个事件中注册，当一个事件被触发时，系统自动调用这个事件中注册的所有过程。这样一个事件的触发就导致另一个模块中的过程被调用。</li>
+</ol>
+<h4 id="虚拟机风格"><a href="#虚拟机风格" class="headerlink" title="虚拟机风格"></a>虚拟机风格</h4><hr>
+<h4 id="企业服务总线"><a href="#企业服务总线" class="headerlink" title="企业服务总线"></a>企业服务总线</h4><p>ESB的概念是从SOA发展而来的，他是一种为进行连接服务提供标准化的通信基础结构，基于开放的标准，为应用提供一个可靠的、可度量的和高度安全的环境，并可帮助企业对业务流程进行设计和模拟，对每个业务流程进行控制和跟踪、分析并改进流程和性能。</p>
+<h4 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h4><p>它是属于面向服务的一种，微服务的特点：小，且专注于做一件事情、轻量级的通信机制、松耦合、独立部署。<br>微服务的优势：</p>
+<ol>
+<li>技术异构性</li>
+<li>弹性</li>
+<li>扩展</li>
+<li>简化部署</li>
+<li>与结织结构相匹配：微服务架构可l以将架构与组织结构相匹配，避免出现过大的代码库。</li>
+<li>可组合性</li>
+<li>对可替代性的优化</li>
+</ol>
+<p>微服务面临的挑战：（软件开发业内有一句名言“软件开发没有银弹”；简单理解，软件开发业内没有一种方法可以解决所有的问题）</p>
+<ol>
+<li>分布式系统的复杂度</li>
+<li>运维成本</li>
+<li>部署自动化</li>
+<li>DevOps与组织结构</li>
+<li>服务间依赖测试</li>
+<li>服务间依赖管理</li>
+</ol>
+<h3 id="架构设计"><a href="#架构设计" class="headerlink" title="架构设计"></a>架构设计</h3><h2 id="测试评审方法"><a href="#测试评审方法" class="headerlink" title="测试评审方法"></a>测试评审方法</h2><h3 id="测试方法"><a href="#测试方法" class="headerlink" title="测试方法"></a>测试方法</h3><p>首先需要明确“错误”（error）和“缺陷”（fault）的概念。<br>IEEE的定义：“错误”主要是针对软件开发过程，“缺陷”主要是针对软件产品。软件开发人员在软件开发过程（主要是分析、设计和编码过程）中所出现的“错误”是导致软件产品“缺陷”的原因，反过来说，“缺陷”是“错误”的结果和表现形式。<br>为了发现软件中的错误（缺陷），应竭力设计能暴露错误（缺陷）的测试用例。<br>测试用例是由测试数据和预期结果构成的。<br>一个好的测试用例极有可能发现至今为止尚未发现的错误（缺陷）的测试测试用例。<br>一个成功的测试是发现了至今为止尚未发现的错误（缺陷）的测试。<br>高效的测试是指用少量的测试用例，发现被测软件尽可能多的错误（缺陷）。<br>软件测试所追求的目标就是以尽可能少的时间和人力发现软件产品中尽可能多的错误（缺陷）。</p>
+<h4 id="软件测试阶段"><a href="#软件测试阶段" class="headerlink" title="软件测试阶段"></a>软件测试阶段</h4><ol>
+<li>单元测试（也称模块测试）<br>由程序员对自己编写的模块自行测试，检查模块是否实现了详细设计说明书中规定的功能和算法。<br>单元测试计划应该在详细设计阶段制定。<br>单元测试重点：模块接口、局部数据结构、重要执行通路、出错处理通路和边界条件等。<br>测试一个模块时需要为该模块编写一个驱动模块和若干个桩（stub）模块。</li>
+<li><p>集成测试（也称组装测试）</p>
+</li>
+<li><p>系统测试（）</p>
+</li>
+</ol>
+<h3 id="评审方法"><a href="#评审方法" class="headerlink" title="评审方法"></a>评审方法</h3><h3 id="验证与确认"><a href="#验证与确认" class="headerlink" title="验证与确认"></a>验证与确认</h3><h3 id="测试自动化"><a href="#测试自动化" class="headerlink" title="测试自动化"></a>测试自动化</h3><h3 id="面向对象的测试"><a href="#面向对象的测试" class="headerlink" title="面向对象的测试"></a>面向对象的测试</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://blog.ofengx.com/2019/10/10/系统架构设计学习资料二/" data-id="ck1udgpw7000jkj5va0iiz13o" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统架构/">系统架构</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/10/17/rabbitmq消息丢失情况分析及解决方法/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          rabbitmq消息丢失情况分析及解决方法
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/07/30/搭建最小springcloud/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">搭建最小springcloud</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CI-CD/">CI/CD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitOps/">GitOps</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SOA/">SOA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kubernetes/">kubernetes</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/live2d/">live2d</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rabbitmq/">rabbitmq</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/simple/">simple</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/springcloud/">springcloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zul/">zul</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/微服务/">微服务</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/架构/">架构</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/系统架构/">系统架构</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CI-CD/" style="font-size: 10px;">CI/CD</a> <a href="/tags/GitOps/" style="font-size: 10px;">GitOps</a> <a href="/tags/SOA/" style="font-size: 10px;">SOA</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/kubernetes/" style="font-size: 10px;">kubernetes</a> <a href="/tags/live2d/" style="font-size: 10px;">live2d</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/rabbitmq/" style="font-size: 10px;">rabbitmq</a> <a href="/tags/simple/" style="font-size: 10px;">simple</a> <a href="/tags/spring-cloud/" style="font-size: 15px;">spring cloud</a> <a href="/tags/springcloud/" style="font-size: 10px;">springcloud</a> <a href="/tags/zul/" style="font-size: 10px;">zul</a> <a href="/tags/微服务/" style="font-size: 10px;">微服务</a> <a href="/tags/架构/" style="font-size: 10px;">架构</a> <a href="/tags/系统架构/" style="font-size: 10px;">系统架构</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/10/17/rabbitmq消息丢失情况分析及解决方法/">rabbitmq消息丢失情况分析及解决方法</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/10/系统架构设计学习资料二/">系统架构设计学习资料二</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/30/搭建最小springcloud/">搭建最小springcloud</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/30/语法/">markdown语法</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/30/什么是springcloud/">什么是springcloud</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Xiang Feng<br>
+      Powered by <a href="https://blog.ofengx.com" target="_blank">ofengx</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+</html>
