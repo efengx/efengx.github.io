@@ -1,15 +1,17 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  home: /
+  archives: /archives
 rss: /atom.xml
 
 # Content
-excerpt_link: Read More
+# excerpt_link: Read More
+excerpt_link: 阅读更多
 fancybox: true
 
 # Sidebar
-sidebar: right
+sidebar:
+  position: right
 widgets:
 - category
 - tag
@@ -31,7 +33,23 @@ show_count: false
 google_analytics:
 gauges_analytics:
 favicon: /favicon.png
-twitter:
+twitter: 
 google_plus:
 fb_admins:
 fb_app_id:
+
+social:
+  GitHub: 
+    name: https://github.com/efengx
+    icon: github
+  #E-Mail: mailto:yourname@gmail.com || envelope
+  #Google: https://plus.google.com/yourname || google
+  Twitter: 
+    name: https://twitter.com/heiyexinghai
+    icon: twitter
+  #FB Page: https://www.facebook.com/yourname || facebook
+  #VK Group: https://vk.com/yourname || vk
+  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+  #YouTube: https://youtube.com/yourname || youtube
+  #Instagram: https://instagram.com/yourname || instagram
+  #Skype: skype:yourname?call|chat || skype
