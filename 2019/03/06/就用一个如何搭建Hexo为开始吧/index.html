@@ -7,18 +7,18 @@
   
   <title>就用一个如何搭建Hexo为开始吧 | Feng Xiang Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&amp;gt;.&amp;lt;基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&amp;gt;.&amp;lt;   之前">
+  <meta name="description" content="经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。 随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&amp;gt;.&amp;lt; 基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。 今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&amp;gt;.&amp;lt;">
 <meta name="keywords" content="hexo,blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="就用一个如何搭建Hexo为开始吧">
 <meta property="og:url" content="https://blog.ofengx.com/2019/03/06/就用一个如何搭建Hexo为开始吧/index.html">
 <meta property="og:site_name" content="Feng Xiang Blog">
-<meta property="og:description" content="经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&amp;gt;.&amp;lt;基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&amp;gt;.&amp;lt;   之前">
+<meta property="og:description" content="经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。 随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&amp;gt;.&amp;lt; 基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。 今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&amp;gt;.&amp;lt;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-30T03:25:10.335Z">
+<meta property="og:updated_time" content="2020-03-16T13:46:46.842Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="就用一个如何搭建Hexo为开始吧">
-<meta name="twitter:description" content="经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&amp;gt;.&amp;lt;基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&amp;gt;.&amp;lt;   之前">
+<meta name="twitter:description" content="经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。 随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&amp;gt;.&amp;lt; 基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。 今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&amp;gt;.&amp;lt;">
   
     <link rel="alternate" href="/atom.xml" title="Feng Xiang Blog" type="application/atom+xml">
   
@@ -29,6 +29,8 @@
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   <link rel="stylesheet" href="/css/style.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" rel="stylesheet" type="text/css">
 </head>
 </html>
 <body>
@@ -94,32 +96,58 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。<br>随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&gt;.&lt;<br>基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。<br>今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&gt;.&lt;   之前一直也想基于github搭建一个blog毕竟被微软收购了，应该不会被关闭吧（为之前的博客默哀3秒…）刚好顺这股干劲走一个。<br><a id="more"></a></p>
-<h2 id="安装-hexo-cli"><a href="#安装-hexo-cli" class="headerlink" title="安装 hexo-cli"></a>安装 hexo-cli</h2><p><a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">可以点击我去hexo的github</a></p>
-<p>开命令行界面window cmd/mac os terminal/linux (这个不用呢只要不是图形界面进入就是了，我很少在linux下用图形界面&gt;.&lt;)。<br>命令很简单一行就搞定，这里提供两种方式 npm 和 yarn 的方式</p>
+        <p>经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。<br>
+随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&gt;.&lt;<br>
+基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。<br>
+今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&gt;.&lt;   之前一直也想基于github搭建一个blog毕竟被微软收购了，应该不会被关闭吧（为之前的博客默哀3秒…）刚好顺这股干劲走一个。</p>
+<a id="more"></a>
+<h2 id="安装-hexo-cli"><a class="markdownIt-Anchor" href="#安装-hexo-cli"></a> 安装 hexo-cli</h2>
+<p><a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">可以点击我去hexo的github</a></p>
+<p>开命令行界面window cmd/mac os terminal/linux (这个不用呢只要不是图形界面进入就是了，我很少在linux下用图形界面&gt;.&lt;)。<br>
+命令很简单一行就搞定，这里提供两种方式 npm 和 yarn 的方式</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% npm install hexo-cli -g</span><br><span class="line"><span class="comment"># OR</span></span><br><span class="line">% yarn global add hexo-cli</span><br></pre></td></tr></table></figure>
-<p>安装需要一点时间，具体视网络情况而定，我大概用了5分钟吧（坑爹的网络…）<br>-g 和 global 代表全局安装，也就是其他所有项目中的都可以使用这个插件不需要在次安装了。<br>（补充下，用README.md写博客真心很舒服，总算脱离了富文本编辑框&gt;.&lt;）</p>
-<h2 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% hexo init blog</span><br><span class="line">% <span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
-<p>blog为博客的名称，可以根据自己的命名喜好自定义一个即可。<br>接下来可以直接在命令行界面下如上用 cd 命令进入blog目录，也可以下载一个<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">vscode点我进入下载页面</a>目前非常好用的Code编辑器，不得不说Microsoft还是很有几把刷子的。</p>
-<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">% hexo server</span><br></pre></td></tr></table></figure>
+<p>安装需要一点时间，具体视网络情况而定，我大概用了5分钟吧（坑爹的网络…）<br>
+-g 和 global 代表全局安装，也就是其他所有项目中的都可以使用这个插件不需要在次安装了。<br>
+（补充下，用README.md写博客真心很舒服，总算脱离了富文本编辑框&gt;.&lt;）</p>
+<h2 id="创建博客"><a class="markdownIt-Anchor" href="#创建博客"></a> 创建博客</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% hexo init blog</span><br><span class="line">% <span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
+<p>blog为博客的名称，可以根据自己的命名喜好自定义一个即可。<br>
+接下来可以直接在命令行界面下如上用 cd 命令进入blog目录，也可以下载一个<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">vscode点我进入下载页面</a>目前非常好用的Code编辑器，不得不说Microsoft还是很有几把刷子的。</p>
+<h2 id="启动"><a class="markdownIt-Anchor" href="#启动"></a> 启动</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">% hexo server</span><br></pre></td></tr></table></figure>
 <p>启动之后在输出中找到url，copy到浏览器中即可。（居然不能自动打开浏览器，我等了一会以为在网络上飞，谁知道没这功能…）</p>
-<h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建一个文章</span></span><br><span class="line">hexo new <span class="string">"就用一个如何搭建Hexo为开始吧"</span></span><br><span class="line"><span class="comment"># 创建一个带目录的文章</span></span><br><span class="line">hexo new post [title]</span><br><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<h2 id="创建文章"><a class="markdownIt-Anchor" href="#创建文章"></a> 创建文章</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建一个文章</span></span><br><span class="line">hexo new <span class="string">"就用一个如何搭建Hexo为开始吧"</span></span><br><span class="line"><span class="comment"># 创建一个带目录的文章</span></span><br><span class="line">hexo new post [title]</span><br><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
 <p>自行查看更多<a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">命令</a></p>
-<h2 id="发布到github-page"><a href="#发布到github-page" class="headerlink" title="发布到github page"></a>发布到github page</h2><h3 id="将项目与github进行链接"><a href="#将项目与github进行链接" class="headerlink" title="将项目与github进行链接"></a>将项目与github进行链接</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">% git init</span><br><span class="line"><span class="comment"># 进行远程链接，请用自己的github地址。</span></span><br><span class="line">% git remote add origin https://github.com/efengx/efengx.github.io.git</span><br><span class="line"><span class="comment"># 查看关联情况</span></span><br><span class="line">% git remote -v</span><br></pre></td></tr></table></figure>
-<h3 id="安装-hexo-deployer-git"><a href="#安装-hexo-deployer-git" class="headerlink" title="安装 hexo-deployer-git"></a>安装 hexo-deployer-git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% npm install hexo-deployer-git --save</span><br><span class="line"><span class="comment"># OR</span></span><br><span class="line">% yarn add hexo-deployer-git</span><br></pre></td></tr></table></figure>
-<h3 id="修改-config-yml-配置"><a href="#修改-config-yml-配置" class="headerlink" title="修改_config.yml 配置"></a>修改_config.yml 配置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/efengx/efengx.github.io.git</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
+<h2 id="发布到github-page"><a class="markdownIt-Anchor" href="#发布到github-page"></a> 发布到github page</h2>
+<h3 id="将项目与github进行链接"><a class="markdownIt-Anchor" href="#将项目与github进行链接"></a> 将项目与github进行链接</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">% git init</span><br><span class="line"><span class="comment"># 进行远程链接，请用自己的github地址。</span></span><br><span class="line">% git remote add origin https://github.com/efengx/efengx.github.io.git</span><br><span class="line"><span class="comment"># 查看关联情况</span></span><br><span class="line">% git remote -v</span><br></pre></td></tr></table></figure>
+<h3 id="安装-hexo-deployer-git"><a class="markdownIt-Anchor" href="#安装-hexo-deployer-git"></a> 安装 hexo-deployer-git</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% npm install hexo-deployer-git --save</span><br><span class="line"><span class="comment"># OR</span></span><br><span class="line">% yarn add hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<h3 id="修改_configyml-配置"><a class="markdownIt-Anchor" href="#修改_configyml-配置"></a> 修改_config.yml 配置</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/efengx/efengx.github.io.git</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
 <p>repo 改成自己的github项目地址</p>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 可选操作（清除缓存）</span></span><br><span class="line">% hexo clean</span><br><span class="line"><span class="comment"># 生成静态页面</span></span><br><span class="line">% hexo generate</span><br><span class="line">% hexo g</span><br><span class="line"><span class="comment"># 发布到github（根据_config.yml中的deploy）</span></span><br><span class="line">% hexo deploy</span><br><span class="line">% hexo d</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调试模式</span></span><br><span class="line">% hexo s --debug</span><br></pre></td></tr></table></figure>
-<h2 id="主题（可选）"><a href="#主题（可选）" class="headerlink" title="主题（可选）"></a>主题（可选）</h2><h3 id="安装-next-主题"><a href="#安装-next-主题" class="headerlink" title="安装 next 主题"></a>安装 next 主题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在blog目录下运行</span></span><br><span class="line">% git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-<h3 id="修改-config-yml-配置文件"><a href="#修改-config-yml-配置文件" class="headerlink" title="修改 _config.yml 配置文件"></a>修改 _config.yml 配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># landscape 为当前主题</span></span><br><span class="line">&gt; theme: landscape</span><br></pre></td></tr></table></figure>
-<h2 id="创建新的页面"><a href="#创建新的页面" class="headerlink" title="创建新的页面"></a>创建新的页面</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="部署"><a class="markdownIt-Anchor" href="#部署"></a> 部署</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 可选操作（清除缓存）</span></span><br><span class="line">% hexo clean</span><br><span class="line"><span class="comment"># 生成静态页面</span></span><br><span class="line">% hexo generate</span><br><span class="line">% hexo g</span><br><span class="line"><span class="comment"># 发布到github（根据_config.yml中的deploy）</span></span><br><span class="line">% hexo deploy</span><br><span class="line">% hexo d</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调试模式</span></span><br><span class="line">% hexo s --debug</span><br></pre></td></tr></table></figure>
+<h2 id="主题可选"><a class="markdownIt-Anchor" href="#主题可选"></a> 主题（可选）</h2>
+<h3 id="安装-next-主题"><a class="markdownIt-Anchor" href="#安装-next-主题"></a> 安装 next 主题</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在blog目录下运行</span></span><br><span class="line">% git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<h3 id="修改-_configyml-配置文件"><a class="markdownIt-Anchor" href="#修改-_configyml-配置文件"></a> 修改 _config.yml 配置文件</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># landscape 为当前主题</span></span><br><span class="line">&gt; theme: landscape</span><br></pre></td></tr></table></figure>
+<h2 id="创建新的页面"><a class="markdownIt-Anchor" href="#创建新的页面"></a> 创建新的页面</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
 <p>layout: post(默认), page, draft</p>
-<h2 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h2><p><a href="https://blog.ofengx.com/">blog.ofengx.com</a></p>
+<h2 id="支持公式以默认主题-landscape-为例"><a class="markdownIt-Anchor" href="#支持公式以默认主题-landscape-为例"></a> 支持公式，以默认主题 landscape 为例</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装 mathjax 插件</span></span><br><span class="line">npm un hexo-renderer-marked --save</span><br><span class="line">npm i hexo-renderer-markdown-it-plus --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 修改站点配置文件 _config.yml</span></span><br><span class="line"><span class="attr">math:</span></span><br><span class="line"><span class="attr">  engine:</span> <span class="string">'mathjax'</span> <span class="comment"># or 'katex'</span></span><br><span class="line"><span class="attr">  mathjax:</span></span><br><span class="line">    <span class="comment"># src: custom_mathjax_source</span></span><br><span class="line"><span class="attr">    config:</span></span><br><span class="line">      <span class="comment"># MathJax config</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在 next 主题配置文件中 themes/next-theme/_config.yml 中将 mathJax 设为 true:</span></span><br><span class="line"><span class="comment"># MathJax Support</span></span><br><span class="line"><span class="attr">mathjax:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  per_page:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  cdn:</span> <span class="string">//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML</span></span><br></pre></td></tr></table></figure>
+<h2 id="访问"><a class="markdownIt-Anchor" href="#访问"></a> 访问</h2>
+<p><a href="https://blog.ofengx.com/">blog.ofengx.com</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/06/就用一个如何搭建Hexo为开始吧/" data-id="ck7uh2u96000c2opvh31ov0ds" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/06/就用一个如何搭建Hexo为开始吧/" data-id="ck7uj3ibz000cehpvpr42gu3q" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>

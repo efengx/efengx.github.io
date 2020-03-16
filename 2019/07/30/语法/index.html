@@ -31,6 +31,8 @@
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   <link rel="stylesheet" href="/css/style.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" rel="stylesheet" type="text/css">
 </head>
 </html>
 <body>
@@ -96,20 +98,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Markdown语法结构<br><a id="more"></a></p>
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>示例：</p>
+        <p>Markdown语法结构</p>
+<a id="more"></a>
+<h2 id="标题"><a class="markdownIt-Anchor" href="#标题"></a> 标题</h2>
+<p>示例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 这是一级标题</span><br><span class="line">## 这是二级标题</span><br><span class="line">### 这是三级标题</span><br><span class="line">#### 这是四级标题</span><br><span class="line">##### 这是五级标题</span><br><span class="line">###### 这是六级标题</span><br></pre></td></tr></table></figure>
 <p>效果：</p>
-<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><hr>
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>示例：</p>
+<h1 id="这是一级标题"><a class="markdownIt-Anchor" href="#这是一级标题"></a> 这是一级标题</h1>
+<h2 id="这是二级标题"><a class="markdownIt-Anchor" href="#这是二级标题"></a> 这是二级标题</h2>
+<h3 id="这是三级标题"><a class="markdownIt-Anchor" href="#这是三级标题"></a> 这是三级标题</h3>
+<h4 id="这是四级标题"><a class="markdownIt-Anchor" href="#这是四级标题"></a> 这是四级标题</h4>
+<h5 id="这是五级标题"><a class="markdownIt-Anchor" href="#这是五级标题"></a> 这是五级标题</h5>
+<h6 id="这是六级标题"><a class="markdownIt-Anchor" href="#这是六级标题"></a> 这是六级标题</h6>
+<hr>
+<h2 id="字体"><a class="markdownIt-Anchor" href="#字体"></a> 字体</h2>
+<p>示例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**这是加粗的文字**</span><br><span class="line">*这是倾斜的文字*</span><br><span class="line">***这是斜体加粗的文字***</span><br><span class="line">~~这是加删除线的文字~~</span><br></pre></td></tr></table></figure>
 <p>效果：x</p>
 <p><em>这是倾斜的文字</em></p>
 <p><strong>这是加粗的文字</strong></p>
-<p><strong><em>这是斜体加粗的文字</em></strong></p>
-<p><del>这是加删除线的文字</del></p>
+<p><em><strong>这是斜体加粗的文字</strong></em></p>
+<p><s>这是加删除线的文字</s></p>
 <hr>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>示例：</p>
+<h2 id="引用"><a class="markdownIt-Anchor" href="#引用"></a> 引用</h2>
+<p>示例：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是引用的内容</span><br><span class="line">&gt;&gt;这是引用的内容</span><br><span class="line">&gt;&gt;&gt;这是引用的内容</span><br></pre></td></tr></table></figure>
 <p>效果：</p>
 <blockquote>
@@ -121,7 +133,8 @@
 </blockquote>
 </blockquote>
 </blockquote>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>示例：</p>
+<h2 id="分割线"><a class="markdownIt-Anchor" href="#分割线"></a> 分割线</h2>
+<p>示例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">----</span><br><span class="line">***</span><br><span class="line">*****</span><br></pre></td></tr></table></figure>
 <p>效果：</p>
 <hr>
@@ -129,35 +142,43 @@
 <hr>
 <hr>
 <hr>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>格式：</p>
+<h2 id="图片"><a class="markdownIt-Anchor" href="#图片"></a> 图片</h2>
+<p>格式：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 &apos;&apos;图片title&apos;&apos;)</span><br><span class="line"></span><br><span class="line">图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</span><br></pre></td></tr></table></figure>
 <p>示例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg &quot;区块链&quot;)</span><br></pre></td></tr></table></figure>
-<p>效果：<br><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg" alt="blockchain" title="区块链"></p>
+<p>效果：<br>
+<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg" alt="blockchain" title="区块链"></p>
 <hr>
-<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p>格式：</p>
+<h2 id="超链接"><a class="markdownIt-Anchor" href="#超链接"></a> 超链接</h2>
+<p>格式：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[超链接名](超链接地址 <span class="string">"超链接title"</span>)</span><br><span class="line">title可加可不加</span><br></pre></td></tr></table></figure>
 <p>示例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[博客](http://blog.ofengx.com)</span><br></pre></td></tr></table></figure>
-<p>效果：<br><a href="http://blog.ofengx.com">博客</a></p>
+<p>效果：<br>
+<a href="http://blog.ofengx.com">博客</a></p>
 <hr>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>示例：</p>
+<h2 id="列表"><a class="markdownIt-Anchor" href="#列表"></a> 列表</h2>
+<p>示例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">- 列表内容</span><br><span class="line">+ 列表内容</span><br><span class="line">* 列表内容</span><br><span class="line"></span><br><span class="line">注意：- + * 跟内容之间都要有一个空格</span><br><span class="line">```text</span><br><span class="line">效果：</span><br><span class="line">- 列表内容</span><br><span class="line">+ 列表内容</span><br><span class="line">* 列表内容</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">## 有序列表</span><br><span class="line"></span><br><span class="line">示例：</span><br><span class="line"></span><br><span class="line">```text</span><br><span class="line">1. 列表内容</span><br><span class="line">2. 列表内容</span><br><span class="line">3. 列表内容</span><br><span class="line"></span><br><span class="line">注意：序号跟内容之间要有空格</span><br><span class="line">```text</span><br><span class="line">效果：</span><br><span class="line">1. 列表内容</span><br><span class="line">2. 列表内容</span><br><span class="line">3. 列表内容</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">## 列表嵌套</span><br><span class="line"></span><br><span class="line">示例：</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">1. 列表内容</span><br><span class="line">   1. 列表内容</span><br><span class="line">   2. 列表内容</span><br><span class="line">   3. 列表内容</span><br><span class="line">2. 列表内容</span><br><span class="line">   1. 列表内容</span><br><span class="line">   2. 列表内容</span><br><span class="line">   3. 列表内容</span><br><span class="line">3. 列表内容</span><br><span class="line">   1. 列表内容</span><br><span class="line">   2. 列表内容</span><br><span class="line">   3. 列表内容</span><br></pre></td></tr></table></figure>
 <p>效果：</p>
 <ol>
-<li>列表内容<ul>
+<li>列表内容
+<ul>
 <li>1.列表内容</li>
 <li>2.列表内容</li>
 <li>3.列表内容</li>
 </ul>
 </li>
-<li>列表内容<ul>
+<li>列表内容
+<ul>
 <li>1.列表内容</li>
 <li>2.列表内容</li>
 <li>3.列表内容</li>
 </ul>
 </li>
-<li>列表内容<ol>
+<li>列表内容
+<ol>
 <li>列表内容</li>
 <li>列表内容</li>
 <li>列表内容</li>
@@ -165,23 +186,60 @@
 </li>
 </ol>
 <hr>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>示例：</p>
+<h2 id="表格"><a class="markdownIt-Anchor" href="#表格"></a> 表格</h2>
+<p>示例：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">|表头|表头|表头|</span><br><span class="line">|---:|---:|---:|</span><br><span class="line">|内容|内容|内容|</span><br><span class="line">|内容|内容|内容|</span><br><span class="line"></span><br><span class="line">第二行分割表头和内容。</span><br><span class="line">- 有一个就行，为了对齐，多加了几个</span><br><span class="line">文字默认居左</span><br><span class="line">-两边加：表示文字居中</span><br><span class="line">-右边加：表示文字居右</span><br><span class="line">注：原生的语法两边都要用 | 包起来。此处省略</span><br></pre></td></tr></table></figure>
 <p>例子：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|姓名|技能|排行|</span><br><span class="line">|---:|---:|---:|</span><br><span class="line">|刘备|哭|大哥|</span><br><span class="line">|关羽|打|二哥|</span><br><span class="line">|张飞|骂|三弟|</span><br></pre></td></tr></table></figure>
-<p>效果：<br>|姓名|技能|排行|<br>|—:|—:|—:|<br>|刘备|哭|大哥|<br>|关羽|打|二哥|</p>
-<h2 id="张飞-骂-三弟"><a href="#张飞-骂-三弟" class="headerlink" title="|张飞|骂|三弟|"></a>|张飞|骂|三弟|</h2><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">单行代码：代码之间分别用一个反引号包起来</span><br><span class="line">`代码内容`</span><br><span class="line"></span><br><span class="line">代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</span><br><span class="line">(```)</span><br><span class="line">  代码...</span><br><span class="line">  代码...</span><br><span class="line">  代码...</span><br><span class="line">(```)</span><br><span class="line">注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。</span><br></pre></td></tr></table></figure></p>
-<p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">单行代码</span><br><span class="line">`create database hero;`</span><br><span class="line"></span><br><span class="line">代码块</span><br><span class="line">(```)</span><br><span class="line">    <span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>()&#123;</span><br><span class="line">         <span class="built_in">echo</span> <span class="string">"这是一句非常牛逼的代码"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    fun();</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure></p>
-<p>效果：<br>单行代码<br><code>create database hero;</code></p>
-<p>代码块<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function fun()&#123;</span><br><span class="line">     echo &quot;这是一句非常牛逼的代码&quot;;</span><br><span class="line">&#125;</span><br><span class="line">fun();</span><br></pre></td></tr></table></figure></p>
+<p>效果：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">姓名</th>
+<th style="text-align:right">技能</th>
+<th style="text-align:right">排行</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">刘备</td>
+<td style="text-align:right">哭</td>
+<td style="text-align:right">大哥</td>
+</tr>
+<tr>
+<td style="text-align:right">关羽</td>
+<td style="text-align:right">打</td>
+<td style="text-align:right">二哥</td>
+</tr>
+<tr>
+<td style="text-align:right">张飞</td>
+<td style="text-align:right">骂</td>
+<td style="text-align:right">三弟</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(```flow)</span><br><span class="line">st=&gt;start: 开始</span><br><span class="line">op=&gt;operation: My Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">e=&gt;end</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure></p>
-<p>效果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">st=start:Start</span><br><span class="line">i=inputoutput:输入年份n</span><br><span class="line">cond1=condition:n能否被4整除？</span><br><span class="line">cond2=condition:n能否被100整除？</span><br><span class="line">cond3=condition:n能否被400整除？</span><br><span class="line">o1=inputoutput:输出非闰年</span><br><span class="line">o2=inputoutput:输出非闰年</span><br><span class="line">o3=inputoutput:输出闰年</span><br><span class="line">o4=inputoutput:输出闰年</span><br><span class="line">e=end</span><br><span class="line"></span><br><span class="line">st-i-cond1</span><br><span class="line">cond1(no)-o1-e</span><br><span class="line">cond1(yes)-cond2</span><br><span class="line">cond2(no)-o3-e</span><br><span class="line">cond2(yes)-cond3</span><br><span class="line">cond3(yes)-o2-e</span><br><span class="line">cond3(no)-o4-e</span><br></pre></td></tr></table></figure></p>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
+<p>示例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">单行代码：代码之间分别用一个反引号包起来</span><br><span class="line">`代码内容`</span><br><span class="line"></span><br><span class="line">代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</span><br><span class="line">(```)</span><br><span class="line">  代码...</span><br><span class="line">  代码...</span><br><span class="line">  代码...</span><br><span class="line">(```)</span><br><span class="line">注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">单行代码</span><br><span class="line">`create database hero;`</span><br><span class="line"></span><br><span class="line">代码块</span><br><span class="line">(```)</span><br><span class="line">    <span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>()&#123;</span><br><span class="line">         <span class="built_in">echo</span> <span class="string">"这是一句非常牛逼的代码"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    fun();</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure>
+<p>效果：<br>
+单行代码<br>
+<code>create database hero;</code></p>
+<p>代码块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function fun()&#123;</span><br><span class="line">     echo &quot;这是一句非常牛逼的代码&quot;;</span><br><span class="line">&#125;</span><br><span class="line">fun();</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="流程图"><a class="markdownIt-Anchor" href="#流程图"></a> 流程图</h2>
+<p>示例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(```flow)</span><br><span class="line">st=&gt;start: 开始</span><br><span class="line">op=&gt;operation: My Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">e=&gt;end</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">st=start:Start</span><br><span class="line">i=inputoutput:输入年份n</span><br><span class="line">cond1=condition:n能否被4整除？</span><br><span class="line">cond2=condition:n能否被100整除？</span><br><span class="line">cond3=condition:n能否被400整除？</span><br><span class="line">o1=inputoutput:输出非闰年</span><br><span class="line">o2=inputoutput:输出非闰年</span><br><span class="line">o3=inputoutput:输出闰年</span><br><span class="line">o4=inputoutput:输出闰年</span><br><span class="line">e=end</span><br><span class="line"></span><br><span class="line">st-i-cond1</span><br><span class="line">cond1(no)-o1-e</span><br><span class="line">cond1(yes)-cond2</span><br><span class="line">cond2(no)-o3-e</span><br><span class="line">cond2(yes)-cond3</span><br><span class="line">cond3(yes)-o2-e</span><br><span class="line">cond3(no)-o4-e</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="ck7uh2u9d000p2opvmxmrjvpa" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="ck7uj3ic5000oehpvla7a24tl" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>

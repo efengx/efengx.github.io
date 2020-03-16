@@ -7,18 +7,18 @@
   
   <title>人工智能 | Feng Xiang Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="深度学习 Deep learning | DL对比机器学习：机器学习的特征提前主要依赖于人工，针对特定简单任务的时候人工提取特征会非常有效，但并不能通用。深度学习的特征提取并不依赖人工，而是机器自动提取。这也是为什么大家都说深度学习的可解释性很差，因为有时候深度学习表现很好，但我们并不知道他的原理是什么。 几种典型的深度学习算法  CNN 卷积神经网络 RNN 循环神经网络 GANS 生成对抗网络">
+  <meta name="description" content="深度学习 Deep learning | DL 对比机器学习： 机器学习的特征提前主要依赖于人工，针对特定简单任务的时候人工提取特征会非常有效，但并不能通用。 深度学习的特征提取并不依赖人工，而是机器自动提取。这也是为什么大家都说深度学习的可解释性很差，因为有时候深度学习表现很好，但我们并不知道他的原理是什么。 几种典型的深度学习算法  CNN 卷积神经网络 RNN 循环神经网络 GANS 生成">
 <meta name="keywords" content="AI,人工智能,深度学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="人工智能">
 <meta property="og:url" content="https://blog.ofengx.com/2019/10/30/人工智能/index.html">
 <meta property="og:site_name" content="Feng Xiang Blog">
-<meta property="og:description" content="深度学习 Deep learning | DL对比机器学习：机器学习的特征提前主要依赖于人工，针对特定简单任务的时候人工提取特征会非常有效，但并不能通用。深度学习的特征提取并不依赖人工，而是机器自动提取。这也是为什么大家都说深度学习的可解释性很差，因为有时候深度学习表现很好，但我们并不知道他的原理是什么。 几种典型的深度学习算法  CNN 卷积神经网络 RNN 循环神经网络 GANS 生成对抗网络">
+<meta property="og:description" content="深度学习 Deep learning | DL 对比机器学习： 机器学习的特征提前主要依赖于人工，针对特定简单任务的时候人工提取特征会非常有效，但并不能通用。 深度学习的特征提取并不依赖人工，而是机器自动提取。这也是为什么大家都说深度学习的可解释性很差，因为有时候深度学习表现很好，但我们并不知道他的原理是什么。 几种典型的深度学习算法  CNN 卷积神经网络 RNN 循环神经网络 GANS 生成">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-10-30T03:55:40.182Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="人工智能">
-<meta name="twitter:description" content="深度学习 Deep learning | DL对比机器学习：机器学习的特征提前主要依赖于人工，针对特定简单任务的时候人工提取特征会非常有效，但并不能通用。深度学习的特征提取并不依赖人工，而是机器自动提取。这也是为什么大家都说深度学习的可解释性很差，因为有时候深度学习表现很好，但我们并不知道他的原理是什么。 几种典型的深度学习算法  CNN 卷积神经网络 RNN 循环神经网络 GANS 生成对抗网络">
+<meta name="twitter:description" content="深度学习 Deep learning | DL 对比机器学习： 机器学习的特征提前主要依赖于人工，针对特定简单任务的时候人工提取特征会非常有效，但并不能通用。 深度学习的特征提取并不依赖人工，而是机器自动提取。这也是为什么大家都说深度学习的可解释性很差，因为有时候深度学习表现很好，但我们并不知道他的原理是什么。 几种典型的深度学习算法  CNN 卷积神经网络 RNN 循环神经网络 GANS 生成">
   
     <link rel="alternate" href="/atom.xml" title="Feng Xiang Blog" type="application/atom+xml">
   
@@ -29,6 +29,8 @@
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   <link rel="stylesheet" href="/css/style.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" rel="stylesheet" type="text/css">
 </head>
 </html>
 <body>
@@ -94,7 +96,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="深度学习-Deep-learning-DL"><a href="#深度学习-Deep-learning-DL" class="headerlink" title="深度学习 Deep learning | DL"></a>深度学习 Deep learning | DL</h2><p>对比机器学习：<br>机器学习的特征提前主要依赖于人工，针对特定简单任务的时候人工提取特征会非常有效，但并不能通用。<br>深度学习的特征提取并不依赖人工，而是机器自动提取。这也是为什么大家都说深度学习的可解释性很差，因为有时候深度学习表现很好，但我们并不知道他的原理是什么。</p>
+        <h2 id="深度学习-deep-learning-dl"><a class="markdownIt-Anchor" href="#深度学习-deep-learning-dl"></a> 深度学习 Deep learning | DL</h2>
+<p>对比机器学习：<br>
+机器学习的特征提前主要依赖于人工，针对特定简单任务的时候人工提取特征会非常有效，但并不能通用。<br>
+深度学习的特征提取并不依赖人工，而是机器自动提取。这也是为什么大家都说深度学习的可解释性很差，因为有时候深度学习表现很好，但我们并不知道他的原理是什么。</p>
 <p>几种典型的深度学习算法</p>
 <ul>
 <li>CNN 卷积神经网络</li>
@@ -102,12 +107,13 @@
 <li>GANS 生成对抗网络</li>
 <li>RL 深度强化学习</li>
 </ul>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://easyai.tech/ai-definition/deep-learning/" target="_blank" rel="noopener">深度学习 DL</a></p>
+<h2 id="参考资料"><a class="markdownIt-Anchor" href="#参考资料"></a> 参考资料</h2>
+<p><a href="https://easyai.tech/ai-definition/deep-learning/" target="_blank" rel="noopener">深度学习 DL</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/30/人工智能/" data-id="ck7uh2u9100072opvpiev34ub" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/30/人工智能/" data-id="ck7uj3ibw0009ehpvn5x5mtj1" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI/">AI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/人工智能/">人工智能</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/深度学习/">深度学习</a></li></ul>

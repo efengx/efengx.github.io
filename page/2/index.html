@@ -24,6 +24,8 @@
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   <link rel="stylesheet" href="/css/style.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" rel="stylesheet" type="text/css">
 </head>
 </html>
 <body>
@@ -91,16 +93,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>REST API是最基本的接口调用规范，使用频率是非常之高。<br>注解是非常有效的技术，可以极大提高开发效率并且可以用简单的方式解决各种复杂的问题。<br>这里主要讲一下在REST API中经常需要使用的基本各种注解<br>
+        <p>REST API是最基本的接口调用规范，使用频率是非常之高。<br>
+注解是非常有效的技术，可以极大提高开发效率并且可以用简单的方式解决各种复杂的问题。<br>
+这里主要讲一下在REST API中经常需要使用的基本各种注解</p>
         
-          </p><p class="article-more-link">
+          <p class="article-more-link">
             <a href="/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/#more">阅读更多</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" data-id="ck7uh2u8q00032opvqlu7lxmn" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/" data-id="ck7uj3ibf0001ehpvdo355k9r" class="article-share-link">分享</a>
       
       
     </footer>
@@ -132,16 +136,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>zuul作为springcloud中的核心路由组件，如何更大的压榨性能一直是一个非常关键的问题。<br>
+        <p>zuul作为springcloud中的核心路由组件，如何更大的压榨性能一直是一个非常关键的问题。</p>
         
-          </p><p class="article-more-link">
+          <p class="article-more-link">
             <a href="/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/#more">阅读更多</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/" data-id="ck7uh2u8n00012opvl3531b0h" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/" data-id="ck7uj3ibl0004ehpv9tdkq3sy" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zul/">zul</a></li></ul>
@@ -177,16 +181,16 @@
       
         <p>GitOps是一种持续交互方式。它的工作原理是使用Git作为声明性基础结构和应用程序的单一事实来源。</p>
 <p>将Git作为交付管道的中心，每个开发人员都可以发出拉取请求，并使用Git加速并简化Kubernetes的应用程序部署和操作任务。</p>
-<p>通过GitOps，自动化的交付管道可以在对Git进行更改时对您的基础架构进行更改。它使用工具将整个应用程序的实际生产状态与源代码控制下的内容进行比较，然后它会告诉您集群何时与现实世界不匹配。<br>
+<p>通过GitOps，自动化的交付管道可以在对Git进行更改时对您的基础架构进行更改。它使用工具将整个应用程序的实际生产状态与源代码控制下的内容进行比较，然后它会告诉您集群何时与现实世界不匹配。</p>
         
-          </p><p class="article-more-link">
+          <p class="article-more-link">
             <a href="/2019/03/13/GitOps-基于Kubernetes的高速CI-CD方式/#more">阅读更多</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/13/GitOps-基于Kubernetes的高速CI-CD方式/" data-id="ck7uh2u8i00002opvklf15d3i" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/13/GitOps-基于Kubernetes的高速CI-CD方式/" data-id="ck7uj3ibj0003ehpvikenv4g8" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CI-CD/">CI/CD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitOps/">GitOps</a></li></ul>
@@ -220,8 +224,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="安装-rss"><a href="#安装-rss" class="headerlink" title="安装 rss"></a>安装 rss</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% npm install hexo-generator-feed --save</span><br><span class="line"><span class="comment"># OR</span></span><br><span class="line">% yarn add hexo-generator-feed</span><br></pre></td></tr></table></figure>
-<h2 id="修改-config-yml-配置"><a href="#修改-config-yml-配置" class="headerlink" title="修改 _config.yml 配置"></a>修改 _config.yml 配置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">feed:</span><br><span class="line">  <span class="built_in">type</span>: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  <span class="built_in">limit</span>: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br><span class="line">  content_limit: 140</span><br><span class="line">  content_limit_delim: <span class="string">' '</span></span><br><span class="line">  order_by: -date</span><br><span class="line">  icon: icon.png</span><br></pre></td></tr></table></figure>
+        <h2 id="安装-rss"><a class="markdownIt-Anchor" href="#安装-rss"></a> 安装 rss</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% npm install hexo-generator-feed --save</span><br><span class="line"><span class="comment"># OR</span></span><br><span class="line">% yarn add hexo-generator-feed</span><br></pre></td></tr></table></figure>
+<h2 id="修改-_configyml-配置"><a class="markdownIt-Anchor" href="#修改-_configyml-配置"></a> 修改 _config.yml 配置</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">feed:</span><br><span class="line">  <span class="built_in">type</span>: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  <span class="built_in">limit</span>: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br><span class="line">  content_limit: 140</span><br><span class="line">  content_limit_delim: <span class="string">' '</span></span><br><span class="line">  order_by: -date</span><br><span class="line">  icon: icon.png</span><br></pre></td></tr></table></figure>
         
           <p class="article-more-link">
             <a href="/2019/03/07/hexo-常用插件/#more">阅读更多</a>
@@ -230,7 +236,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/07/hexo-常用插件/" data-id="ck7uh2u8t00042opvj6pp36ji" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/07/hexo-常用插件/" data-id="ck7uj3iba0000ehpv6oi9a03q" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -264,16 +270,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>创建blog的主要目的 &gt;.&lt;<br>确实好玩 &gt;.&lt;<br>
+        <p>创建blog的主要目的 &gt;.&lt;<br>
+确实好玩 &gt;.&lt;</p>
         
-          </p><p class="article-more-link">
+          <p class="article-more-link">
             <a href="/2019/03/06/好玩的live2d看板娘/#more">阅读更多</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/06/好玩的live2d看板娘/" data-id="ck7uh2u98000f2opvdc5n2pgg" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/06/好玩的live2d看板娘/" data-id="ck7uj3ic0000eehpvinrdj5d1" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/live2d/">live2d</a></li></ul>
@@ -307,16 +314,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。<br>随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&gt;.&lt;<br>基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。<br>今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&gt;.&lt;   之前一直也想基于github搭建一个blog毕竟被微软收购了，应该不会被关闭吧（为之前的博客默哀3秒…）刚好顺这股干劲走一个。<br>
+        <p>经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。<br>
+随着技术的发展很多的blog都被淘汰了，也有很多随着服务器运营商的关闭而随之灰灰了&gt;.&lt;<br>
+基本在第三方平台撰写博客（虽然这是一种很好的方式，平台会维护整个blog并且也可以帮助推荐），也许是源于一颗爱折腾的心。<br>
+今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&gt;.&lt;   之前一直也想基于github搭建一个blog毕竟被微软收购了，应该不会被关闭吧（为之前的博客默哀3秒…）刚好顺这股干劲走一个。</p>
         
-          </p><p class="article-more-link">
+          <p class="article-more-link">
             <a href="/2019/03/06/就用一个如何搭建Hexo为开始吧/#more">阅读更多</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/06/就用一个如何搭建Hexo为开始吧/" data-id="ck7uh2u96000c2opvh31ov0ds" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/06/就用一个如何搭建Hexo为开始吧/" data-id="ck7uj3ibz000cehpvpr42gu3q" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
