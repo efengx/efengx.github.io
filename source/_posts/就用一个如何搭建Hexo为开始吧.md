@@ -127,6 +127,53 @@ hexo new [layout] <title>
 
 layout: post(默认), page, draft
 
+## 支持公式，以默认主题 landscape 为例
+
+```bash
+# 安装 mathjax 插件
+npm un hexo-renderer-marked --save
+npm i hexo-renderer-markdown-it-plus --save
+```
+
+```yml
+# 修改站点配置文件 _config.yml，添加如下内容
+markdown_it_plus:
+  highlight: true
+  html: true
+  xhtmlOut: true
+  breaks: true
+  langPrefix:
+  linkify: true
+  typographer:
+  quotes: “”‘’
+  pre_class: highlight
+```
+
+```html
+<!-- 
+  阅读全文后启用支持
+  <hexo dir>/themes/landscape/layout/_partial/article.ejs
+  在 </article> 前加入一行代码，添加后效果如下： 
+-->
+  <% if (!index && post.math){ %>
+    <script>
+      var assetsString = '<link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" rel="stylesheet" type="text/css">'
+      var pHead = document.getElementsByTagName('head')[0];
+      pHead.innerHTML = pHead.innerHTML + assetsString;
+    </script>
+  <% } %>
+</article>
+```
+
+```html
+<!-- 
+  直接全部启用支持
+  编辑 <hexo dir>/themes/landscape/layout/_partial/head.ejs ，在 </head> 前加入一行代码，添加后效果如下：
+-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" rel="stylesheet" type="text/css">
+</head>
+```
+
 ## 访问
 
 [blog.ofengx.com](https://blog.ofengx.com/)

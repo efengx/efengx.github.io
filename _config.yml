@@ -115,3 +115,15 @@ feed:
   content_limit_delim: ' '
   order_by: -date
   icon: favicon.png
+
+# math
+markdown_it_plus:
+  highlight: true
+  html: true
+  xhtmlOut: true
+  breaks: true
+  langPrefix:
+  linkify: true
+  typographer:
+  quotes: “”‘’
+  pre_class: highlight
