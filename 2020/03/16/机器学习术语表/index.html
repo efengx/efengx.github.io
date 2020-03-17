@@ -15,10 +15,29 @@
 <meta property="og:site_name" content="Feng Xiang Blog">
 <meta property="og:description" content="A  A/B 测试（A/B testing） 一种统计方法，用于将两种或多种技术进行比较，通常是将当前采用的技术与新技术进行比较。A/B 测试不仅旨在确定哪种技术的效果更好，而且还有助于了解相应差异是否具有显著的统计意义。A/B 测试通常是采用一种衡量方式对两种技术进行比较，但也适用于任意有限数量的技术和衡量方式。  准确率（accuracy） 分类模型的正确预测所占的比例。在多类别分类中，准确">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-16T14:03:46.152Z">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/Cluster.svg">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/RingCluster.svg">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/convex_functions.png">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/nonconvex_function.svg">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/convex_set.png">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/nonconvex_set.png">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/ConvolutionalFilter33.svg">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/AnimatedConvolution.gif">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/ConvolutionalLayerInputMatrix.svg">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/ConvolutionalLayerFilter.svg">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/ConvolutionalLayerOperation.svg">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/decision_boundary.png">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/hinge-loss.svg">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/DogDimensions.svg">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/DogDimensionsKMeans.svg">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/PoolingStart.svg">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/PoolingConvolution.svg">
+<meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/AnimatedConvolution.gif">
+<meta property="og:updated_time" content="2020-03-17T03:21:05.049Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习术语表">
 <meta name="twitter:description" content="A  A/B 测试（A/B testing） 一种统计方法，用于将两种或多种技术进行比较，通常是将当前采用的技术与新技术进行比较。A/B 测试不仅旨在确定哪种技术的效果更好，而且还有助于了解相应差异是否具有显著的统计意义。A/B 测试通常是采用一种衡量方式对两种技术进行比较，但也适用于任意有限数量的技术和衡量方式。  准确率（accuracy） 分类模型的正确预测所占的比例。在多类别分类中，准确">
+<meta name="twitter:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/Cluster.svg">
   
     <link rel="alternate" href="/atom.xml" title="Feng Xiang Blog" type="application/atom+xml">
   
@@ -96,6 +115,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+        
+        
+          <div id="toc" class="toc-article">
+            <strong class="toc-title">文章目录</strong>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#a"><span class="toc-text"> A</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ab-测试ab-testing"><span class="toc-text"> A/B 测试（A/B testing）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#准确率accuracy"><span class="toc-text"> 准确率（accuracy）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#激活函数activation-function"><span class="toc-text"> 激活函数（activation function）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#adagrad"><span class="toc-text"> AdaGrad</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#roc-曲线下面积auc-area-under-the-roc-curve"><span class="toc-text"> ROC 曲线下面积（AUC, Area under the ROC Curve）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#b"><span class="toc-text"> B</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#反向传播算法backpropagation"><span class="toc-text"> 反向传播算法（backpropagation）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基准baseline"><span class="toc-text"> 基准（baseline）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#批次batch"><span class="toc-text"> 批次（batch）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#批次大小batch-size"><span class="toc-text"> 批次大小（batch size）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#偏差bias"><span class="toc-text"> 偏差（bias）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二元分类binary-classification"><span class="toc-text"> 二元分类（binary classification）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分箱binning"><span class="toc-text"> 分箱（binning）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分桶bucketing"><span class="toc-text"> 分桶（bucketing）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#c"><span class="toc-text"> C</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#校准层calibration-layer"><span class="toc-text"> 校准层（calibration layer）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#候选采样candidate-sampling"><span class="toc-text"> 候选采样（candidate sampling）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分类数据categorical-data"><span class="toc-text"> 分类数据（categorical data）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#形心centroid"><span class="toc-text"> 形心（centroid）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#检查点checkpoint"><span class="toc-text"> 检查点（checkpoint）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#类别class"><span class="toc-text"> 类别（class）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分类不平衡的数据集class-imbalanced-data-set"><span class="toc-text"> 分类不平衡的数据集（class-imbalanced data set）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分类模型classification-model"><span class="toc-text"> 分类模型（classification model）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分类阈值classification-threshold"><span class="toc-text"> 分类阈值（classification threshold）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#聚类clustering"><span class="toc-text"> 聚类（clustering）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#协同过滤collaborative-filtering"><span class="toc-text"> 协同过滤（collaborative filtering）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#混淆矩阵confusion-matrix"><span class="toc-text"> 混淆矩阵（confusion matrix）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#连续特征continuous-feature"><span class="toc-text"> 连续特征（continuous feature）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#收敛convergence"><span class="toc-text"> 收敛（convergence）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#凸函数convex-function"><span class="toc-text"> 凸函数（convex function）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#凸优化convex-optimization"><span class="toc-text"> 凸优化（convex optimization）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#凸集convex-set"><span class="toc-text"> 凸集（convex set）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#卷积convolution"><span class="toc-text"> 卷积（convolution）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#卷积过滤器convolutional-filter"><span class="toc-text"> 卷积过滤器（convolutional filter）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#卷积层convolutional-layer"><span class="toc-text"> 卷积层（convolutional layer）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#卷积神经网络convolutional-neural-network"><span class="toc-text"> 卷积神经网络（convolutional neural network）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#卷积运算convolutional-operation"><span class="toc-text"> 卷积运算（convolutional operation）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#成本cost"><span class="toc-text"> 成本（cost）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#交叉熵cross-entropy"><span class="toc-text"> 交叉熵（cross-entropy）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义-estimatorcustom-estimator"><span class="toc-text"> 自定义 Estimator（custom Estimator）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#d"><span class="toc-text"> D</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据分析data-analysis"><span class="toc-text"> 数据分析（data analysis）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#dataframe"><span class="toc-text"> DataFrame</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据集data-set"><span class="toc-text"> 数据集（data set）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#dataset-apitfdata"><span class="toc-text"> Dataset API（tf.data）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#决策边界decision-boundary"><span class="toc-text"> 决策边界（decision boundary）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#密集层dense-layer"><span class="toc-text"> 密集层（dense layer）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#深度模型deep-model"><span class="toc-text"> 深度模型（deep model）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#密集特征dense-feature"><span class="toc-text"> 密集特征（dense feature）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设备device"><span class="toc-text"> 设备（device）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#离散特征discrete-feature"><span class="toc-text"> 离散特征（discrete feature）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#丢弃正则化dropout-regularization"><span class="toc-text"> 丢弃正则化（dropout regularization）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#动态模型dynamic-model"><span class="toc-text"> 动态模型（dynamic model）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#e"><span class="toc-text"> E</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#早停法early-stopping"><span class="toc-text"> 早停法（early stopping）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#嵌套embeddings"><span class="toc-text"> 嵌套（embeddings）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#经验风险最小化erm-empirical-risk-minimization"><span class="toc-text"> 经验风险最小化（ERM, empirical risk minimization）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#集成学习ensemble"><span class="toc-text"> 集成学习（ensemble）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#周期epoch"><span class="toc-text"> 周期（epoch）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#estimator"><span class="toc-text"> Estimator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#样本example"><span class="toc-text"> 样本（example）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#f"><span class="toc-text"> F</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#假负例fn-false-negative"><span class="toc-text"> 假负例（FN, false negative）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#假正例fp-false-positive"><span class="toc-text"> 假正例（FP, false positive）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#假正例率false-positive-rate-简称-fp-率"><span class="toc-text"> 假正例率（false positive rate, 简称 FP 率）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征feature"><span class="toc-text"> 特征（feature）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征列tffeature_column"><span class="toc-text"> 特征列（tf.feature_column）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征组合feature-cross"><span class="toc-text"> 特征组合（feature cross）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征工程feature-engineering"><span class="toc-text"> 特征工程（feature engineering）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征集feature-set"><span class="toc-text"> 特征集（feature set）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征规范feature-spec"><span class="toc-text"> 特征规范（feature spec）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#少量样本学习few-shot-learning"><span class="toc-text"> 少量样本学习（few-shot learning）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#完整-softmaxfull-softmax"><span class="toc-text"> 完整 softmax（full softmax）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#全连接层fully-connected-layer"><span class="toc-text"> 全连接层（fully connected layer）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#g"><span class="toc-text"> G</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#泛化generalization"><span class="toc-text"> 泛化（generalization）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#广义线性模型generalized-linear-model"><span class="toc-text"> 广义线性模型（generalized linear model）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#梯度gradient"><span class="toc-text"> 梯度（gradient）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#梯度裁剪gradient-clipping"><span class="toc-text"> 梯度裁剪（gradient clipping）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#梯度下降法gradient-descent"><span class="toc-text"> 梯度下降法（gradient descent）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#图graph"><span class="toc-text"> 图（graph）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#h"><span class="toc-text"> H</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#启发法heuristic"><span class="toc-text"> 启发法（heuristic）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#隐藏层hidden-layer"><span class="toc-text"> 隐藏层（hidden layer）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#合页损失函数hinge-loss"><span class="toc-text"> 合页损失函数（hinge loss）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#维持数据holdout-data"><span class="toc-text"> 维持数据（holdout data）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#超参数hyperparameter"><span class="toc-text"> 超参数（hyperparameter）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#超平面hyperplane"><span class="toc-text"> 超平面（hyperplane）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#i"><span class="toc-text"> I</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#独立同等分布iid-independently-and-identically-distributed"><span class="toc-text"> 独立同等分布（i.i.d, independently and identically distributed）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#推断inference"><span class="toc-text"> 推断（inference）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#输入函数input-function"><span class="toc-text"> 输入函数（input function）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#输入层input-layer"><span class="toc-text"> 输入层（input layer）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实例instance"><span class="toc-text"> 实例（instance）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可解释性interpretability"><span class="toc-text"> 可解释性（interpretability）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#评分者间一致性信度inter-rater-agreement"><span class="toc-text"> 评分者间一致性信度（inter-rater agreement）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#迭代iteration"><span class="toc-text"> 迭代（iteration）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#k"><span class="toc-text"> K</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#k-means"><span class="toc-text"> k-means</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#k-median"><span class="toc-text"> k-median</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#keras"><span class="toc-text"> Keras</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#核支持向量机ksvm-kernel-support-vector-machines"><span class="toc-text"> 核支持向量机（KSVM, Kernel Support Vector Machines）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#l"><span class="toc-text"> L</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#l_1-损失函数l_1-loss"><span class="toc-text"> L1L_1L1​ 损失函数（L1L_1L1​ loss）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#l_1-正则化l_1-regularization"><span class="toc-text"> L1L_1L1​ 正则化（L1L_1L1​ regularization）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#l_2-损失函数l_2-loss"><span class="toc-text"> L2L_2L2​ 损失函数（L2L_2L2​ loss）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#l_2-正则化l_2-regularization"><span class="toc-text"> L2L_2L2​ 正则化（L2L_2L2​ regularization）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#标签label"><span class="toc-text"> 标签（label）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有标签样本labeled-example"><span class="toc-text"> 有标签样本（labeled example）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lambda"><span class="toc-text"> lambda</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#层layer"><span class="toc-text"> 层（layer）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#layers-apitflayers"><span class="toc-text"> Layers API（tf.layers）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#学习速率learning-rate"><span class="toc-text"> 学习速率（learning rate）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#最小二乘回归least-squares-regression"><span class="toc-text"> 最小二乘回归（least squares regression）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#线性回归linear-regression"><span class="toc-text"> 线性回归（linear regression）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑回归logistic-regression"><span class="toc-text"> 逻辑回归（logistic regression）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对数logits"><span class="toc-text"> 对数（logits）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对数损失函数log-loss"><span class="toc-text"> 对数损失函数（Log Loss）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对数几率log-odds"><span class="toc-text"> 对数几率（log-odds）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#损失loss"><span class="toc-text"> 损失（Loss）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#m"><span class="toc-text"> M</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#机器学习machine-learning"><span class="toc-text"> 机器学习（machine learning）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#均方误差mse-mean-squared-error"><span class="toc-text"> 均方误差（MSE, Mean Squared Error）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#指标metric"><span class="toc-text"> 指标（metric）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#metrics-apitfmetrics"><span class="toc-text"> Metrics API（tf.metrics）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小批次mini-batch"><span class="toc-text"> 小批次（mini-batch）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小批次随机梯度下降法sgd-mini-batch-stochastic-gradient-descent"><span class="toc-text"> 小批次随机梯度下降法（SGD, mini-batch stochastic gradient descent）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ml"><span class="toc-text"> ML</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#模型model"><span class="toc-text"> 模型（model）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#模型函数model-function"><span class="toc-text"> 模型函数（model function）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#模型训练model-training"><span class="toc-text"> 模型训练（model training）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#动量momentum"><span class="toc-text"> 动量（Momentum）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#多类别分类multi-class-classification"><span class="toc-text"> 多类别分类（multi-class classification）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#多项分类multinomial-classification"><span class="toc-text"> 多项分类（multinomial classification）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#n"><span class="toc-text"> N</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#nan-陷阱nan-trap"><span class="toc-text"> NaN 陷阱（NaN trap）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#负类别negative-class"><span class="toc-text"> 负类别（negative class）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#神经网络neural-network"><span class="toc-text"> 神经网络（neural network）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#神经元neuron"><span class="toc-text"> 神经元（neuron）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#节点node"><span class="toc-text"> 节点（node）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#标准化normalization"><span class="toc-text"> 标准化（normalization）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数值数据numerical-data"><span class="toc-text"> 数值数据（numerical data）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#numpy"><span class="toc-text"> Numpy</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#o"><span class="toc-text"> O</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#目标objective"><span class="toc-text"> 目标（objective）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#离线推断offline-inference"><span class="toc-text"> 离线推断（offline inference）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#独热编码one-hot-encoding"><span class="toc-text"> 独热编码（one-hot encoding）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#单样本学习one-shot-learning通常用于对象分类"><span class="toc-text"> 单样本学习（one-shot learning，通常用于对象分类）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一对多one-vs-all"><span class="toc-text"> 一对多（one-vs.-all）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在线推断online-inference"><span class="toc-text"> 在线推断（online inference）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#操作op-operation"><span class="toc-text"> 操作（op, Operation）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#优化器optimizer"><span class="toc-text"> 优化器（optimizer）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#离群值outlier"><span class="toc-text"> 离群值（outlier）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#输出层output-layer"><span class="toc-text"> 输出层（output layer）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#过拟合overfitting"><span class="toc-text"> 过拟合（overfitting）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#p"><span class="toc-text"> P</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pandas"><span class="toc-text"> Pandas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参数parameter"><span class="toc-text"> 参数（parameter）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参数服务器ps-parameter-server"><span class="toc-text"> 参数服务器（PS, Parameter Server）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参数更新parameter-update"><span class="toc-text"> 参数更新（parameter update）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#偏导数partial-derivative"><span class="toc-text"> 偏导数（partial derivative）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#划分策略partitioning-strategy"><span class="toc-text"> 划分策略（partitioning strategy）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#性能performance"><span class="toc-text"> 性能（performance）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#困惑度perplexity"><span class="toc-text"> 困惑度（perplexity）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#流水线pipeline"><span class="toc-text"> 流水线（pipeline）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#池化pooling"><span class="toc-text"> 池化（pooling）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正类别positive-class"><span class="toc-text"> 正类别（positive class）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#精确率precision"><span class="toc-text"> 精确率（precision）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预测prediction"><span class="toc-text"> 预测（prediction）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预测偏差prediction-bias"><span class="toc-text"> 预测偏差（prediction bias）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预创建的-estimatorpre-made-estimator"><span class="toc-text"> 预创建的 Estimator（pre-made Estimator）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预训练模型pre-trained-model"><span class="toc-text"> 预训练模型（pre-trained model）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#先验信念prior-belief"><span class="toc-text"> 先验信念（prior belief）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#q"><span class="toc-text"> Q</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#队列queue"><span class="toc-text"> 队列（queue）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#r"><span class="toc-text"> R</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#等级rank"><span class="toc-text"> 等级（rank）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#评分者rater"><span class="toc-text"> 评分者（rater）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#召回率recall"><span class="toc-text"> 召回率（recall）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修正线性单元relu-rectified-linear-unit"><span class="toc-text"> 修正线性单元（ReLU, Rectified Linear Unit）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#回归模型regression-model"><span class="toc-text"> 回归模型（regression model）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则化regularization"><span class="toc-text"> 正则化（regularization）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则化率regularization-rate"><span class="toc-text"> 正则化率（regularization rate）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表示法representation"><span class="toc-text"> 表示法（representation）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#受试者工作特征曲线receiver-operating-characteristic简称-roc-曲线"><span class="toc-text"> 受试者工作特征曲线（receiver operating characteristic，简称 ROC 曲线）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#根目录root-directory"><span class="toc-text"> 根目录（root directory）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#均方根误差rmse-root-mean-squared-error"><span class="toc-text"> 均方根误差（RMSE, Root Mean Squared Error）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#旋转不变性rotational-invariance"><span class="toc-text"> 旋转不变性（rotational invariance）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#s"><span class="toc-text"> S</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#savedmodel"><span class="toc-text"> SavedModel</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#saver"><span class="toc-text"> Saver</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#缩放scaling"><span class="toc-text"> 缩放（scaling）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scikit-learn"><span class="toc-text"> scikit-learn</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#半监督式学习semi-supervised-learning"><span class="toc-text"> 半监督式学习（semi-supervised learning）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#序列模型sequence-model"><span class="toc-text"> 序列模型（sequence model）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#会话tfsession"><span class="toc-text"> 会话（tf.session）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#s-型函数sigmoid-function"><span class="toc-text"> S 型函数（sigmoid function）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#大小不变性size-invariance"><span class="toc-text"> 大小不变性（size invariance）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#softmax"><span class="toc-text"> softmax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#稀疏特征sparse-feature"><span class="toc-text"> 稀疏特征（sparse feature）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#稀疏表示法sparse-representation"><span class="toc-text"> 稀疏表示法（sparse representation）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#稀疏性sparsity"><span class="toc-text"> 稀疏性（sparsity）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#空间池化spatial-pooling"><span class="toc-text"> 空间池化（spatial pooling）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#平方合页损失函数squared-hinge-loss"><span class="toc-text"> 平方合页损失函数（squared hinge loss）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#平方损失函数squared-loss"><span class="toc-text"> 平方损失函数（squared loss）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#静态模型static-model"><span class="toc-text"> 静态模型（static model）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#平稳性stationarity"><span class="toc-text"> 平稳性（stationarity）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#步step"><span class="toc-text"> 步（step）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#步长step-size"><span class="toc-text"> 步长（step size）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#随机梯度下降法sgd-stochastic-gradient-descent"><span class="toc-text"> 随机梯度下降法（SGD, stochastic gradient descent）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#结构风险最小化srm-structural-risk-minimization"><span class="toc-text"> 结构风险最小化（SRM, structural risk minimization）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#步长stride"><span class="toc-text"> 步长（stride）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下采样subsampling"><span class="toc-text"> 下采样（subsampling）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结summary"><span class="toc-text"> 总结（summary）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#监督式机器学习supervised-machine-learning"><span class="toc-text"> 监督式机器学习（supervised machine learning）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#合成特征synthetic-feature"><span class="toc-text"> 合成特征（synthetic feature）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#t"><span class="toc-text"> T</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#目标target"><span class="toc-text"> 目标（target）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#时态数据temporal-data"><span class="toc-text"> 时态数据（temporal data）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#张量tensor"><span class="toc-text"> 张量（Tensor）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#张量处理单元tpu-tensor-processing-unit"><span class="toc-text"> 张量处理单元（TPU, Tensor Processing Unit）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#张量等级tensor-rank"><span class="toc-text"> 张量等级（Tensor rank）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#张量形状tensor-shape"><span class="toc-text"> 张量形状（Tensor shape）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#张量大小tensor-size"><span class="toc-text"> 张量大小（Tensor size）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tensorboard"><span class="toc-text"> TensorBoard</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tensorflow"><span class="toc-text"> TensorFlow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tensorflow-playground"><span class="toc-text"> TensorFlow Playground</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tensorflow-serving"><span class="toc-text"> TensorFlow Serving</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#测试集test-set"><span class="toc-text"> 测试集（test set）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tfexample"><span class="toc-text"> tf.Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#时间序列分析time-series-analysis"><span class="toc-text"> 时间序列分析（time series analysis）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#训练training"><span class="toc-text"> 训练（training）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#训练集training-set"><span class="toc-text"> 训练集（training set）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#迁移学习transfer-learning"><span class="toc-text"> 迁移学习（transfer learning）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#平移不变性translational-invariance"><span class="toc-text"> 平移不变性（translational invariance）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#负例tn-true-negative"><span class="toc-text"> 负例（TN, true negative）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正例tp-true-positive"><span class="toc-text"> 正例（TP, true positive）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正例率true-positive-rate-简称-tp-率"><span class="toc-text"> 正例率（true positive rate, 简称 TP 率）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u"><span class="toc-text"> U</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#无标签样本unlabeled-example"><span class="toc-text"> 无标签样本（unlabeled example）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非监督式机器学习unsupervised-machine-learning"><span class="toc-text"> 非监督式机器学习（unsupervised machine learning）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#v"><span class="toc-text"> V</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#验证集validation-set"><span class="toc-text"> 验证集（validation set）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#w"><span class="toc-text"> W</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#权重weight"><span class="toc-text"> 权重（weight）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#宽度模型wide-model"><span class="toc-text"> 宽度模型（wide model）</span></a></li></ol></li></ol>
+          </div>
+                  
+
         <h2 id="a"><a class="markdownIt-Anchor" href="#a"></a> A</h2>
 <h3 id="ab-测试ab-testing"><a class="markdownIt-Anchor" href="#ab-测试ab-testing"></a> A/B 测试（A/B testing）</h3>
 <p>一种统计方法，用于将两种或多种技术进行比较，通常是将当前采用的技术与新技术进行比较。A/B 测试不仅旨在确定哪种技术的效果更好，而且还有助于了解相应差异是否具有显著的统计意义。A/B 测试通常是采用一种衡量方式对两种技术进行比较，但也适用于任意有限数量的技术和衡量方式。</p>
@@ -103,11 +130,875 @@
 <p>分类模型的正确预测所占的比例。在多类别分类中，准确率的定义如下：</p>
 <p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">准</mi><mi mathvariant="normal">确</mi><mi mathvariant="normal">率</mi></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">正</mi><mi mathvariant="normal">确</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">预</mi><mi mathvariant="normal">测</mi><mi mathvariant="normal">数</mi></mrow><mrow><mi mathvariant="normal">样</mi><mi mathvariant="normal">本</mi><mi mathvariant="normal">总</mi><mi mathvariant="normal">数</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathbf{准确率} = \frac{正确的预测数}{样本总数}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord"><span class="mord cjk_fallback">准</span><span class="mord cjk_fallback">确</span><span class="mord cjk_fallback">率</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.363em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.677em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">样</span><span class="mord cjk_fallback">本</span><span class="mord cjk_fallback">总</span><span class="mord cjk_fallback">数</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">确</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">预</span><span class="mord cjk_fallback">测</span><span class="mord cjk_fallback">数</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>在二元分类中，准确率的定义如下：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">准</mi><mi mathvariant="normal">确</mi><mi mathvariant="normal">率</mi></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">正</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi><mo>+</mo><mi mathvariant="normal">负</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi></mrow><mrow><mi mathvariant="normal">样</mi><mi mathvariant="normal">本</mi><mi mathvariant="normal">总</mi><mi mathvariant="normal">数</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathbf{准确率} = \frac{正例数 + 负例数}{样本总数}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord"><span class="mord cjk_fallback">准</span><span class="mord cjk_fallback">确</span><span class="mord cjk_fallback">率</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.9463300000000001em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.2603300000000002em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">样</span><span class="mord cjk_fallback">本</span><span class="mord cjk_fallback">总</span><span class="mord cjk_fallback">数</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord cjk_fallback">负</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<h3 id="激活函数activation-function"><a class="markdownIt-Anchor" href="#激活函数activation-function"></a> 激活函数（activation function）</h3>
+<p>一种函数（例如 ReLU 或 S 型函数），用于对上一层的所有输入求加权和，然后生成一个输出值（通常为非线性值），并将其传递给下一层。</p>
+<h3 id="adagrad"><a class="markdownIt-Anchor" href="#adagrad"></a> AdaGrad</h3>
+<p>一种先进的梯度下降法，用于重新调整每个参数的梯度，以便有效地为每个参数指定独立的学习速率。</p>
+<h3 id="roc-曲线下面积auc-area-under-the-roc-curve"><a class="markdownIt-Anchor" href="#roc-曲线下面积auc-area-under-the-roc-curve"></a> ROC 曲线下面积（AUC, Area under the ROC Curve）</h3>
+<p>一种会考虑所有可能分类阈值的评估指标。</p>
+<p>ROC 曲线下面积是，对于随机选择的正类别样本确实为正类别，以及随机选择的负类别样本为正类别，分类器更确信前者的概率。</p>
+<a id="more"></a>
+<h2 id="b"><a class="markdownIt-Anchor" href="#b"></a> B</h2>
+<h3 id="反向传播算法backpropagation"><a class="markdownIt-Anchor" href="#反向传播算法backpropagation"></a> 反向传播算法（backpropagation）</h3>
+<p>在神经网络上执行梯度下降法的主要算法。该算法会先按前向传播方式计算（并缓存）每个节点的输出值，然后再按反向传播遍历图的方式计算损失函数值相对于每个参数的偏导数。</p>
+<h3 id="基准baseline"><a class="markdownIt-Anchor" href="#基准baseline"></a> 基准（baseline）</h3>
+<p>一种简单的模型或启发法，用作比较模型效果时的参考点。基准有助于模型开发者针对特定问题量化最低预期效果。</p>
+<h3 id="批次batch"><a class="markdownIt-Anchor" href="#批次batch"></a> 批次（batch）</h3>
+<p>模型训练的一次迭代（即一次梯度更新）中使用的样本集。</p>
+<h3 id="批次大小batch-size"><a class="markdownIt-Anchor" href="#批次大小batch-size"></a> 批次大小（batch size）</h3>
+<p>一个批次中的样本数。例如，SGD 的批次大小为 1，而小批次的大小通常介于 10 到 1000 之间。批次大小在训练和推断期间通常是固定的；不过，TensorFlow 允许使用动态批次大小。</p>
+<h3 id="偏差bias"><a class="markdownIt-Anchor" href="#偏差bias"></a> 偏差（bias）</h3>
+<p>距离原点的截距或偏移。偏差（也称为偏差项）在机器学习模型中用 b 或 w0 表示。例如，在下面的公式中，偏差为 b：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>y</mi><mo mathvariant="normal">′</mo></msup><mo>=</mo><mrow><mi>b</mi><mo>+</mo><msub><mi>w</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>w</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><msub><mi>w</mi><mi>n</mi></msub><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><annotation encoding="application/x-tex">y&#x27; = {b + w_1 x_1 + w_2 x_2 + ... w_n x_n }
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.996332em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.801892em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>请勿与预测偏差混淆。</p>
+<h3 id="二元分类binary-classification"><a class="markdownIt-Anchor" href="#二元分类binary-classification"></a> 二元分类（binary classification）</h3>
+<p>一种分类任务，可输出两种互斥类别之一。例如，对电子邮件进行评估并输出“垃圾邮件”或“非垃圾邮件”的机器学习模型就是一个二元分类器。</p>
+<h3 id="分箱binning"><a class="markdownIt-Anchor" href="#分箱binning"></a> 分箱（binning）</h3>
+<h3 id="分桶bucketing"><a class="markdownIt-Anchor" href="#分桶bucketing"></a> 分桶（bucketing）</h3>
+<p>将一个特征（通常是连续特征）转换成多个二元特征（称为桶或箱），通常根据值区间进行转换。例如，您可以将温度区间分割为离散分箱，而不是将温度表示成单个连续的浮点特征。假设温度数据可精确到小数点后一位，则可以将介于 0.0 到 15.0 度之间的所有温度都归入一个分箱，将介于 15.1 到 30.0 度之间的所有温度归入第二个分箱，并将介于 30.1 到 50.0 度之间的所有温度归入第三个分箱。</p>
+<h2 id="c"><a class="markdownIt-Anchor" href="#c"></a> C</h2>
+<h3 id="校准层calibration-layer"><a class="markdownIt-Anchor" href="#校准层calibration-layer"></a> 校准层（calibration layer）</h3>
+<p>一种预测后调整，通常是为了降低预测偏差的影响。调整后的预测和概率应与观察到的标签集的分布一致。</p>
+<h3 id="候选采样candidate-sampling"><a class="markdownIt-Anchor" href="#候选采样candidate-sampling"></a> 候选采样（candidate sampling）</h3>
+<p>一种训练时进行的优化，会使用某种函数（例如 softmax）针对所有正类别标签计算概率，但对于负类别标签，则仅针对其随机样本计算概率。例如，如果某个样本的标签为“小猎犬”和“狗”，则候选采样将针对“小猎犬”和“狗”类别输出以及其他类别（猫、棒棒糖、栅栏）的随机子集计算预测概率和相应的损失项。这种采样基于的想法是，只要正类别始终得到适当的正增强，负类别就可以从频率较低的负增强中进行学习，这确实是在实际中观察到的情况。候选采样的目的是，通过不针对所有负类别计算预测结果来提高计算效率。</p>
+<h3 id="分类数据categorical-data"><a class="markdownIt-Anchor" href="#分类数据categorical-data"></a> 分类数据（categorical data）</h3>
+<p>一种特征，拥有一组离散的可能值。以某个名为 house style 的分类特征为例，该特征拥有一组离散的可能值（共三个），即 Tudor, ranch, colonial。通过将 house style 表示成分类数据，相应模型可以学习 Tudor、ranch 和 colonial 分别对房价的影响。</p>
+<p>有时，离散集中的值是互斥的，只能将其中一个值应用于指定样本。例如，car maker 分类特征可能只允许一个样本有一个值 (Toyota)。在其他情况下，则可以应用多个值。一辆车可能会被喷涂多种不同的颜色，因此，car color 分类特征可能会允许单个样本具有多个值（例如 red 和 white）。</p>
+<p>分类特征有时称为离散特征。</p>
+<p>与数值数据相对。</p>
+<h3 id="形心centroid"><a class="markdownIt-Anchor" href="#形心centroid"></a> 形心（centroid）</h3>
+<p>聚类的中心，由 k-means 或 k-median 算法决定。例如，如果 k 为 3，则 k-means 或 k-median 算法会找出 3 个形心。</p>
+<h3 id="检查点checkpoint"><a class="markdownIt-Anchor" href="#检查点checkpoint"></a> 检查点（checkpoint）</h3>
+<p>一种数据，用于捕获模型变量在特定时间的状态。借助检查点，可以导出模型权重，跨多个会话执行训练，以及使训练在发生错误之后得以继续（例如作业抢占）。请注意，图本身不包含在检查点中。</p>
+<h3 id="类别class"><a class="markdownIt-Anchor" href="#类别class"></a> 类别（class）</h3>
+<p>为标签枚举的一组目标值中的一个。例如，在检测垃圾邮件的二元分类模型中，两种类别分别是“垃圾邮件”和“非垃圾邮件”。在识别狗品种的多类别分类模型中，类别可以是“贵宾犬”、“小猎犬”、“哈巴犬”等等。</p>
+<h3 id="分类不平衡的数据集class-imbalanced-data-set"><a class="markdownIt-Anchor" href="#分类不平衡的数据集class-imbalanced-data-set"></a> 分类不平衡的数据集（class-imbalanced data set）</h3>
+<p>一种二元分类问题，在此类问题中，两种类别的标签在出现频率方面具有很大的差距。例如，在某个疾病数据集中，0.0001 的样本具有正类别标签，0.9999 的样本具有负类别标签，这就属于分类不平衡问题；但在某个足球比赛预测器中，0.51 的样本的标签为其中一个球队赢，0.49 的样本的标签为另一个球队赢，这就不属于分类不平衡问题。</p>
+<h3 id="分类模型classification-model"><a class="markdownIt-Anchor" href="#分类模型classification-model"></a> 分类模型（classification model）</h3>
+<p>一种机器学习模型，用于区分两种或多种离散类别。例如，某个自然语言处理分类模型可以确定输入的句子是法语、西班牙语还是意大利语。请与回归模型进行比较。</p>
+<h3 id="分类阈值classification-threshold"><a class="markdownIt-Anchor" href="#分类阈值classification-threshold"></a> 分类阈值（classification threshold）</h3>
+<p>一种标量值条件，应用于模型预测的得分，旨在将正类别与负类别区分开。将逻辑回归结果映射到二元分类时使用。以某个逻辑回归模型为例，该模型用于确定指定电子邮件是垃圾邮件的概率。如果分类阈值为 0.9，那么逻辑回归值高于 0.9 的电子邮件将被归类为“垃圾邮件”，低于 0.9 的则被归类为“非垃圾邮件”。</p>
+<h3 id="聚类clustering"><a class="markdownIt-Anchor" href="#聚类clustering"></a> 聚类（clustering）</h3>
+<p>将关联的样本分成一组，一般用于非监督式学习。在所有样本均分组完毕后，相关人员便可选择性地为每个聚类赋予含义。</p>
+<p>聚类算法有很多。例如，k-means 算法会基于样本与形心的接近程度聚类样本，如下图所示：</p>
+<p><img src="Cluster.svg" alt="Cluster.svg"></p>
+<p>之后，研究人员便可查看这些聚类并进行其他操作，例如，将聚类 1 标记为“矮型树”，将聚类 2 标记为“全尺寸树”。</p>
+<p>再举一个例子，例如基于样本与中心点距离的聚类算法，如下所示：</p>
+<p><img src="RingCluster.svg" alt="RingCluster.svg"></p>
+<h3 id="协同过滤collaborative-filtering"><a class="markdownIt-Anchor" href="#协同过滤collaborative-filtering"></a> 协同过滤（collaborative filtering）</h3>
+<p>根据很多其他用户的兴趣来预测某位用户的兴趣。协同过滤通常用在推荐系统中。</p>
+<h3 id="混淆矩阵confusion-matrix"><a class="markdownIt-Anchor" href="#混淆矩阵confusion-matrix"></a> 混淆矩阵（confusion matrix）</h3>
+<p>一种 NxN 表格，用于总结分类模型的预测效果；即标签和模型预测的分类之间的关联。在混淆矩阵中，一个轴表示模型预测的标签，另一个轴表示实际标签。N 表示类别个数。在二元分类问题中，N=2。例如，下面显示了一个二元分类问题的混淆矩阵示例：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>肿瘤（预测的标签）</th>
+<th>非肿瘤（预测的标签）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>肿瘤（实际标签）</td>
+<td>18</td>
+<td>1</td>
+</tr>
+<tr>
+<td>非肿瘤（实际标签）</td>
+<td>6</td>
+<td>452</td>
+</tr>
+</tbody>
+</table>
+<p>上面的混淆矩阵显示，在 19 个实际有肿瘤的样本中，该模型正确地将 18 个归类为有肿瘤（18 个正例），错误地将 1 个归类为没有肿瘤（1 个假负例）。同样，在 458 个实际没有肿瘤的样本中，模型归类正确的有 452 个（452 个负例），归类错误的有 6 个（6 个假正例）。</p>
+<p>多类别分类问题的混淆矩阵有助于确定出错模式。例如，某个混淆矩阵可以揭示，某个经过训练以识别手写数字的模型往往会将 4 错误地预测为 9，将 7 错误地预测为 1。</p>
+<p>混淆矩阵包含计算各种效果指标（包括精确率和召回率）所需的充足信息。</p>
+<h3 id="连续特征continuous-feature"><a class="markdownIt-Anchor" href="#连续特征continuous-feature"></a> 连续特征（continuous feature）</h3>
+<p>一种浮点特征，可能值的区间不受限制。与离散特征相对。</p>
+<h3 id="收敛convergence"><a class="markdownIt-Anchor" href="#收敛convergence"></a> 收敛（convergence）</h3>
+<p>通俗来说，收敛通常是指在训练期间达到的一种状态，即经过一定次数的迭代之后，训练损失和验证损失在每次迭代中的变化都非常小或根本没有变化。也就是说，如果采用当前数据进行额外的训练将无法改进模型，模型即达到收敛状态。在深度学习中，损失值有时会在最终下降之前的多次迭代中保持不变或几乎保持不变，暂时形成收敛的假象。</p>
+<p>另请参阅早停法。</p>
+<p>另请参阅 Boyd 和 Vandenberghe 合著的 Convex Optimization（《凸优化》）。</p>
+<h3 id="凸函数convex-function"><a class="markdownIt-Anchor" href="#凸函数convex-function"></a> 凸函数（convex function）</h3>
+<p>一种函数，函数图像以上的区域为凸集。典型凸函数的形状类似于字母 U。例如，以下都是凸函数：</p>
+<p><img src="convex_functions.png" alt="convex_functions"></p>
+<p>相反，以下函数则不是凸函数。请注意图像上方的区域如何不是凸集：</p>
+<p><img src="nonconvex_function.svg" alt="nonconvex_function"></p>
+<p>严格凸函数只有一个局部最低点，该点也是全局最低点。经典的 U 形函数都是严格凸函数。不过，有些凸函数（例如直线）则不是这样。</p>
+<p>很多常见的损失函数（包括下列函数）都是凸函数：</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 损失函数</li>
+<li>对数损失函数</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化</li>
+</ul>
+<p>梯度下降法的很多变体都一定能找到一个接近严格凸函数最小值的点。同样，随机梯度下降法的很多变体都有很高的可能性能够找到接近严格凸函数最小值的点（但并非一定能找到）。</p>
+<p>两个凸函数的和（例如 L2 损失函数 + L1 正则化）也是凸函数。</p>
+<p>深度模型绝不会是凸函数。值得注意的是，专门针对凸优化设计的算法往往总能在深度网络上找到非常好的解决方案，虽然这些解决方案并不一定对应于全局最小值。</p>
+<h3 id="凸优化convex-optimization"><a class="markdownIt-Anchor" href="#凸优化convex-optimization"></a> 凸优化（convex optimization）</h3>
+<p>使用数学方法（例如梯度下降法）寻找凸函数最小值的过程。机器学习方面的大量研究都是专注于如何通过公式将各种问题表示成凸优化问题，以及如何更高效地解决这些问题。</p>
+<p>如需完整的详细信息，请参阅 Boyd 和 Vandenberghe 合著的 Convex Optimization（《凸优化》）。</p>
+<h3 id="凸集convex-set"><a class="markdownIt-Anchor" href="#凸集convex-set"></a> 凸集（convex set）</h3>
+<p>欧几里得空间的一个子集，其中任意两点之间的连线仍完全落在该子集内。例如，下面的两个图形都是凸集：</p>
+<p><img src="convex_set.png" alt="convex_set"></p>
+<p>相反，下面的两个图形都不是凸集：</p>
+<p><img src="nonconvex_set.png" alt="nonconvex_set"></p>
+<h3 id="卷积convolution"><a class="markdownIt-Anchor" href="#卷积convolution"></a> 卷积（convolution）</h3>
+<p>简单来说，卷积在数学中指两个函数的组合。在机器学习中，卷积结合使用卷积过滤器和输入矩阵来训练权重。</p>
+<p>机器学习中的“卷积”一词通常是卷积运算或卷积层的简称。</p>
+<p>如果没有卷积，机器学习算法就需要学习大张量中每个单元格各自的权重。例如，用 2K x 2K 图像训练的机器学习算法将被迫找出 400 万个单独的权重。而使用卷积，机器学习算法只需在卷积过滤器中找出每个单元格的权重，大大减少了训练模型所需的内存。在应用卷积过滤器后，它只需跨单元格进行复制，每个单元格都会与过滤器相乘。</p>
+<h3 id="卷积过滤器convolutional-filter"><a class="markdownIt-Anchor" href="#卷积过滤器convolutional-filter"></a> 卷积过滤器（convolutional filter）</h3>
+<p>卷积运算中的两个参与方之一。（另一个参与方是输入矩阵切片。）卷积过滤器是一种矩阵，其等级与输入矩阵相同，但形状小一些。以 28×28 的输入矩阵为例，过滤器可以是小于 28×28 的任何二维矩阵。</p>
+<p>在图形操作中，卷积过滤器中的所有单元格通常按照固定模式设置为 1 和 0。在机器学习中，卷积过滤器通常先选择随机数字，然后由网络训练出理想值。</p>
+<h3 id="卷积层convolutional-layer"><a class="markdownIt-Anchor" href="#卷积层convolutional-layer"></a> 卷积层（convolutional layer）</h3>
+<p>深度神经网络的一个层，卷积过滤器会在其中传递输入矩阵。以下面的 3x3 卷积过滤器为例：</p>
+<p><img src="ConvolutionalFilter33.svg" alt="ConvolutionalFilter33"></p>
+<p>下面的动画显示了一个由 9 个卷积运算（涉及 5x5 输入矩阵）组成的卷积层。请注意，每个卷积运算都涉及一个不同的 3x3 输入矩阵切片。由此产生的 3×3 矩阵（右侧）就包含 9 个卷积运算的结果：</p>
+<p><img src="AnimatedConvolution.gif" alt="AnimatedConvolution"></p>
+<h3 id="卷积神经网络convolutional-neural-network"><a class="markdownIt-Anchor" href="#卷积神经网络convolutional-neural-network"></a> 卷积神经网络（convolutional neural network）</h3>
+<p>一种神经网络，其中至少有一层为卷积层。典型的卷积神经网络包含以下几层的组合：</p>
+<ul>
+<li>卷积层</li>
+<li>池化层</li>
+<li>密集层</li>
+</ul>
+<p>卷积神经网络在解决某些类型的问题（如图像识别）上取得了巨大成功。</p>
+<h3 id="卷积运算convolutional-operation"><a class="markdownIt-Anchor" href="#卷积运算convolutional-operation"></a> 卷积运算（convolutional operation）</h3>
+<p>如下所示的两步数学运算：</p>
+<ol>
+<li>对卷积过滤器和输入矩阵切片执行元素级乘法。（输入矩阵切片与卷积过滤器具有相同的等级和大小。）</li>
+<li>对生成的积矩阵中的所有值求和。</li>
+</ol>
+<p>以下面的 5x5 输入矩阵为例：</p>
+<p><img src="ConvolutionalLayerInputMatrix.svg" alt="ConvolutionalLayerInputMatrix"></p>
+<p>现在，以下面这个 2x2 卷积过滤器为例：</p>
+<p><img src="ConvolutionalLayerFilter.svg" alt="ConvolutionalLayerFilter"></p>
+<p>每个卷积运算都涉及一个 2x2 输入矩阵切片。例如，假设我们使用输入矩阵左上角的 2x2 切片。这样一来，对此切片进行卷积运算将如下所示：</p>
+<p><img src="ConvolutionalLayerOperation.svg" alt="ConvolutionalLayerOperation"></p>
+<p>卷积层由一系列卷积运算组成，每个卷积运算都针对不同的输入矩阵切片。</p>
+<h3 id="成本cost"><a class="markdownIt-Anchor" href="#成本cost"></a> 成本（cost）</h3>
+<p>与损失的含义相同。</p>
+<h3 id="交叉熵cross-entropy"><a class="markdownIt-Anchor" href="#交叉熵cross-entropy"></a> 交叉熵（cross-entropy）</h3>
+<p>对数损失函数向多类别分类问题的一种泛化。交叉熵可以量化两种概率分布之间的差异。另请参阅困惑度。</p>
+<h3 id="自定义-estimatorcustom-estimator"><a class="markdownIt-Anchor" href="#自定义-estimatorcustom-estimator"></a> 自定义 Estimator（custom Estimator）</h3>
+<p>您按照这些说明自行编写的 Estimator。</p>
+<p>与预创建的 Estimator 相对。</p>
+<h2 id="d"><a class="markdownIt-Anchor" href="#d"></a> D</h2>
+<h3 id="数据分析data-analysis"><a class="markdownIt-Anchor" href="#数据分析data-analysis"></a> 数据分析（data analysis）</h3>
+<p>根据样本、测量结果和可视化内容来理解数据。数据分析在首次收到数据集、构建第一个模型之前特别有用。此外，数据分析在理解实验和调试系统问题方面也至关重要。</p>
+<h3 id="dataframe"><a class="markdownIt-Anchor" href="#dataframe"></a> DataFrame</h3>
+<p>一种热门的数据类型，用于表示 Pandas 中的数据集。DataFrame 类似于表格。DataFrame 的每一列都有一个名称（标题），每一行都由一个数字标识。</p>
+<h3 id="数据集data-set"><a class="markdownIt-Anchor" href="#数据集data-set"></a> 数据集（data set）</h3>
+<p>一组样本的集合。</p>
+<h3 id="dataset-apitfdata"><a class="markdownIt-Anchor" href="#dataset-apitfdata"></a> Dataset API（tf.data）</h3>
+<p>一种高级别的 TensorFlow API，用于读取数据并将其转换为机器学习算法所需的格式。tf.data.Dataset 对象表示一系列元素，其中每个元素都包含一个或多个张量。tf.data.Iterator 对象可获取 Dataset 中的元素。</p>
+<p>如需详细了解 Dataset API，请参阅《TensorFlow 编程人员指南》中的导入数据。</p>
+<h3 id="决策边界decision-boundary"><a class="markdownIt-Anchor" href="#决策边界decision-boundary"></a> 决策边界（decision boundary）</h3>
+<p>在二元分类或多类别分类问题中，模型学到的类别之间的分界线。例如，在以下表示某个二元分类问题的图片中，决策边界是橙色类别和蓝色类别之间的分界线：</p>
+<p><img src="decision_boundary.png" alt="decision_boundary"></p>
+<h3 id="密集层dense-layer"><a class="markdownIt-Anchor" href="#密集层dense-layer"></a> 密集层（dense layer）</h3>
+<p>与全连接层的含义相同。</p>
+<h3 id="深度模型deep-model"><a class="markdownIt-Anchor" href="#深度模型deep-model"></a> 深度模型（deep model）</h3>
+<p>一种神经网络，其中包含多个隐藏层。深度模型依赖于可训练的非线性关系。</p>
+<p>与宽度模型相对。</p>
+<h3 id="密集特征dense-feature"><a class="markdownIt-Anchor" href="#密集特征dense-feature"></a> 密集特征（dense feature）</h3>
+<p>一种大部分值是非零值的特征，通常是浮点值张量。与稀疏特征相对。</p>
+<h3 id="设备device"><a class="markdownIt-Anchor" href="#设备device"></a> 设备（device）</h3>
+<p>一类可运行 TensorFlow 会话的硬件，包括 CPU、GPU 和 TPU。</p>
+<h3 id="离散特征discrete-feature"><a class="markdownIt-Anchor" href="#离散特征discrete-feature"></a> 离散特征（discrete feature）</h3>
+<p>一种特征，包含有限个可能值。例如，某个值只能是“动物”、“蔬菜”或“矿物”的特征便是一个离散特征（或分类特征）。与连续特征相对。</p>
+<h3 id="丢弃正则化dropout-regularization"><a class="markdownIt-Anchor" href="#丢弃正则化dropout-regularization"></a> 丢弃正则化（dropout regularization）</h3>
+<p>正则化的一种形式，在训练神经网络方面非常有用。丢弃正则化的运作机制是，在一个梯度步长中移除从神经网络层中随机选择的固定数量的单元。丢弃的单元越多，正则化效果就越强。这类似于训练神经网络以模拟较小网络的指数级规模集成学习。如需完整的详细信息，请参阅 Dropout: A Simple Way to Prevent Neural Networks from Overfitting（《丢弃：一种防止神经网络过拟合的简单方法》）。</p>
+<h3 id="动态模型dynamic-model"><a class="markdownIt-Anchor" href="#动态模型dynamic-model"></a> 动态模型（dynamic model）</h3>
+<p>一种模型，以持续更新的方式在线接受训练。也就是说，数据会源源不断地进入这种模型。</p>
+<h2 id="e"><a class="markdownIt-Anchor" href="#e"></a> E</h2>
+<h3 id="早停法early-stopping"><a class="markdownIt-Anchor" href="#早停法early-stopping"></a> 早停法（early stopping）</h3>
+<p>一种正则化方法，是指在训练损失仍可以继续降低之前结束模型训练。使用早停法时，您会在验证数据集的损失开始增大（也就是泛化效果变差）时结束模型训练。</p>
+<h3 id="嵌套embeddings"><a class="markdownIt-Anchor" href="#嵌套embeddings"></a> 嵌套（embeddings）</h3>
+<p>一种分类特征，以连续值特征表示。通常，嵌套是指将高维度向量映射到低维度的空间。例如，您可以采用以下两种方式之一来表示英文句子中的单词：</p>
+<pre><code>表示成包含百万个元素（高维度）的稀疏向量，其中所有元素都是整数。向量中的每个单元格都表示一个单独的英文单词，单元格中的值表示相应单词在句子中出现的次数。由于单个英文句子包含的单词不太可能超过 50 个，因此向量中几乎每个单元格都包含 0。少数非 0 的单元格中将包含一个非常小的整数（通常为 1），该整数表示相应单词在句子中出现的次数。
+表示成包含数百个元素（低维度）的密集向量，其中每个元素都存储一个介于 0 到 1 之间的浮点值。这就是一种嵌套。
+</code></pre>
+<p>在 TensorFlow 中，会按反向传播损失训练嵌套，和训练神经网络中的任何其他参数一样。</p>
+<h3 id="经验风险最小化erm-empirical-risk-minimization"><a class="markdownIt-Anchor" href="#经验风险最小化erm-empirical-risk-minimization"></a> 经验风险最小化（ERM, empirical risk minimization）</h3>
+<p>用于选择可以将基于训练集的损失降至最低的函数。与结构风险最小化相对。</p>
+<h3 id="集成学习ensemble"><a class="markdownIt-Anchor" href="#集成学习ensemble"></a> 集成学习（ensemble）</h3>
+<p>多个模型的预测结果的并集。您可以通过以下一项或多项来创建集成学习：</p>
+<ul>
+<li>不同的初始化</li>
+<li>不同的超参数</li>
+<li>不同的整体结构</li>
+</ul>
+<p>深度模型和宽度模型属于一种集成学习。</p>
+<h3 id="周期epoch"><a class="markdownIt-Anchor" href="#周期epoch"></a> 周期（epoch）</h3>
+<p>在训练时，整个数据集的一次完整遍历，以便不漏掉任何一个样本。因此，一个周期表示（N/批次大小）次训练迭代，其中 N 是样本总数。</p>
+<h3 id="estimator"><a class="markdownIt-Anchor" href="#estimator"></a> Estimator</h3>
+<p>tf.Estimator 类的一个实例，用于封装负责构建 TensorFlow 图并运行 TensorFlow 会话的逻辑。您可以创建自定义 Estimator（如需相关介绍，请点击此处），也可以实例化其他人预创建的 Estimator。</p>
+<h3 id="样本example"><a class="markdownIt-Anchor" href="#样本example"></a> 样本（example）</h3>
+<p>数据集的一行。一个样本包含一个或多个特征，此外还可能包含一个标签。另请参阅有标签样本和无标签样本。</p>
+<h2 id="f"><a class="markdownIt-Anchor" href="#f"></a> F</h2>
+<h3 id="假负例fn-false-negative"><a class="markdownIt-Anchor" href="#假负例fn-false-negative"></a> 假负例（FN, false negative）</h3>
+<p>被模型错误地预测为负类别的样本。例如，模型推断出某封电子邮件不是垃圾邮件（负类别），但该电子邮件其实是垃圾邮件。</p>
+<h3 id="假正例fp-false-positive"><a class="markdownIt-Anchor" href="#假正例fp-false-positive"></a> 假正例（FP, false positive）</h3>
+<p>被模型错误地预测为正类别的样本。例如，模型推断出某封电子邮件是垃圾邮件（正类别），但该电子邮件其实不是垃圾邮件。</p>
+<h3 id="假正例率false-positive-rate-简称-fp-率"><a class="markdownIt-Anchor" href="#假正例率false-positive-rate-简称-fp-率"></a> 假正例率（false positive rate, 简称 FP 率）</h3>
+<p>ROC 曲线中的 x 轴。FP 率的定义如下：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">假</mi><mi mathvariant="normal">正</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">率</mi></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">假</mi><mi mathvariant="normal">正</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi></mrow><mrow><mi mathvariant="normal">假</mi><mi mathvariant="normal">正</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi><mo>+</mo><mi mathvariant="normal">负</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathbf{假正例率} = \frac{假正例数}{假正例数 + 负例数}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord"><span class="mord cjk_fallback">假</span><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">率</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.4463300000000001em;vertical-align:-0.7693300000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.677em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">假</span><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord cjk_fallback">负</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">假</span><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693300000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<h3 id="特征feature"><a class="markdownIt-Anchor" href="#特征feature"></a> 特征（feature）</h3>
+<p>在进行预测时使用的输入变量。</p>
+<h3 id="特征列tffeature_column"><a class="markdownIt-Anchor" href="#特征列tffeature_column"></a> 特征列（tf.feature_column）</h3>
+<p>指定模型应该如何解读特定特征的一种函数。此类函数的输出结果是所有 Estimators 构造函数的必需参数。</p>
+<p>借助 tf.feature_column 函数，模型可对输入特征的不同表示法轻松进行实验。有关详情，请参阅《TensorFlow 编程人员指南》中的特征列一章。</p>
+<p>“特征列”是 Google 专用的术语。特征列在 Yahoo/Microsoft 使用的 VW 系统中称为“命名空间”，也称为场。</p>
+<h3 id="特征组合feature-cross"><a class="markdownIt-Anchor" href="#特征组合feature-cross"></a> 特征组合（feature cross）</h3>
+<p>通过将单独的特征进行组合（求笛卡尔积）而形成的合成特征。特征组合有助于表达非线性关系。</p>
+<h3 id="特征工程feature-engineering"><a class="markdownIt-Anchor" href="#特征工程feature-engineering"></a> 特征工程（feature engineering）</h3>
+<p>指以下过程：确定哪些特征可能在训练模型方面非常有用，然后将日志文件及其他来源的原始数据转换为所需的特征。在 TensorFlow 中，特征工程通常是指将原始日志文件条目转换为 tf.Example 协议缓冲区。另请参阅 tf.Transform。</p>
+<p>特征工程有时称为特征提取。</p>
+<h3 id="特征集feature-set"><a class="markdownIt-Anchor" href="#特征集feature-set"></a> 特征集（feature set）</h3>
+<p>训练机器学习模型时采用的一组特征。例如，对于某个用于预测房价的模型，邮政编码、房屋面积以及房屋状况可以组成一个简单的特征集。</p>
+<h3 id="特征规范feature-spec"><a class="markdownIt-Anchor" href="#特征规范feature-spec"></a> 特征规范（feature spec）</h3>
+<p>用于描述如何从 tf.Example 协议缓冲区提取特征数据。由于 tf.Example 协议缓冲区只是一个数据容器，因此您必须指定以下内容：</p>
+<ul>
+<li>要提取的数据（即特征的键）</li>
+<li>数据类型（例如 float 或 int）</li>
+<li>长度（固定或可变）</li>
+</ul>
+<p>Estimator API 提供了一些可用来根据给定 FeatureColumns 列表生成特征规范的工具。</p>
+<h3 id="少量样本学习few-shot-learning"><a class="markdownIt-Anchor" href="#少量样本学习few-shot-learning"></a> 少量样本学习（few-shot learning）</h3>
+<p>一种机器学习方法（通常用于对象分类），旨在仅通过少量训练样本学习有效的分类器。</p>
+<p>另请参阅单样本学习。</p>
+<h3 id="完整-softmaxfull-softmax"><a class="markdownIt-Anchor" href="#完整-softmaxfull-softmax"></a> 完整 softmax（full softmax）</h3>
+<p>请参阅 softmax。与候选采样相对。</p>
+<h3 id="全连接层fully-connected-layer"><a class="markdownIt-Anchor" href="#全连接层fully-connected-layer"></a> 全连接层（fully connected layer）</h3>
+<p>一种隐藏层，其中的每个节点均与下一个隐藏层中的每个节点相连。</p>
+<p>全连接层又称为密集层。</p>
+<h2 id="g"><a class="markdownIt-Anchor" href="#g"></a> G</h2>
+<h3 id="泛化generalization"><a class="markdownIt-Anchor" href="#泛化generalization"></a> 泛化（generalization）</h3>
+<p>指的是模型依据训练时采用的数据，针对以前未见过的新数据做出正确预测的能力。</p>
+<h3 id="广义线性模型generalized-linear-model"><a class="markdownIt-Anchor" href="#广义线性模型generalized-linear-model"></a> 广义线性模型（generalized linear model）</h3>
+<p>最小二乘回归模型（基于高斯噪声）向其他类型的模型（基于其他类型的噪声，例如泊松噪声或分类噪声）进行的一种泛化。广义线性模型的示例包括：</p>
+<ul>
+<li>逻辑回归</li>
+<li>多类别回归</li>
+<li>最小二乘回归</li>
+</ul>
+<p>可以通过凸优化找到广义线性模型的参数。</p>
+<p>广义线性模型具有以下特性：</p>
+<ul>
+<li>最优的最小二乘回归模型的平均预测结果等于训练数据的平均标签。</li>
+<li>最优的逻辑回归模型预测的平均概率等于训练数据的平均标签。</li>
+</ul>
+<p>广义线性模型的功能受其特征的限制。与深度模型不同，广义线性模型无法“学习新特征”。</p>
+<h3 id="梯度gradient"><a class="markdownIt-Anchor" href="#梯度gradient"></a> 梯度（gradient）</h3>
+<p>偏导数相对于所有自变量的向量。在机器学习中，梯度是模型函数偏导数的向量。梯度指向最高速上升的方向。</p>
+<h3 id="梯度裁剪gradient-clipping"><a class="markdownIt-Anchor" href="#梯度裁剪gradient-clipping"></a> 梯度裁剪（gradient clipping）</h3>
+<p>在应用梯度值之前先设置其上限。梯度裁剪有助于确保数值稳定性以及防止梯度爆炸。</p>
+<h3 id="梯度下降法gradient-descent"><a class="markdownIt-Anchor" href="#梯度下降法gradient-descent"></a> 梯度下降法（gradient descent）</h3>
+<p>一种通过计算并且减小梯度将损失降至最低的技术，它以训练数据为条件，来计算损失相对于模型参数的梯度。通俗来说，梯度下降法以迭代方式调整参数，逐渐找到权重和偏差的最佳组合，从而将损失降至最低。</p>
+<h3 id="图graph"><a class="markdownIt-Anchor" href="#图graph"></a> 图（graph）</h3>
+<p>TensorFlow 中的一种计算规范。图中的节点表示操作。边缘具有方向，表示将某项操作的结果（一个张量）作为一个操作数传递给另一项操作。可以使用 TensorBoard 直观呈现图。</p>
+<h2 id="h"><a class="markdownIt-Anchor" href="#h"></a> H</h2>
+<h3 id="启发法heuristic"><a class="markdownIt-Anchor" href="#启发法heuristic"></a> 启发法（heuristic）</h3>
+<p>一种非最优但实用的问题解决方案，足以用于进行改进或从中学习。</p>
+<h3 id="隐藏层hidden-layer"><a class="markdownIt-Anchor" href="#隐藏层hidden-layer"></a> 隐藏层（hidden layer）</h3>
+<p>神经网络中的合成层，介于输入层（即特征）和输出层（即预测）之间。神经网络包含一个或多个隐藏层。</p>
+<h3 id="合页损失函数hinge-loss"><a class="markdownIt-Anchor" href="#合页损失函数hinge-loss"></a> 合页损失函数（hinge loss）</h3>
+<p>一系列用于分类的损失函数，旨在找到距离每个训练样本都尽可能远的决策边界，从而使样本和边界之间的裕度最大化。 KSVM 使用合页损失函数（或相关函数，例如平方合页损失函数）。对于二元分类，合页损失函数的定义如下：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>o</mi><mi>s</mi><mi>s</mi><mo>=</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo>−</mo><mo stretchy="false">(</mo><msup><mi>y</mi><mo mathvariant="normal">′</mo></msup><mo>∗</mo><mi>y</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">loss = max(0,1 - (y&#x27; * y))
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.051892em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.801892em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span></span></p>
+<p>其中“y’”表示分类器模型的原始输出：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>y</mi><mo mathvariant="normal">′</mo></msup><mo>=</mo><mi>b</mi><mo>+</mo><msub><mi>w</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>w</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><msub><mi>w</mi><mi>n</mi></msub><msub><mi>x</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">y&#x27; = b + w_1 x_1 + w_2 x_2 + ... w_n x_n
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.996332em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.801892em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<p>“y”表示真标签，值为 -1 或 +1。</p>
+<p>因此，合页损失与 (y * y’) 的关系图如下所示：</p>
+<p><img src="hinge-loss.svg" alt="hinge-loss"></p>
+<h3 id="维持数据holdout-data"><a class="markdownIt-Anchor" href="#维持数据holdout-data"></a> 维持数据（holdout data）</h3>
+<p>训练期间故意不使用（“维持”）的样本。验证数据集和测试数据集都属于维持数据。维持数据有助于评估模型向训练时所用数据之外的数据进行泛化的能力。与基于训练数据集的损失相比，基于维持数据集的损失有助于更好地估算基于未见过的数据集的损失。</p>
+<h3 id="超参数hyperparameter"><a class="markdownIt-Anchor" href="#超参数hyperparameter"></a> 超参数（hyperparameter）</h3>
+<p>在模型训练的连续过程中，您调节的“旋钮”。例如，学习速率就是一种超参数。</p>
+<p>与参数相对。</p>
+<h3 id="超平面hyperplane"><a class="markdownIt-Anchor" href="#超平面hyperplane"></a> 超平面（hyperplane）</h3>
+<p>将一个空间划分为两个子空间的边界。例如，在二维空间中，直线就是一个超平面，在三维空间中，平面则是一个超平面。在机器学习中更典型的是：超平面是分隔高维度空间的边界。核支持向量机利用超平面将正类别和负类别区分开来（通常是在极高维度空间中）。</p>
+<h2 id="i"><a class="markdownIt-Anchor" href="#i"></a> I</h2>
+<h3 id="独立同等分布iid-independently-and-identically-distributed"><a class="markdownIt-Anchor" href="#独立同等分布iid-independently-and-identically-distributed"></a> 独立同等分布（i.i.d, independently and identically distributed）</h3>
+<p>从不会改变的分布中提取的数据，其中提取的每个值都不依赖于之前提取的值。i.i.d. 是机器学习的理想气体 - 一种实用的数学结构，但在现实世界中几乎从未发现过。例如，某个网页的访问者在短时间内的分布可能为 i.i.d.，即分布在该短时间内没有变化，且一位用户的访问行为通常与另一位用户的访问行为无关。不过，如果将时间窗口扩大，网页访问者的分布可能呈现出季节性变化。</p>
+<h3 id="推断inference"><a class="markdownIt-Anchor" href="#推断inference"></a> 推断（inference）</h3>
+<p>在机器学习中，推断通常指以下过程：通过将训练过的模型应用于无标签样本来做出预测。在统计学中，推断是指在某些观测数据条件下拟合分布参数的过程。（请参阅维基百科中有关统计学推断的文章。）</p>
+<h3 id="输入函数input-function"><a class="markdownIt-Anchor" href="#输入函数input-function"></a> 输入函数（input function）</h3>
+<p>在 TensorFlow 中，用于将输入数据返回到 Estimator 的训练、评估或预测方法的函数。例如，训练输入函数会返回训练集中的一批特征和标签。</p>
+<h3 id="输入层input-layer"><a class="markdownIt-Anchor" href="#输入层input-layer"></a> 输入层（input layer）</h3>
+<p>神经网络中的第一层（接收输入数据的层）。</p>
+<h3 id="实例instance"><a class="markdownIt-Anchor" href="#实例instance"></a> 实例（instance）</h3>
+<p>与样本的含义相同。</p>
+<h3 id="可解释性interpretability"><a class="markdownIt-Anchor" href="#可解释性interpretability"></a> 可解释性（interpretability）</h3>
+<p>模型的预测可解释的难易程度。深度模型通常不可解释，也就是说，很难对深度模型的不同层进行解释。相比之下，线性回归模型和宽度模型的可解释性通常要好得多。</p>
+<h3 id="评分者间一致性信度inter-rater-agreement"><a class="markdownIt-Anchor" href="#评分者间一致性信度inter-rater-agreement"></a> 评分者间一致性信度（inter-rater agreement）</h3>
+<p>一种衡量指标，用于衡量在执行某项任务时评分者达成一致的频率。如果评分者未达成一致，则可能需要改进任务说明。有时也称为注释者间一致性信度或评分者间可靠性信度。另请参阅 Cohen’s kappa（最热门的评分者间一致性信度衡量指标之一）。</p>
+<h3 id="迭代iteration"><a class="markdownIt-Anchor" href="#迭代iteration"></a> 迭代（iteration）</h3>
+<p>模型的权重在训练期间的一次更新。迭代包含计算参数在单批次数据上的梯度损失。</p>
+<h2 id="k"><a class="markdownIt-Anchor" href="#k"></a> K</h2>
+<h3 id="k-means"><a class="markdownIt-Anchor" href="#k-means"></a> k-means</h3>
+<p>一种热门的聚类算法，用于对非监督式学习中的样本进行分组。k-means 算法基本上会执行以下操作：</p>
+<ul>
+<li>以迭代方式确定最佳的 k 中心点（称为形心）。</li>
+<li>将每个样本分配到最近的形心。与同一个形心距离最近的样本属于同一个组。</li>
+</ul>
+<p>k-means 算法会挑选形心位置，以最大限度地减小每个样本与其最接近形心之间的距离的累积平方。</p>
+<p>以下面的小狗高度与小狗宽度的关系图为例：</p>
+<p><img src="DogDimensions.svg" alt="DogDimensions"></p>
+<p>如果 k=3，则 k-means 算法会确定三个形心。每个样本都被分配到与其最接近的形心，最终产生三个组：</p>
+<p><img src="DogDimensionsKMeans.svg" alt="DogDimensionsKMeans"></p>
+<p>假设制造商想要确定小、中和大号狗毛衣的理想尺寸。在该聚类中，三个形心用于标识每只狗的平均高度和平均宽度。因此，制造商可能应该根据这三个形心确定毛衣尺寸。请注意，聚类的形心通常不是聚类中的样本。</p>
+<p>上图显示了 k-means 应用于仅具有两个特征（高度和宽度）的样本。请注意，k-means 可以跨多个特征为样本分组。</p>
+<h3 id="k-median"><a class="markdownIt-Anchor" href="#k-median"></a> k-median</h3>
+<p>与 k-means 紧密相关的聚类算法。两者的实际区别如下：</p>
+<ul>
+<li>对于 k-means，确定形心的方法是，最大限度地减小候选形心与它的每个样本之间的距离平方和。</li>
+<li>对于 k-median，确定形心的方法是，最大限度地减小候选形心与它的每个样本之间的距离总和。</li>
+</ul>
+<p>请注意，距离的定义也有所不同：</p>
+<ul>
+<li>k-means 采用从形心到样本的欧几里得距离。（在二维空间中，欧几里得距离即使用勾股定理来计算斜边。）例如，(2,2) 与 (5,-2) 之间的 k-means 距离为：</li>
+</ul>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">欧</mi><mi mathvariant="normal">几</mi><mi mathvariant="normal">里</mi><mi mathvariant="normal">德</mi><mi mathvariant="normal">距</mi><mi mathvariant="normal">离</mi></mrow><mo>=</mo><msqrt><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>−</mo><mn>5</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>−</mo><mo>−</mo><mn>2</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\mathbf{欧几里德距离} = \sqrt{(2-5)^2 + (2 - -2)^2} = {5}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord"><span class="mord cjk_fallback">欧</span><span class="mord cjk_fallback">几</span><span class="mord cjk_fallback">里</span><span class="mord cjk_fallback">德</span><span class="mord cjk_fallback">距</span><span class="mord cjk_fallback">离</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.24em;vertical-align:-0.25612499999999994em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.983875em;"><span class="svg-align" style="top:-3.2em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord" style="padding-left:1em;"><span class="mopen">(</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">5</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">−</span><span class="mord">2</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-2.9438750000000002em;"><span class="pstrut" style="height:3.2em;"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em;"><svg width="400em" height="1.28em" viewbox="0 0 400000 1296" preserveaspectratio="xMinYMin slice"><path d="M263,681c0.7,0,18,39.7,52,119c34,79.3,68.167,
+158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120c340,-704.7,510.7,-1060.3,512,-1067
+c4.7,-7.3,11,-11,19,-11H40000v40H1012.3s-271.3,567,-271.3,567c-38.7,80.7,-84,
+175,-136,283c-52,108,-89.167,185.3,-111.5,232c-22.3,46.7,-33.8,70.3,-34.5,71
+c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1s-109,-253,-109,-253c-72.7,-168,-109.3,
+-252,-110,-252c-10.7,8,-22,16.7,-34,26c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26
+s76,-59,76,-59s76,-60,76,-60z M1001 80H40000v40H1012z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.25612499999999994em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord"><span class="mord">5</span></span></span></span></span></span></p>
+<ul>
+<li>k-median 采用从形心到样本的曼哈顿距离。这个距离是每个维度中绝对差异值的总和。例如，(2,2) 与 (5,-2) 之间的 k-median 距离为：</li>
+</ul>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">曼</mi><mi mathvariant="normal">哈</mi><mi mathvariant="normal">顿</mi><mi mathvariant="normal">距</mi><mi mathvariant="normal">离</mi></mrow><mo>=</mo><mi mathvariant="normal">∣</mi><mn>2</mn><mo>−</mo><mn>5</mn><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">∣</mi><mn>2</mn><mo>−</mo><mo>−</mo><mn>2</mn><mi mathvariant="normal">∣</mi><mo>=</mo><mn>7</mn></mrow><annotation encoding="application/x-tex">\mathbf{曼哈顿距离} = |2 - 5| + |2 - -2| = 7
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord"><span class="mord cjk_fallback">曼</span><span class="mord cjk_fallback">哈</span><span class="mord cjk_fallback">顿</span><span class="mord cjk_fallback">距</span><span class="mord cjk_fallback">离</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">5</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mord">2</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span></span></span></span></span></p>
+<h3 id="keras"><a class="markdownIt-Anchor" href="#keras"></a> Keras</h3>
+<p>一种热门的 Python 机器学习 API。Keras 能够在多种深度学习框架上运行，其中包括 TensorFlow（在该框架上，Keras 作为 tf.keras 提供）。</p>
+<h3 id="核支持向量机ksvm-kernel-support-vector-machines"><a class="markdownIt-Anchor" href="#核支持向量机ksvm-kernel-support-vector-machines"></a> 核支持向量机（KSVM, Kernel Support Vector Machines）</h3>
+<p>一种分类算法，旨在通过将输入数据向量映射到更高维度的空间，来最大化正类别和负类别之间的裕度。以某个输入数据集包含一百个特征的分类问题为例。为了最大化正类别和负类别之间的裕度，KSVM 可以在内部将这些特征映射到百万维度的空间。KSVM 使用合页损失函数。</p>
+<h2 id="l"><a class="markdownIt-Anchor" href="#l"></a> L</h2>
+<h3 id="l_1-损失函数l_1-loss"><a class="markdownIt-Anchor" href="#l_1-损失函数l_1-loss"></a> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 损失函数（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> loss）</h3>
+<p>一种损失函数，基于模型预测的值与标签的实际值之差的绝对值。与 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 损失函数相比，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 损失函数对离群值的敏感性弱一些。</p>
+<h3 id="l_1-正则化l_1-regularization"><a class="markdownIt-Anchor" href="#l_1-正则化l_1-regularization"></a> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> regularization）</h3>
+<p>一种正则化，根据权重的绝对值的总和来惩罚权重。在依赖稀疏特征的模型中，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化有助于使不相关或几乎不相关的特征的权重正好为 0，从而将这些特征从模型中移除。与 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化相对。</p>
+<h3 id="l_2-损失函数l_2-loss"><a class="markdownIt-Anchor" href="#l_2-损失函数l_2-loss"></a> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 损失函数（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> loss）</h3>
+<p>请参阅平方损失函数。</p>
+<h3 id="l_2-正则化l_2-regularization"><a class="markdownIt-Anchor" href="#l_2-正则化l_2-regularization"></a> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> regularization）</h3>
+<p>一种正则化，根据权重的平方和来惩罚权重。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化有助于使离群值（具有较大正值或较小负值）权重接近于 0，但又不正好为 0。（与 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化相对。）在线性模型中，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化始终可以改进泛化。</p>
+<h3 id="标签label"><a class="markdownIt-Anchor" href="#标签label"></a> 标签（label）</h3>
+<p>在监督式学习中，标签指样本的“答案”或“结果”部分。有标签数据集中的每个样本都包含一个或多个特征以及一个标签。例如，在房屋数据集中，特征可能包括卧室数、卫生间数以及房龄，而标签则可能是房价。在垃圾邮件检测数据集中，特征可能包括主题行、发件人以及电子邮件本身，而标签则可能是“垃圾邮件”或“非垃圾邮件”。</p>
+<h3 id="有标签样本labeled-example"><a class="markdownIt-Anchor" href="#有标签样本labeled-example"></a> 有标签样本（labeled example）</h3>
+<p>包含特征和标签的样本。在监督式训练中，模型从有标签样本中学习规律。</p>
+<h3 id="lambda"><a class="markdownIt-Anchor" href="#lambda"></a> lambda</h3>
+<p>与正则化率的含义相同。</p>
+<p>（多含义术语，我们在此关注的是该术语在正则化中的定义。）</p>
+<h3 id="层layer"><a class="markdownIt-Anchor" href="#层layer"></a> 层（layer）</h3>
+<p>神经网络中的一组神经元，负责处理一组输入特征，或一组神经元的输出。</p>
+<p>此外还指 TensorFlow 中的抽象层。层是 Python 函数，以张量和配置选项作为输入，然后生成其他张量作为输出。当必要的张量组合起来后，用户便可以通过模型函数将结果转换为 Estimator。</p>
+<h3 id="layers-apitflayers"><a class="markdownIt-Anchor" href="#layers-apitflayers"></a> Layers API（tf.layers）</h3>
+<p>一种 TensorFlow API，用于以层组合的方式构建深度神经网络。通过 Layers API，您可以构建不同类型的层，例如：</p>
+<ul>
+<li>通过 tf.layers.Dense 构建全连接层。</li>
+<li>通过 tf.layers.Conv2D 构建卷积层。</li>
+</ul>
+<p>在编写自定义 Estimator 时，您可以编写“层”对象来定义所有隐藏层的特征。</p>
+<p>Layers API 遵循 Keras layers API 规范。也就是说，除了前缀不同以外，Layers API 中的所有函数均与 Keras layers API 中的对应函数具有相同的名称和签名。</p>
+<h3 id="学习速率learning-rate"><a class="markdownIt-Anchor" href="#学习速率learning-rate"></a> 学习速率（learning rate）</h3>
+<p>在训练模型时用于梯度下降的一个标量。在每次迭代期间，梯度下降法都会将学习速率与梯度相乘。得出的乘积称为梯度步长。</p>
+<p>学习速率是一个重要的超参数。</p>
+<h3 id="最小二乘回归least-squares-regression"><a class="markdownIt-Anchor" href="#最小二乘回归least-squares-regression"></a> 最小二乘回归（least squares regression）</h3>
+<p>一种通过最小化 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 损失训练出的线性回归模型。</p>
+<h3 id="线性回归linear-regression"><a class="markdownIt-Anchor" href="#线性回归linear-regression"></a> 线性回归（linear regression）</h3>
+<p>一种回归模型，通过将输入特征进行线性组合输出连续值。</p>
+<h3 id="逻辑回归logistic-regression"><a class="markdownIt-Anchor" href="#逻辑回归logistic-regression"></a> 逻辑回归（logistic regression）</h3>
+<p>一种模型，通过将 S 型函数应用于线性预测，生成分类问题中每个可能的离散标签值的概率。虽然逻辑回归经常用于二元分类问题，但也可用于多类别分类问题（其叫法变为多类别逻辑回归或多项回归）。</p>
+<h3 id="对数logits"><a class="markdownIt-Anchor" href="#对数logits"></a> 对数（logits）</h3>
+<p>分类模型生成的原始（非标准化）预测向量，通常会传递给标准化函数。如果模型要解决多类别分类问题，则对数通常变成 softmax 函数的输入。之后，softmax 函数会生成一个（标准化）概率向量，对应于每个可能的类别。</p>
+<p>此外，对数有时也称为 S 型函数的元素级反函数。如需了解详细信息，请参阅 tf.nn.sigmoid_cross_entropy_with_logits。</p>
+<h3 id="对数损失函数log-loss"><a class="markdownIt-Anchor" href="#对数损失函数log-loss"></a> 对数损失函数（Log Loss）</h3>
+<p>二元逻辑回归中使用的损失函数。</p>
+<h3 id="对数几率log-odds"><a class="markdownIt-Anchor" href="#对数几率log-odds"></a> 对数几率（log-odds）</h3>
+<p>某个事件几率的对数。</p>
+<p>如果事件涉及二元概率，则几率指的是成功概率 § 与失败概率 (1-p) 之比。例如，假设某个给定事件的成功概率为 90％，失败概率为 10％。在这种情况下，几率的计算公式如下：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">几</mi><mi mathvariant="normal">率</mi></mrow><mo>=</mo><mfrac><mi>p</mi><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mi mathvariant="normal">.</mi><mn>9</mn></mrow><mrow><mi mathvariant="normal">.</mi><mn>1</mn></mrow></mfrac><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">\mathbf{几率} = \frac{p}{(1-p)} = \frac{.9}{.1} = 9
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord"><span class="mord cjk_fallback">几</span><span class="mord cjk_fallback">率</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.04356em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1075599999999999em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">p</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">p</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">.</span><span class="mord">1</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">.</span><span class="mord">9</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">9</span></span></span></span></span></p>
+<p>简单来说，对数几率即几率的对数。按照惯例，“对数”指自然对数，但对数的基数其实可以是任何大于 1 的数。若遵循惯例，上述示例的对数几率应为：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">对</mi><mi mathvariant="normal">数</mi><mi mathvariant="normal">几</mi><mi mathvariant="normal">率</mi></mrow><mo>=</mo><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo><mo>=</mo><mn>2.2</mn></mrow><annotation encoding="application/x-tex">\mathbf{对数几率} = ln(9) = 2.2
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord"><span class="mord cjk_fallback">对</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">几</span><span class="mord cjk_fallback">率</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">n</span><span class="mopen">(</span><span class="mord">9</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord">.</span><span class="mord">2</span></span></span></span></span></p>
+<p>对数几率是 S 型函数的反函数。</p>
+<h3 id="损失loss"><a class="markdownIt-Anchor" href="#损失loss"></a> 损失（Loss）</h3>
+<p>一种衡量指标，用于衡量模型的预测偏离其标签的程度。或者更悲观地说是衡量模型有多差。要确定此值，模型必须定义损失函数。例如，线性回归模型通常将均方误差用作损失函数，而逻辑回归模型则使用对数损失函数。</p>
+<h2 id="m"><a class="markdownIt-Anchor" href="#m"></a> M</h2>
+<h3 id="机器学习machine-learning"><a class="markdownIt-Anchor" href="#机器学习machine-learning"></a> 机器学习（machine learning）</h3>
+<p>一种程序或系统，用于根据输入数据构建（训练）预测模型。这种系统会利用学到的模型根据从分布（训练该模型时使用的同一分布）中提取的新数据（以前从未见过的数据）进行实用的预测。机器学习还指与这些程序或系统相关的研究领域。</p>
+<h3 id="均方误差mse-mean-squared-error"><a class="markdownIt-Anchor" href="#均方误差mse-mean-squared-error"></a> 均方误差（MSE, Mean Squared Error）</h3>
+<p>每个样本的平均平方损失。MSE 的计算方法是平方损失除以样本数。TensorFlow Playground 显示的“训练损失”值和“测试损失”值都是 MSE。</p>
+<h3 id="指标metric"><a class="markdownIt-Anchor" href="#指标metric"></a> 指标（metric）</h3>
+<p>您关心的一个数值。可能可以也可能不可以直接在机器学习系统中得到优化。您的系统尝试优化的指标称为目标。</p>
+<h3 id="metrics-apitfmetrics"><a class="markdownIt-Anchor" href="#metrics-apitfmetrics"></a> Metrics API（tf.metrics）</h3>
+<p>一种用于评估模型的 TensorFlow API。例如，tf.metrics.accuracy 用于确定模型的预测与标签匹配的频率。在编写自定义 Estimator 时，您可以调用 Metrics API 函数来指定应如何评估您的模型。</p>
+<h3 id="小批次mini-batch"><a class="markdownIt-Anchor" href="#小批次mini-batch"></a> 小批次（mini-batch）</h3>
+<p>从整批样本内随机选择并在训练或推断过程的一次迭代中一起运行的一小部分样本。小批次的批次大小通常介于 10 到 1000 之间。与基于完整的训练数据计算损失相比，基于小批次数据计算损失要高效得多。</p>
+<h3 id="小批次随机梯度下降法sgd-mini-batch-stochastic-gradient-descent"><a class="markdownIt-Anchor" href="#小批次随机梯度下降法sgd-mini-batch-stochastic-gradient-descent"></a> 小批次随机梯度下降法（SGD, mini-batch stochastic gradient descent）</h3>
+<p>一种采用小批次样本的梯度下降法。也就是说，小批次 SGD 会根据一小部分训练数据来估算梯度。Vanilla SGD 使用的小批次的大小为 1。</p>
+<h3 id="ml"><a class="markdownIt-Anchor" href="#ml"></a> ML</h3>
+<p>机器学习的缩写。</p>
+<h3 id="模型model"><a class="markdownIt-Anchor" href="#模型model"></a> 模型（model）</h3>
+<p>机器学习系统从训练数据学到的内容的表示形式。多含义术语，可以理解为下列两种相关含义之一：</p>
+<ul>
+<li>一种 TensorFlow 图，用于表示预测的计算结构。</li>
+<li>该 TensorFlow 图的特定权重和偏差，通过训练决定。</li>
+</ul>
+<h3 id="模型函数model-function"><a class="markdownIt-Anchor" href="#模型函数model-function"></a> 模型函数（model function）</h3>
+<p>Estimator 中的函数，用于实现机器学习训练、评估和推断。例如，模型函数的训练部分可以处理以下任务：定义深度神经网络的拓扑并确定其优化器函数。如果使用预创建的 Estimator，则有人已为您编写了模型函数。如果使用自定义 Estimator，则必须自行编写模型函数。</p>
+<h3 id="模型训练model-training"><a class="markdownIt-Anchor" href="#模型训练model-training"></a> 模型训练（model training）</h3>
+<p>确定最佳模型的过程。</p>
+<h3 id="动量momentum"><a class="markdownIt-Anchor" href="#动量momentum"></a> 动量（Momentum）</h3>
+<p>一种先进的梯度下降法，其中学习步长不仅取决于当前步长的导数，还取决于之前一步或多步的步长的导数。动量涉及计算梯度随时间而变化的指数级加权移动平均值，与物理学中的动量类似。动量有时可以防止学习过程被卡在局部最小的情况。</p>
+<h3 id="多类别分类multi-class-classification"><a class="markdownIt-Anchor" href="#多类别分类multi-class-classification"></a> 多类别分类（multi-class classification）</h3>
+<p>区分两种以上类别的分类问题。例如，枫树大约有 128 种，因此，确定枫树种类的模型就属于多类别模型。反之，仅将电子邮件分为两类（“垃圾邮件”和“非垃圾邮件”）的模型属于二元分类模型。</p>
+<h3 id="多项分类multinomial-classification"><a class="markdownIt-Anchor" href="#多项分类multinomial-classification"></a> 多项分类（multinomial classification）</h3>
+<p>与多类别分类的含义相同。</p>
+<h2 id="n"><a class="markdownIt-Anchor" href="#n"></a> N</h2>
+<h3 id="nan-陷阱nan-trap"><a class="markdownIt-Anchor" href="#nan-陷阱nan-trap"></a> NaN 陷阱（NaN trap）</h3>
+<p>模型中的一个数字在训练期间变成 NaN，这会导致模型中的很多或所有其他数字最终也会变成 NaN。</p>
+<p>NaN 是“非数字”的缩写。</p>
+<h3 id="负类别negative-class"><a class="markdownIt-Anchor" href="#负类别negative-class"></a> 负类别（negative class）</h3>
+<p>在二元分类中，一种类别称为正类别，另一种类别称为负类别。正类别是我们要寻找的类别，负类别则是另一种可能性。例如，在医学检查中，负类别可以是“非肿瘤”。在电子邮件分类器中，负类别可以是“非垃圾邮件”。另请参阅正类别。</p>
+<h3 id="神经网络neural-network"><a class="markdownIt-Anchor" href="#神经网络neural-network"></a> 神经网络（neural network）</h3>
+<p>一种模型，灵感来源于脑部结构，由多个层构成（至少有一个是隐藏层），每个层都包含简单相连的单元或神经元（具有非线性关系）。</p>
+<h3 id="神经元neuron"><a class="markdownIt-Anchor" href="#神经元neuron"></a> 神经元（neuron）</h3>
+<p>神经网络中的节点，通常会接收多个输入值并生成一个输出值。神经元通过将激活函数（非线性转换）应用于输入值的加权和来计算输出值。</p>
+<h3 id="节点node"><a class="markdownIt-Anchor" href="#节点node"></a> 节点（node）</h3>
+<p>多含义术语，可以理解为下列两种含义之一：</p>
+<ul>
+<li>隐藏层中的神经元。</li>
+<li>TensorFlow 图中的操作。</li>
+</ul>
+<h3 id="标准化normalization"><a class="markdownIt-Anchor" href="#标准化normalization"></a> 标准化（normalization）</h3>
+<p>将实际的值区间转换为标准的值区间（通常为 -1 到 +1 或 0 到 1）的过程。例如，假设某个特征的自然区间是 800 到 6000。通过减法和除法运算，您可以将这些值标准化为位于 -1 到 +1 区间内。</p>
+<p>另请参阅缩放。</p>
+<h3 id="数值数据numerical-data"><a class="markdownIt-Anchor" href="#数值数据numerical-data"></a> 数值数据（numerical data）</h3>
+<p>用整数或实数表示的特征。例如，在房地产模型中，您可能会用数值数据表示房子大小（以平方英尺或平方米为单位）。如果用数值数据表示特征，则可以表明特征的值相互之间具有数学关系，并且与标签可能也有数学关系。例如，如果用数值数据表示房子大小，则可以表明面积为 200 平方米的房子是面积为 100 平方米的房子的两倍。此外，房子面积的平方米数可能与房价存在一定的数学关系。</p>
+<p>并非所有整数数据都应表示成数值数据。例如，世界上某些地区的邮政编码是整数，但在模型中，不应将整数邮政编码表示成数值数据。这是因为邮政编码 20000 在效力上并不是邮政编码 10000 的两倍（或一半）。此外，虽然不同的邮政编码确实与不同的房地产价值有关，但我们也不能假设邮政编码为 20000 的房地产在价值上是邮政编码为 10000 的房地产的两倍。邮政编码应表示成分类数据。</p>
+<p>数值特征有时称为连续特征。</p>
+<h3 id="numpy"><a class="markdownIt-Anchor" href="#numpy"></a> Numpy</h3>
+<p>一个开放源代码数学库，在 Python 中提供高效的数组操作。Pandas 建立在 Numpy 之上。</p>
+<h2 id="o"><a class="markdownIt-Anchor" href="#o"></a> O</h2>
+<h3 id="目标objective"><a class="markdownIt-Anchor" href="#目标objective"></a> 目标（objective）</h3>
+<p>算法尝试优化的指标。</p>
+<h3 id="离线推断offline-inference"><a class="markdownIt-Anchor" href="#离线推断offline-inference"></a> 离线推断（offline inference）</h3>
+<p>生成一组预测，存储这些预测，然后根据需求检索这些预测。与在线推断相对。</p>
+<h3 id="独热编码one-hot-encoding"><a class="markdownIt-Anchor" href="#独热编码one-hot-encoding"></a> 独热编码（one-hot encoding）</h3>
+<p>一种稀疏向量，其中：</p>
+<ul>
+<li>一个元素设为 1。</li>
+<li>所有其他元素均设为 0。</li>
+</ul>
+<p>独热编码常用于表示拥有有限个可能值的字符串或标识符。例如，假设某个指定的植物学数据集记录了 15000 个不同的物种，其中每个物种都用独一无二的字符串标识符来表示。在特征工程过程中，您可能需要将这些字符串标识符编码为独热向量，向量的大小为 15000。</p>
+<h3 id="单样本学习one-shot-learning通常用于对象分类"><a class="markdownIt-Anchor" href="#单样本学习one-shot-learning通常用于对象分类"></a> 单样本学习（one-shot learning，通常用于对象分类）</h3>
+<p>一种机器学习方法，通常用于对象分类，旨在通过单个训练样本学习有效的分类器。</p>
+<p>另请参阅少量样本学习。</p>
+<h3 id="一对多one-vs-all"><a class="markdownIt-Anchor" href="#一对多one-vs-all"></a> 一对多（one-vs.-all）</h3>
+<p>假设某个分类问题有 N 种可能的解决方案，一对多解决方案将包含 N 个单独的二元分类器 - 一个二元分类器对应一种可能的结果。例如，假设某个模型用于区分样本属于动物、蔬菜还是矿物，一对多解决方案将提供下列三个单独的二元分类器：</p>
+<ul>
+<li>动物和非动物</li>
+<li>蔬菜和非蔬菜</li>
+<li>矿物和非矿物</li>
+</ul>
+<h3 id="在线推断online-inference"><a class="markdownIt-Anchor" href="#在线推断online-inference"></a> 在线推断（online inference）</h3>
+<p>根据需求生成预测。与离线推断相对。</p>
+<h3 id="操作op-operation"><a class="markdownIt-Anchor" href="#操作op-operation"></a> 操作（op, Operation）</h3>
+<p>TensorFlow 图中的节点。在 TensorFlow 中，任何创建、操纵或销毁张量的过程都属于操作。例如，矩阵相乘就是一种操作，该操作以两个张量作为输入，并生成一个张量作为输出。</p>
+<h3 id="优化器optimizer"><a class="markdownIt-Anchor" href="#优化器optimizer"></a> 优化器（optimizer）</h3>
+<p>梯度下降法的一种具体实现。TensorFlow 的优化器基类是 tf.train.Optimizer。不同的优化器可能会利用以下一个或多个概念来增强梯度下降法在指定训练集中的效果：</p>
+<ul>
+<li>动量 (Momentum)</li>
+<li>更新频率（AdaGrad = ADAptive GRADient descent；Adam = ADAptive with Momentum；RMSProp）</li>
+<li>稀疏性/正则化 (Ftrl)</li>
+<li>更复杂的数学方法（Proximal，等等）</li>
+</ul>
+<p>甚至还包括 NN 驱动的优化器。</p>
+<h3 id="离群值outlier"><a class="markdownIt-Anchor" href="#离群值outlier"></a> 离群值（outlier）</h3>
+<p>与大多数其他值差别很大的值。在机器学习中，下列所有值都是离群值。</p>
+<ul>
+<li>绝对值很高的权重。</li>
+<li>与实际值相差很大的预测值。</li>
+<li>值比平均值高大约 3 个标准偏差的输入数据。</li>
+</ul>
+<p>离群值常常会导致模型训练出现问题。</p>
+<h3 id="输出层output-layer"><a class="markdownIt-Anchor" href="#输出层output-layer"></a> 输出层（output layer）</h3>
+<p>神经网络的“最后”一层，也是包含答案的层。</p>
+<h3 id="过拟合overfitting"><a class="markdownIt-Anchor" href="#过拟合overfitting"></a> 过拟合（overfitting）</h3>
+<p>创建的模型与训练数据过于匹配，以致于模型无法根据新数据做出正确的预测。</p>
+<h2 id="p"><a class="markdownIt-Anchor" href="#p"></a> P</h2>
+<h3 id="pandas"><a class="markdownIt-Anchor" href="#pandas"></a> Pandas</h3>
+<p>面向列的数据分析 API。很多机器学习框架（包括 TensorFlow）都支持将 Pandas 数据结构作为输入。请参阅 Pandas 文档。</p>
+<h3 id="参数parameter"><a class="markdownIt-Anchor" href="#参数parameter"></a> 参数（parameter）</h3>
+<p>机器学习系统自行训练的模型的变量。例如，权重就是一种参数，它们的值是机器学习系统通过连续的训练迭代逐渐学习到的。与超参数相对。</p>
+<h3 id="参数服务器ps-parameter-server"><a class="markdownIt-Anchor" href="#参数服务器ps-parameter-server"></a> 参数服务器（PS, Parameter Server）</h3>
+<p>一种作业，负责在分布式设置中跟踪模型参数。</p>
+<h3 id="参数更新parameter-update"><a class="markdownIt-Anchor" href="#参数更新parameter-update"></a> 参数更新（parameter update）</h3>
+<p>在训练期间（通常是在梯度下降法的单次迭代中）调整模型参数的操作。</p>
+<h3 id="偏导数partial-derivative"><a class="markdownIt-Anchor" href="#偏导数partial-derivative"></a> 偏导数（partial derivative）</h3>
+<p>一种导数，除一个变量之外的所有变量都被视为常量。例如，f(x, y) 对 x 的偏导数就是 f(x) 的导数（即，使 y 保持恒定）。f 对 x 的偏导数仅关注 x 如何变化，而忽略公式中的所有其他变量。</p>
+<h3 id="划分策略partitioning-strategy"><a class="markdownIt-Anchor" href="#划分策略partitioning-strategy"></a> 划分策略（partitioning strategy）</h3>
+<p>在参数服务器间分割变量的算法。</p>
+<h3 id="性能performance"><a class="markdownIt-Anchor" href="#性能performance"></a> 性能（performance）</h3>
+<p>多含义术语，具有以下含义：</p>
+<ul>
+<li>在软件工程中的传统含义。即：相应软件的运行速度有多快（或有多高效）？</li>
+<li>在机器学习中的含义。在机器学习领域，性能旨在回答以下问题：相应模型的准确度有多高？即模型在预测方面的表现有多好？</li>
+</ul>
+<h3 id="困惑度perplexity"><a class="markdownIt-Anchor" href="#困惑度perplexity"></a> 困惑度（perplexity）</h3>
+<p>一种衡量指标，用于衡量模型能够多好地完成任务。例如，假设任务是读取用户使用智能手机键盘输入字词时输入的前几个字母，然后列出一组可能的完整字词。此任务的困惑度 § 是：为了使列出的字词中包含用户尝试输入的实际字词，您需要提供的猜测项的个数。</p>
+<p>困惑度与交叉熵的关系如下：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>=</mo><msup><mn>2</mn><mrow><mo>−</mo><mi>c</mi><mi>r</mi><mi>o</mi><mi>s</mi><mi>s</mi><mtext>  </mtext><mi>e</mi><mi>n</mi><mi>t</mi><mi>r</mi><mi>o</mi><mi>p</mi><mi>y</mi></mrow></msup></mrow><annotation encoding="application/x-tex">P = 2^{-cross\;entropy}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.843556em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.843556em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathdefault mtight">c</span><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span><span class="mord mathdefault mtight">o</span><span class="mord mathdefault mtight">s</span><span class="mord mathdefault mtight">s</span><span class="mspace mtight" style="margin-right:0.3252777777777778em;"></span><span class="mord mathdefault mtight">e</span><span class="mord mathdefault mtight">n</span><span class="mord mathdefault mtight">t</span><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span><span class="mord mathdefault mtight">o</span><span class="mord mathdefault mtight">p</span><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<h3 id="流水线pipeline"><a class="markdownIt-Anchor" href="#流水线pipeline"></a> 流水线（pipeline）</h3>
+<p>机器学习算法的基础架构。流水线包括收集数据、将数据放入训练数据文件、训练一个或多个模型，以及将模型导出到生产环境。</p>
+<h3 id="池化pooling"><a class="markdownIt-Anchor" href="#池化pooling"></a> 池化（pooling）</h3>
+<p>将一个或多个由前趋的卷积层创建的矩阵压缩为较小的矩阵。池化通常是取整个池化区域的最大值或平均值。以下面的 3x3 矩阵为例：</p>
+<p><img src="PoolingStart.svg" alt="PoolingStart"></p>
+<p>池化运算与卷积运算类似：将矩阵分割为多个切片，然后按步长逐个运行卷积运算。例如，假设池化运算按 1x1 步长将卷积矩阵分割为 2x2 个切片。如下图所示，进行了四个池化运算。假设每个池化运算都选择该切片中四个值的最大值：</p>
+<p><img src="PoolingConvolution.svg" alt="PoolingConvolution"></p>
+<p>池化有助于在输入矩阵中实现平移不变性。</p>
+<p>对于视觉应用来说，池化的更正式名称为空间池化。时间序列应用通常将池化称为时序池化。按照不太正式的说法，池化通常称为下采样或降采样。</p>
+<h3 id="正类别positive-class"><a class="markdownIt-Anchor" href="#正类别positive-class"></a> 正类别（positive class）</h3>
+<p>在二元分类中，两种可能的类别分别被标记为正类别和负类别。正类别结果是我们要测试的对象。（不可否认的是，我们会同时测试这两种结果，但只关注正类别结果。）例如，在医学检查中，正类别可以是“肿瘤”。在电子邮件分类器中，正类别可以是“垃圾邮件”。</p>
+<p>与负类别相对。</p>
+<h3 id="精确率precision"><a class="markdownIt-Anchor" href="#精确率precision"></a> 精确率（precision）</h3>
+<p>一种分类模型指标。精确率指模型正确预测正类别的频率，即：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">精</mi><mi mathvariant="normal">确</mi><mi mathvariant="normal">率</mi></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">正</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi></mrow><mrow><mi mathvariant="normal">正</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi><mo>+</mo><mi mathvariant="normal">假</mi><mi mathvariant="normal">正</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathbf{精确率} = \frac{正例数}{正例数 + 假正例数}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord"><span class="mord cjk_fallback">精</span><span class="mord cjk_fallback">确</span><span class="mord cjk_fallback">率</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.4463300000000001em;vertical-align:-0.7693300000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.677em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord cjk_fallback">假</span><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693300000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<h3 id="预测prediction"><a class="markdownIt-Anchor" href="#预测prediction"></a> 预测（prediction）</h3>
+<p>模型在收到输入样本后的输出。</p>
+<h3 id="预测偏差prediction-bias"><a class="markdownIt-Anchor" href="#预测偏差prediction-bias"></a> 预测偏差（prediction bias）</h3>
+<p>一种值，用于表明预测平均值与数据集中标签的平均值相差有多大。</p>
+<h3 id="预创建的-estimatorpre-made-estimator"><a class="markdownIt-Anchor" href="#预创建的-estimatorpre-made-estimator"></a> 预创建的 Estimator（pre-made Estimator）</h3>
+<p>其他人已建好的 Estimator。TensorFlow 提供了一些预创建的 Estimator，包括 DNNClassifier、DNNRegressor 和 LinearClassifier。您可以按照这些说明构建自己预创建的 Estimator。</p>
+<h3 id="预训练模型pre-trained-model"><a class="markdownIt-Anchor" href="#预训练模型pre-trained-model"></a> 预训练模型（pre-trained model）</h3>
+<p>已经过训练的模型或模型组件（例如嵌套）。有时，您需要将预训练的嵌套馈送到神经网络。在其他时候，您的模型将自行训练嵌套，而不依赖于预训练的嵌套。</p>
+<h3 id="先验信念prior-belief"><a class="markdownIt-Anchor" href="#先验信念prior-belief"></a> 先验信念（prior belief）</h3>
+<p>在开始采用相应数据进行训练之前，您对这些数据抱有的信念。例如，L2 正则化依赖的先验信念是权重应该很小且应以 0 为中心呈正态分布。</p>
+<h2 id="q"><a class="markdownIt-Anchor" href="#q"></a> Q</h2>
+<h3 id="队列queue"><a class="markdownIt-Anchor" href="#队列queue"></a> 队列（queue）</h3>
+<p>一种 TensorFlow 操作，用于实现队列数据结构。通常用于 I/O 中。</p>
+<h2 id="r"><a class="markdownIt-Anchor" href="#r"></a> R</h2>
+<h3 id="等级rank"><a class="markdownIt-Anchor" href="#等级rank"></a> 等级（rank）</h3>
+<p>机器学习中的一个多含义术语，可以理解为下列含义之一：</p>
+<ul>
+<li>张量中的维数。例如，标量等级为 0，向量等级为 1，矩阵等级为 2。</li>
+<li>在将类别从最高到最低进行排序的机器学习问题中，类别的顺序位置。例如，行为排序系统可以将狗狗的奖励从最高（牛排）到最低（枯萎的羽衣甘蓝）进行排序。</li>
+</ul>
+<h3 id="评分者rater"><a class="markdownIt-Anchor" href="#评分者rater"></a> 评分者（rater）</h3>
+<p>为样本提供标签的人。有时称为“注释者”。</p>
+<h3 id="召回率recall"><a class="markdownIt-Anchor" href="#召回率recall"></a> 召回率（recall）</h3>
+<p>一种分类模型指标，用于回答以下问题：在所有可能的正类别标签中，模型正确地识别出了多少个？即：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">召</mi><mi mathvariant="normal">回</mi><mi mathvariant="normal">率</mi></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">正</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi></mrow><mrow><mi mathvariant="normal">正</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi><mo>+</mo><mi mathvariant="normal">假</mi><mi mathvariant="normal">负</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathbf{召回率} = \frac{正例数}{正例数 + 假负例数}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord"><span class="mord cjk_fallback">召</span><span class="mord cjk_fallback">回</span><span class="mord cjk_fallback">率</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.4463300000000001em;vertical-align:-0.7693300000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.677em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord cjk_fallback">假</span><span class="mord cjk_fallback">负</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693300000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<h3 id="修正线性单元relu-rectified-linear-unit"><a class="markdownIt-Anchor" href="#修正线性单元relu-rectified-linear-unit"></a> 修正线性单元（ReLU, Rectified Linear Unit）</h3>
+<p>一种激活函数，其规则如下：</p>
+<ul>
+<li>如果输入为负数或 0，则输出 0。</li>
+<li>如果输入为正数，则输出等于输入。</li>
+</ul>
+<h3 id="回归模型regression-model"><a class="markdownIt-Anchor" href="#回归模型regression-model"></a> 回归模型（regression model）</h3>
+<p>一种模型，能够输出连续的值（通常为浮点值）。请与分类模型进行比较，分类模型会输出离散值，例如“黄花菜”或“虎皮百合”。</p>
+<h3 id="正则化regularization"><a class="markdownIt-Anchor" href="#正则化regularization"></a> 正则化（regularization）</h3>
+<p>对模型复杂度的惩罚。正则化有助于防止出现过拟合，包含以下类型：</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化</li>
+<li>丢弃正则化</li>
+<li>早停法（这不是正式的正则化方法，但可以有效限制过拟合）</li>
+</ul>
+<h3 id="正则化率regularization-rate"><a class="markdownIt-Anchor" href="#正则化率regularization-rate"></a> 正则化率（regularization rate）</h3>
+<p>一种标量值，以 lambda 表示，用于指定正则化函数的相对重要性。从下面简化的损失公式中可以看出正则化率的影响：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">最</mi><mi mathvariant="normal">小</mi><mi mathvariant="normal">化</mi><mo stretchy="false">(</mo><mi mathvariant="normal">损</mi><mi mathvariant="normal">失</mi><mi mathvariant="normal">函</mi><mi mathvariant="normal">数</mi><mo>+</mo><mi>λ</mi><mo stretchy="false">(</mo><mi mathvariant="normal">正</mi><mi mathvariant="normal">则</mi><mi mathvariant="normal">化</mi><mi mathvariant="normal">公</mi><mi mathvariant="normal">式</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">最小化(损失函数 + \lambda(正则化公式))
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">化</span><span class="mopen">(</span><span class="mord cjk_fallback">损</span><span class="mord cjk_fallback">失</span><span class="mord cjk_fallback">函</span><span class="mord cjk_fallback">数</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">λ</span><span class="mopen">(</span><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">则</span><span class="mord cjk_fallback">化</span><span class="mord cjk_fallback">公</span><span class="mord cjk_fallback">式</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span></span></p>
+<p>提高正则化率可以减少过拟合，但可能会使模型的准确率降低。</p>
+<h3 id="表示法representation"><a class="markdownIt-Anchor" href="#表示法representation"></a> 表示法（representation）</h3>
+<p>将数据映射到实用特征的过程。</p>
+<h3 id="受试者工作特征曲线receiver-operating-characteristic简称-roc-曲线"><a class="markdownIt-Anchor" href="#受试者工作特征曲线receiver-operating-characteristic简称-roc-曲线"></a> 受试者工作特征曲线（receiver operating characteristic，简称 ROC 曲线）</h3>
+<p>不同分类阈值下的正例率和假正例率构成的曲线。另请参阅曲线下面积。</p>
+<h3 id="根目录root-directory"><a class="markdownIt-Anchor" href="#根目录root-directory"></a> 根目录（root directory）</h3>
+<p>您指定的目录，用于托管多个模型的 TensorFlow 检查点和事件文件的子目录。</p>
+<h3 id="均方根误差rmse-root-mean-squared-error"><a class="markdownIt-Anchor" href="#均方根误差rmse-root-mean-squared-error"></a> 均方根误差（RMSE, Root Mean Squared Error）</h3>
+<p>均方误差的平方根。</p>
+<h3 id="旋转不变性rotational-invariance"><a class="markdownIt-Anchor" href="#旋转不变性rotational-invariance"></a> 旋转不变性（rotational invariance）</h3>
+<p>在图像分类问题中，即使图像的方向发生变化，算法也能成功地对图像进行分类。例如，无论网球拍朝上、侧向还是朝下放置，该算法仍然可以识别它。请注意，并非总是希望旋转不变；例如，倒置的“9”不应分类为“9”。</p>
+<p>另请参阅平移不变性和大小不变性。</p>
+<h2 id="s"><a class="markdownIt-Anchor" href="#s"></a> S</h2>
+<h3 id="savedmodel"><a class="markdownIt-Anchor" href="#savedmodel"></a> SavedModel</h3>
+<p>保存和恢复 TensorFlow 模型时建议使用的格式。SavedModel 是一种独立于语言且可恢复的序列化格式，使较高级别的系统和工具可以创建、使用和转换 TensorFlow 模型。</p>
+<p>如需完整的详细信息，请参阅《TensorFlow 编程人员指南》中的保存和恢复。</p>
+<h3 id="saver"><a class="markdownIt-Anchor" href="#saver"></a> Saver</h3>
+<p>一种 TensorFlow 对象，负责保存模型检查点。</p>
+<h3 id="缩放scaling"><a class="markdownIt-Anchor" href="#缩放scaling"></a> 缩放（scaling）</h3>
+<p>特征工程中的一种常用做法，是指对某个特征的值区间进行调整，使之与数据集中其他特征的值区间一致。例如，假设您希望数据集中所有浮点特征的值都位于 0 到 1 区间内，如果某个特征的值位于 0 到 500 区间内，您就可以通过将每个值除以 500 来缩放该特征。</p>
+<p>另请参阅标准化。</p>
+<h3 id="scikit-learn"><a class="markdownIt-Anchor" href="#scikit-learn"></a> scikit-learn</h3>
+<p>一个热门的开放源代码机器学习平台。请访问 <a href="http://www.scikit-learn.org" target="_blank" rel="noopener">www.scikit-learn.org</a>。</p>
+<h3 id="半监督式学习semi-supervised-learning"><a class="markdownIt-Anchor" href="#半监督式学习semi-supervised-learning"></a> 半监督式学习（semi-supervised learning）</h3>
+<p>训练模型时采用的数据中，某些训练样本有标签，而其他样本则没有标签。半监督式学习采用的一种技术是推断无标签样本的标签，然后使用推断出的标签进行训练，以创建新模型。如果获得有标签样本需要高昂的成本，而无标签样本则有很多，那么半监督式学习将非常有用。</p>
+<h3 id="序列模型sequence-model"><a class="markdownIt-Anchor" href="#序列模型sequence-model"></a> 序列模型（sequence model）</h3>
+<p>一种模型，其输入具有序列依赖性。例如，根据之前观看过的一系列视频对观看的下一个视频进行预测。</p>
+<h3 id="会话tfsession"><a class="markdownIt-Anchor" href="#会话tfsession"></a> 会话（tf.session）</h3>
+<p>封装了 TensorFlow 运行时状态的对象，用于运行全部或部分图。在使用底层 TensorFlow API 时，您可以直接创建并管理一个或多个 tf.session 对象。在使用 Estimator API 时，Estimator 会为您创建会话对象。</p>
+<h3 id="s-型函数sigmoid-function"><a class="markdownIt-Anchor" href="#s-型函数sigmoid-function"></a> S 型函数（sigmoid function）</h3>
+<p>一种函数，可将逻辑回归输出或多项回归输出（对数几率）映射到概率，以返回介于 0 到 1 之间的值。S 型函数的公式如下：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="bold">y</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi mathvariant="normal">样</mi><mi mathvariant="normal">本</mi><mi mathvariant="normal">总</mi><mi mathvariant="normal">数</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathbf{y} = \frac{1}{样本总数}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.63888em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">y</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">样</span><span class="mord cjk_fallback">本</span><span class="mord cjk_fallback">总</span><span class="mord cjk_fallback">数</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>在逻辑回归问题中， 非常简单：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>σ</mi><mo>=</mo><mi>b</mi><mo>+</mo><msub><mi>w</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>w</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><msub><mi>w</mi><mi>n</mi></msub><msub><mi>x</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\sigma = b + w_1 x_1 + w_2 x_2 + ...w_n x_n
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<p>换句话说，S 型函数可将 转换为介于 0 到 1 之间的概率。</p>
+<p>在某些神经网络中，S 型函数可作为激活函数使用。</p>
+<h3 id="大小不变性size-invariance"><a class="markdownIt-Anchor" href="#大小不变性size-invariance"></a> 大小不变性（size invariance）</h3>
+<p>在图像分类问题中，即使图像的大小发生变化，算法也能成功地对图像进行分类。例如，无论一只猫以 200 万像素还是 20 万像素呈现，该算法仍然可以识别它。请注意，即使是最好的图像分类算法，在大小不变性方面仍然会存在切实的限制。例如，对于仅以 20 像素呈现的猫图像，算法（或人）不可能正确对其进行分类。</p>
+<p>另请参阅平移不变性和旋转不变性。</p>
+<h3 id="softmax"><a class="markdownIt-Anchor" href="#softmax"></a> softmax</h3>
+<p>一种函数，可提供多类别分类模型中每个可能类别的概率。这些概率的总和正好为 1.0。例如，softmax 可能会得出某个图像是狗、猫和马的概率分别是 0.9、0.08 和 0.02。（也称为完整 softmax。）</p>
+<p>与候选采样相对。</p>
+<h3 id="稀疏特征sparse-feature"><a class="markdownIt-Anchor" href="#稀疏特征sparse-feature"></a> 稀疏特征（sparse feature）</h3>
+<p>一种特征向量，其中的大多数值都为 0 或为空。例如，某个向量包含一个为 1 的值和一百万个为 0 的值，则该向量就属于稀疏向量。再举一个例子，搜索查询中的单词也可能属于稀疏特征 - 在某种指定语言中有很多可能的单词，但在某个指定的查询中仅包含其中几个。</p>
+<p>与密集特征相对。</p>
+<h3 id="稀疏表示法sparse-representation"><a class="markdownIt-Anchor" href="#稀疏表示法sparse-representation"></a> 稀疏表示法（sparse representation）</h3>
+<p>一种张量表示法，仅存储非零元素。</p>
+<p>例如，英语中包含约一百万个单词。表示一个英语句子中所用单词的数量，考虑以下两种方式：</p>
+<ul>
+<li>要采用密集表示法来表示此句子，则必须为所有一百万个单元格设置一个整数，然后在大部分单元格中放入 0，在少数单元格中放入一个非常小的整数。</li>
+<li>要采用稀疏表示法来表示此句子，则仅存储象征句子中实际存在的单词的单元格。因此，如果句子只包含 20 个独一无二的单词，那么该句子的稀疏表示法将仅在 20 个单元格中存储一个整数。</li>
+</ul>
+<p>例如，假设以两种方式来表示句子“Dogs wag tails.”。如下表所示，密集表示法将使用约一百万个单元格；稀疏表示法则只使用 3 个单元格：</p>
+<blockquote>
+<p>密集表示法</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>单元格编号</th>
+<th>单词</th>
+<th>出现次数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>a</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>aardvark</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>aargh</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>aarti</td>
+<td>0</td>
+</tr>
+<tr>
+<td>… 出现次数为 0 的另外 140391 个单词</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>140395</td>
+<td>dogs</td>
+<td>1</td>
+</tr>
+<tr>
+<td>… 出现次数为 0 的 633062 个单词</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>773458</td>
+<td>tails</td>
+<td>1</td>
+</tr>
+<tr>
+<td>… 出现次数为 0 的 189136 个单词</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>962594</td>
+<td>wag</td>
+<td>1</td>
+</tr>
+<tr>
+<td>… 出现次数为 0 的很多其他单词</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>稀疏表示法</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>单元格编号</th>
+<th>单词</th>
+<th>出现次数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>140395</td>
+<td>dogs</td>
+<td>1</td>
+</tr>
+<tr>
+<td>773458</td>
+<td>tails</td>
+<td>1</td>
+</tr>
+<tr>
+<td>962594</td>
+<td>wag</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="稀疏性sparsity"><a class="markdownIt-Anchor" href="#稀疏性sparsity"></a> 稀疏性（sparsity）</h3>
+<p>向量或矩阵中设置为 0（或空）的元素数除以该向量或矩阵中的条目总数。以一个 10x10 矩阵（其中 98 个单元格都包含 0）为例。稀疏性的计算方法如下：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">稀</mi><mi mathvariant="normal">疏</mi><mi mathvariant="normal">性</mi></mrow><mo>=</mo><mfrac><mn>98</mn><mn>100</mn></mfrac><mo>=</mo><mn>0.98</mn></mrow><annotation encoding="application/x-tex">\mathbf{稀疏性} = \frac{98}{100} = 0.98
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord"><span class="mord cjk_fallback">稀</span><span class="mord cjk_fallback">疏</span><span class="mord cjk_fallback">性</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">9</span><span class="mord">8</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">9</span><span class="mord">8</span></span></span></span></span></p>
+<p>特征稀疏性是指特征向量的稀疏性；模型稀疏性是指模型权重的稀疏性。</p>
+<h3 id="空间池化spatial-pooling"><a class="markdownIt-Anchor" href="#空间池化spatial-pooling"></a> 空间池化（spatial pooling）</h3>
+<p>请参阅池化。</p>
+<h3 id="平方合页损失函数squared-hinge-loss"><a class="markdownIt-Anchor" href="#平方合页损失函数squared-hinge-loss"></a> 平方合页损失函数（squared hinge loss）</h3>
+<p>合页损失函数的平方。与常规合页损失函数相比，平方合页损失函数对离群值的惩罚更严厉。</p>
+<h3 id="平方损失函数squared-loss"><a class="markdownIt-Anchor" href="#平方损失函数squared-loss"></a> 平方损失函数（squared loss）</h3>
+<p>在线性回归中使用的损失函数（也称为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 损失函数）。该函数可计算模型为有标签样本预测的值和标签的实际值之差的平方。由于取平方值，因此该损失函数会放大不佳预测的影响。也就是说，与 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 损失函数相比，平方损失函数对离群值的反应更强烈。</p>
+<h3 id="静态模型static-model"><a class="markdownIt-Anchor" href="#静态模型static-model"></a> 静态模型（static model）</h3>
+<p>离线训练的一种模型。</p>
+<h3 id="平稳性stationarity"><a class="markdownIt-Anchor" href="#平稳性stationarity"></a> 平稳性（stationarity）</h3>
+<p>数据集中数据的一种属性，表示数据分布在一个或多个维度保持不变。这种维度最常见的是时间，即表明平稳性的数据不随时间而变化。例如，从 9 月到 12 月，表明平稳性的数据没有发生变化。</p>
+<h3 id="步step"><a class="markdownIt-Anchor" href="#步step"></a> 步（step）</h3>
+<p>对一个批次的向前和向后评估。</p>
+<h3 id="步长step-size"><a class="markdownIt-Anchor" href="#步长step-size"></a> 步长（step size）</h3>
+<p>与学习速率的含义相同。</p>
+<h3 id="随机梯度下降法sgd-stochastic-gradient-descent"><a class="markdownIt-Anchor" href="#随机梯度下降法sgd-stochastic-gradient-descent"></a> 随机梯度下降法（SGD, stochastic gradient descent）</h3>
+<p>批次大小为 1 的一种梯度下降法。换句话说，SGD 依赖于从数据集中随机均匀选择的单个样本来计算每步的梯度估算值。</p>
+<h3 id="结构风险最小化srm-structural-risk-minimization"><a class="markdownIt-Anchor" href="#结构风险最小化srm-structural-risk-minimization"></a> 结构风险最小化（SRM, structural risk minimization）</h3>
+<p>一种算法，用于平衡以下两个目标：</p>
+<ul>
+<li>期望构建最具预测性的模型（例如损失最低）。</li>
+<li>期望使模型尽可能简单（例如强大的正则化）。</li>
+</ul>
+<p>例如，旨在将基于训练集的损失和正则化降至最低的函数就是一种结构风险最小化算法。</p>
+<p>如需更多信息，请参阅 <a href="http://www.svms.org/srm/" target="_blank" rel="noopener">http://www.svms.org/srm/</a></p>
+<p>与经验风险最小化相对。</p>
+<h3 id="步长stride"><a class="markdownIt-Anchor" href="#步长stride"></a> 步长（stride）</h3>
+<p>在卷积运算或池化中，下一个系列的输入切片的每个维度中的增量。例如，下面的动画演示了卷积运算过程中的一个 (1,1) 步长。因此，下一个输入切片是从上一个输入切片向右移动一个步长的位置开始。当运算到达右侧边缘时，下一个切片将回到最左边，但是下移一个位置。</p>
+<p><img src="AnimatedConvolution.gif" alt="AnimatedConvolution"></p>
+<p>前面的示例演示了一个二维步长。如果输入矩阵为三维，那么步长也将是三维。</p>
+<h3 id="下采样subsampling"><a class="markdownIt-Anchor" href="#下采样subsampling"></a> 下采样（subsampling）</h3>
+<p>请参阅池化。</p>
+<h3 id="总结summary"><a class="markdownIt-Anchor" href="#总结summary"></a> 总结（summary）</h3>
+<p>在 TensorFlow 中的某一步计算出的一个值或一组值，通常用于在训练期间跟踪模型指标。</p>
+<h3 id="监督式机器学习supervised-machine-learning"><a class="markdownIt-Anchor" href="#监督式机器学习supervised-machine-learning"></a> 监督式机器学习（supervised machine learning）</h3>
+<p>根据输入数据及其对应的标签来训练模型。监督式机器学习类似于学生通过研究一系列问题及其对应的答案来学习某个主题。在掌握了问题和答案之间的对应关系后，学生便可以回答关于同一主题的新问题（以前从未见过的问题）。请与非监督式机器学习进行比较。</p>
+<h3 id="合成特征synthetic-feature"><a class="markdownIt-Anchor" href="#合成特征synthetic-feature"></a> 合成特征（synthetic feature）</h3>
+<p>一种特征，不在输入特征之列，而是从一个或多个输入特征衍生而来。合成特征包括以下类型：</p>
+<ul>
+<li>对连续特征进行分桶，以分为多个区间分箱。</li>
+<li>将一个特征值与其他特征值或其本身相乘（或相除）。</li>
+<li>创建一个特征组合。</li>
+</ul>
+<p>仅通过标准化或缩放创建的特征不属于合成特征。</p>
+<h2 id="t"><a class="markdownIt-Anchor" href="#t"></a> T</h2>
+<h3 id="目标target"><a class="markdownIt-Anchor" href="#目标target"></a> 目标（target）</h3>
+<p>与标签的含义相同。</p>
+<h3 id="时态数据temporal-data"><a class="markdownIt-Anchor" href="#时态数据temporal-data"></a> 时态数据（temporal data）</h3>
+<p>在不同时间点记录的数据。例如，记录的一年中每一天的冬外套销量就属于时态数据。</p>
+<h3 id="张量tensor"><a class="markdownIt-Anchor" href="#张量tensor"></a> 张量（Tensor）</h3>
+<p>TensorFlow 程序中的主要数据结构。张量是 N 维（其中 N 可能非常大）数据结构，最常见的是标量、向量或矩阵。张量的元素可以包含整数值、浮点值或字符串值。</p>
+<h3 id="张量处理单元tpu-tensor-processing-unit"><a class="markdownIt-Anchor" href="#张量处理单元tpu-tensor-processing-unit"></a> 张量处理单元（TPU, Tensor Processing Unit）</h3>
+<p>一种 ASIC（应用专用集成电路），用于优化 TensorFlow 程序的性能。</p>
+<h3 id="张量等级tensor-rank"><a class="markdownIt-Anchor" href="#张量等级tensor-rank"></a> 张量等级（Tensor rank）</h3>
+<p>请参阅等级。</p>
+<h3 id="张量形状tensor-shape"><a class="markdownIt-Anchor" href="#张量形状tensor-shape"></a> 张量形状（Tensor shape）</h3>
+<p>张量在各种维度中包含的元素数。例如，张量 [5, 10] 在一个维度中的形状为 5，在另一个维度中的形状为 10。</p>
+<h3 id="张量大小tensor-size"><a class="markdownIt-Anchor" href="#张量大小tensor-size"></a> 张量大小（Tensor size）</h3>
+<p>张量包含的标量总数。例如，张量 [5, 10] 的大小为 50。</p>
+<h3 id="tensorboard"><a class="markdownIt-Anchor" href="#tensorboard"></a> TensorBoard</h3>
+<p>一个信息中心，用于显示在执行一个或多个 TensorFlow 程序期间保存的摘要信息。</p>
+<h3 id="tensorflow"><a class="markdownIt-Anchor" href="#tensorflow"></a> TensorFlow</h3>
+<p>一个大型的分布式机器学习平台。该术语还指 TensorFlow 堆栈中的基本 API 层，该层支持对数据流图进行一般计算。</p>
+<p>虽然 TensorFlow 主要应用于机器学习领域，但也可用于需要使用数据流图进行数值计算的非机器学习任务。</p>
+<h3 id="tensorflow-playground"><a class="markdownIt-Anchor" href="#tensorflow-playground"></a> TensorFlow Playground</h3>
+<p>一款用于直观呈现不同的超参数对模型（主要是神经网络）训练的影响的程序。要试用 TensorFlow Playground，请前往<a href="http://playground.tensorflow.org" target="_blank" rel="noopener">http://playground.tensorflow.org</a></p>
+<h3 id="tensorflow-serving"><a class="markdownIt-Anchor" href="#tensorflow-serving"></a> TensorFlow Serving</h3>
+<p>一个平台，用于将训练过的模型部署到生产环境。</p>
+<h3 id="测试集test-set"><a class="markdownIt-Anchor" href="#测试集test-set"></a> 测试集（test set）</h3>
+<p>数据集的子集，用于在模型经由验证集的初步验证之后测试模型。</p>
+<p>与训练集和验证集相对。</p>
+<h3 id="tfexample"><a class="markdownIt-Anchor" href="#tfexample"></a> tf.Example</h3>
+<p>一种标准协议缓冲区，旨在描述用于机器学习模型训练或推断的输入数据。</p>
+<h3 id="时间序列分析time-series-analysis"><a class="markdownIt-Anchor" href="#时间序列分析time-series-analysis"></a> 时间序列分析（time series analysis）</h3>
+<p>机器学习和统计学的一个子领域，旨在分析时态数据。很多类型的机器学习问题都需要时间序列分析，其中包括分类、聚类、预测和异常检测。例如，您可以利用时间序列分析根据历史销量数据预测未来每月的冬外套销量。</p>
+<h3 id="训练training"><a class="markdownIt-Anchor" href="#训练training"></a> 训练（training）</h3>
+<p>确定构成模型的理想参数的过程。</p>
+<h3 id="训练集training-set"><a class="markdownIt-Anchor" href="#训练集training-set"></a> 训练集（training set）</h3>
+<p>数据集的子集，用于训练模型。</p>
+<p>与验证集和测试集相对。</p>
+<h3 id="迁移学习transfer-learning"><a class="markdownIt-Anchor" href="#迁移学习transfer-learning"></a> 迁移学习（transfer learning）</h3>
+<p>将信息从一个机器学习任务迁移到另一个机器学习任务。例如，在多任务学习中，一个模型可以完成多项任务，例如针对不同任务具有不同输出节点的深度模型。迁移学习可能涉及将知识从较简单任务的解决方案迁移到较复杂的任务，或者将知识从数据较多的任务迁移到数据较少的任务。</p>
+<p>大多数机器学习系统都只能完成一项任务。迁移学习是迈向人工智能的一小步；在人工智能中，单个程序可以完成多项任务。</p>
+<h3 id="平移不变性translational-invariance"><a class="markdownIt-Anchor" href="#平移不变性translational-invariance"></a> 平移不变性（translational invariance）</h3>
+<p>在图像分类问题中，即使图像中对象的位置发生变化，算法也能成功对图像进行分类。例如，无论一只狗位于画面正中央还是画面左侧，该算法仍然可以识别它。</p>
+<p>另请参阅大小不变性和旋转不变性。</p>
+<h3 id="负例tn-true-negative"><a class="markdownIt-Anchor" href="#负例tn-true-negative"></a> 负例（TN, true negative）</h3>
+<p>被模型正确地预测为负类别的样本。例如，模型推断出某封电子邮件不是垃圾邮件，而该电子邮件确实不是垃圾邮件。</p>
+<h3 id="正例tp-true-positive"><a class="markdownIt-Anchor" href="#正例tp-true-positive"></a> 正例（TP, true positive）</h3>
+<p>被模型正确地预测为正类别的样本。例如，模型推断出某封电子邮件是垃圾邮件，而该电子邮件确实是垃圾邮件。</p>
+<h3 id="正例率true-positive-rate-简称-tp-率"><a class="markdownIt-Anchor" href="#正例率true-positive-rate-简称-tp-率"></a> 正例率（true positive rate, 简称 TP 率）</h3>
+<p>与召回率的含义相同，即：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">正</mi><mi mathvariant="normal">确</mi><mi mathvariant="normal">率</mi></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">正</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi></mrow><mrow><mi mathvariant="normal">正</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi><mo>+</mo><mi mathvariant="normal">假</mi><mi mathvariant="normal">负</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathbf{正确率} = \frac{正例数}{正例数 + 假负例数}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord"><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">确</span><span class="mord cjk_fallback">率</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.4463300000000001em;vertical-align:-0.7693300000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.677em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord cjk_fallback">假</span><span class="mord cjk_fallback">负</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693300000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>正例率是 ROC 曲线的 y 轴。</p>
+<h2 id="u"><a class="markdownIt-Anchor" href="#u"></a> U</h2>
+<h3 id="无标签样本unlabeled-example"><a class="markdownIt-Anchor" href="#无标签样本unlabeled-example"></a> 无标签样本（unlabeled example）</h3>
+<p>包含特征但没有标签的样本。无标签样本是用于进行推断的输入内容。在半监督式和非监督式学习中，在训练期间会使用无标签样本。</p>
+<h3 id="非监督式机器学习unsupervised-machine-learning"><a class="markdownIt-Anchor" href="#非监督式机器学习unsupervised-machine-learning"></a> 非监督式机器学习（unsupervised machine learning）</h3>
+<p>训练模型，以找出数据集（通常是无标签数据集）中的规律。</p>
+<p>非监督式机器学习最常见的用途是将数据分为不同的聚类，使相似的样本位于同一组中。例如，非监督式机器学习算法可以根据音乐的各种属性将歌曲分为不同的聚类。所得聚类可以作为其他机器学习算法（例如音乐推荐服务）的输入。在很难获取真标签的领域，聚类可能会非常有用。例如，在反滥用和反欺诈等领域，聚类有助于人们更好地了解相关数据。</p>
+<p>非监督式机器学习的另一个例子是主成分分析 (PCA)。例如，通过对包含数百万购物车中物品的数据集进行主成分分析，可能会发现有柠檬的购物车中往往也有抗酸药。</p>
+<p>请与监督式机器学习进行比较。</p>
+<h2 id="v"><a class="markdownIt-Anchor" href="#v"></a> V</h2>
+<h3 id="验证集validation-set"><a class="markdownIt-Anchor" href="#验证集validation-set"></a> 验证集（validation set）</h3>
+<p>数据集的一个子集，从训练集分离而来，用于调整超参数。</p>
+<p>与训练集和测试集相对。</p>
+<h2 id="w"><a class="markdownIt-Anchor" href="#w"></a> W</h2>
+<h3 id="权重weight"><a class="markdownIt-Anchor" href="#权重weight"></a> 权重（weight）</h3>
+<p>线性模型中特征的系数，或深度网络中的边。训练线性模型的目标是确定每个特征的理想权重。如果权重为 0，则相应的特征对模型来说没有任何贡献。</p>
+<h3 id="宽度模型wide-model"><a class="markdownIt-Anchor" href="#宽度模型wide-model"></a> 宽度模型（wide model）</h3>
+<p>一种线性模型，通常有很多稀疏输入特征。我们之所以称之为“宽度模型”，是因为这是一种特殊类型的神经网络，其大量输入均直接与输出节点相连。与深度模型相比，宽度模型通常更易于调试和检查。虽然宽度模型无法通过隐藏层来表示非线性关系，但可以利用特征组合、分桶等转换以不同的方式为非线性关系建模。</p>
+<p>与深度模型相对。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2020/03/16/机器学习术语表/" data-id="ck7ujgvms000gsdpvgxq5bmzu" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2020/03/16/机器学习术语表/" data-id="ck7v6g5ih000grfpvnrc1f6dk" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/人工智能/">人工智能</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/术语表/">术语表</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/机器学习/">机器学习</a></li></ul>

@@ -100,11 +100,25 @@
 <p>分类模型的正确预测所占的比例。在多类别分类中，准确率的定义如下：</p>
 <p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">准</mi><mi mathvariant="normal">确</mi><mi mathvariant="normal">率</mi></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">正</mi><mi mathvariant="normal">确</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">预</mi><mi mathvariant="normal">测</mi><mi mathvariant="normal">数</mi></mrow><mrow><mi mathvariant="normal">样</mi><mi mathvariant="normal">本</mi><mi mathvariant="normal">总</mi><mi mathvariant="normal">数</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathbf{准确率} = \frac{正确的预测数}{样本总数}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord"><span class="mord cjk_fallback">准</span><span class="mord cjk_fallback">确</span><span class="mord cjk_fallback">率</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.363em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.677em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">样</span><span class="mord cjk_fallback">本</span><span class="mord cjk_fallback">总</span><span class="mord cjk_fallback">数</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">确</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">预</span><span class="mord cjk_fallback">测</span><span class="mord cjk_fallback">数</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
-
+<p>在二元分类中，准确率的定义如下：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">准</mi><mi mathvariant="normal">确</mi><mi mathvariant="normal">率</mi></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">正</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi><mo>+</mo><mi mathvariant="normal">负</mi><mi mathvariant="normal">例</mi><mi mathvariant="normal">数</mi></mrow><mrow><mi mathvariant="normal">样</mi><mi mathvariant="normal">本</mi><mi mathvariant="normal">总</mi><mi mathvariant="normal">数</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathbf{准确率} = \frac{正例数 + 负例数}{样本总数}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord"><span class="mord cjk_fallback">准</span><span class="mord cjk_fallback">确</span><span class="mord cjk_fallback">率</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.9463300000000001em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.2603300000000002em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">样</span><span class="mord cjk_fallback">本</span><span class="mord cjk_fallback">总</span><span class="mord cjk_fallback">数</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">正</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord cjk_fallback">负</span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">数</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<h3 id="激活函数activation-function"><a class="markdownIt-Anchor" href="#激活函数activation-function"></a> 激活函数（activation function）</h3>
+<p>一种函数（例如 ReLU 或 S 型函数），用于对上一层的所有输入求加权和，然后生成一个输出值（通常为非线性值），并将其传递给下一层。</p>
+<h3 id="adagrad"><a class="markdownIt-Anchor" href="#adagrad"></a> AdaGrad</h3>
+<p>一种先进的梯度下降法，用于重新调整每个参数的梯度，以便有效地为每个参数指定独立的学习速率。</p>
+<h3 id="roc-曲线下面积auc-area-under-the-roc-curve"><a class="markdownIt-Anchor" href="#roc-曲线下面积auc-area-under-the-roc-curve"></a> ROC 曲线下面积（AUC, Area under the ROC Curve）</h3>
+<p>一种会考虑所有可能分类阈值的评估指标。</p>
+<p>ROC 曲线下面积是，对于随机选择的正类别样本确实为正类别，以及随机选择的负类别样本为正类别，分类器更确信前者的概率。</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/03/16/机器学习术语表/#more">阅读更多</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2020/03/16/机器学习术语表/" data-id="ck7ujgvms000gsdpvgxq5bmzu" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2020/03/16/机器学习术语表/" data-id="ck7v6g5ih000grfpvnrc1f6dk" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/人工智能/">人工智能</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/术语表/">术语表</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/机器学习/">机器学习</a></li></ul>
@@ -140,6 +154,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+        
+                  
+
         <h2 id="深度学习-deep-learning-dl"><a class="markdownIt-Anchor" href="#深度学习-deep-learning-dl"></a> 深度学习 Deep learning | DL</h2>
 <p>对比机器学习：<br>
 机器学习的特征提前主要依赖于人工，针对特定简单任务的时候人工提取特征会非常有效，但并不能通用。<br>
@@ -157,7 +174,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/30/人工智能/" data-id="ck7ujgvmm0006sdpvx47qn4jv" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/30/人工智能/" data-id="ck7v6g5ib0008rfpvoljli8ge" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI/">AI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/人工智能/">人工智能</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/深度学习/">深度学习</a></li></ul>
@@ -202,7 +219,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/17/rabbitmq消息丢失情况分析及解决方法/" data-id="ck7ujgvmo0009sdpvdn4q8bi6" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/17/rabbitmq消息丢失情况分析及解决方法/" data-id="ck7v6g5ia0007rfpvfziq75eu" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rabbitmq/">rabbitmq</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/高可用/">高可用</a></li></ul>
@@ -247,7 +264,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/15/设计模式及实现/" data-id="ck7ujgvmw000msdpvzosnnim9" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/15/设计模式及实现/" data-id="ck7v6g5im000prfpvy2l9k8ka" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/设计模式/">设计模式</a></li></ul>
@@ -292,7 +309,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/10/系统架构设计学习资料二/" data-id="ck7ujgvmv000lsdpvnxs1drfx" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/10/系统架构设计学习资料二/" data-id="ck7v6g5ik000krfpvmwthp5bd" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统架构/">系统架构</a></li></ul>
@@ -337,7 +354,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/搭建最小springcloud/" data-id="ck7ujgvmu000isdpvfzhsu4fw" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/搭建最小springcloud/" data-id="ck7v6g5if000frfpvy955lllc" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/simple/">simple</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/springcloud/">springcloud</a></li></ul>
@@ -382,7 +399,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="ck7ujgvmx000psdpva2skz5cx" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="ck7v6g5il000mrfpvw9b5nmj5" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
@@ -427,7 +444,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="ck7ujgvmq000bsdpvprtdfzwo" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="ck7v6g5ie000crfpvgnvwz0mg" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SOA/">SOA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微服务/">微服务</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/架构/">架构</a></li></ul>
@@ -472,7 +489,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/" data-id="ck7ujgvmv000ksdpvshswnc5q" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/" data-id="ck7v6g5in000qrfpvc0u59iqo" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/kubernetes/">kubernetes</a></li></ul>
@@ -517,7 +534,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/" data-id="ck7ujgvmj0005sdpvftsdplr3" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/" data-id="ck7v6g5hy0003rfpvg45yx4qx" class="article-share-link">分享</a>
       
       
     </footer>
