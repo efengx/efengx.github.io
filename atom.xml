@@ -259,7 +259,7 @@
     <link href="https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-%E5%A6%82%E4%BD%95%E8%AE%A9%E6%80%A7%E8%83%BD%E6%8F%90%E9%AB%981000/"/>
     <id>https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/</id>
     <published>2019-03-13T08:10:25.000Z</published>
-    <updated>2019-10-17T14:37:06.848Z</updated>
+    <updated>2020-03-17T05:46:49.625Z</updated>
     
     <summary type="html">
     
@@ -270,7 +270,7 @@
     
       <category term="spring cloud" scheme="https://blog.ofengx.com/tags/spring-cloud/"/>
     
-      <category term="zul" scheme="https://blog.ofengx.com/tags/zul/"/>
+      <category term="zuul" scheme="https://blog.ofengx.com/tags/zuul/"/>
     
   </entry>
   
