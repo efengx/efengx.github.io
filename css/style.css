@@ -962,6 +962,7 @@ a.article-tag-list-link:before {
   background: #eee;
   margin: 0 0 0 0.5em;
   padding: 1em;
+  width: 300px;
 }
 .toc-article strong {
   padding: 0.3em 0;
