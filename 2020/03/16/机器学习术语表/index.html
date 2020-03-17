@@ -33,7 +33,7 @@
 <meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/PoolingStart.svg">
 <meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/PoolingConvolution.svg">
 <meta property="og:image" content="https://blog.ofengx.com/2020/03/16/机器学习术语表/AnimatedConvolution.gif">
-<meta property="og:updated_time" content="2020-03-17T09:34:35.425Z">
+<meta property="og:updated_time" content="2020-03-17T13:18:44.099Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习术语表">
 <meta name="twitter:description" content="A  A/B 测试（A/B testing） 一种统计方法，用于将两种或多种技术进行比较，通常是将当前采用的技术与新技术进行比较。A/B 测试不仅旨在确定哪种技术的效果更好，而且还有助于了解相应差异是否具有显著的统计意义。A/B 测试通常是采用一种衡量方式对两种技术进行比较，但也适用于任意有限数量的技术和衡量方式。  准确率（accuracy） 分类模型的正确预测所占的比例。在多类别分类中，准确">
@@ -238,7 +238,7 @@
 <li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化</li>
 </ul>
 <p>梯度下降法的很多变体都一定能找到一个接近严格凸函数最小值的点。同样，随机梯度下降法的很多变体都有很高的可能性能够找到接近严格凸函数最小值的点（但并非一定能找到）。</p>
-<p>两个凸函数的和（例如 L2 损失函数 + L1 正则化）也是凸函数。</p>
+<p>两个凸函数的和（例如 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 损失函数 + <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化）也是凸函数。</p>
 <p>深度模型绝不会是凸函数。值得注意的是，专门针对凸优化设计的算法往往总能在深度网络上找到非常好的解决方案，虽然这些解决方案并不一定对应于全局最小值。</p>
 <h3 id="凸优化convex-optimization"><a class="markdownIt-Anchor" href="#凸优化convex-optimization"></a> 凸优化（convex optimization）</h3>
 <p>使用数学方法（例如梯度下降法）寻找凸函数最小值的过程。机器学习方面的大量研究都是专注于如何通过公式将各种问题表示成凸优化问题，以及如何更高效地解决这些问题。</p>
@@ -689,7 +689,7 @@ s76,-59,76,-59s76,-60,76,-60z M1001 80H40000v40H1012z"/></svg></span></span></sp
 <h3 id="预训练模型pre-trained-model"><a class="markdownIt-Anchor" href="#预训练模型pre-trained-model"></a> 预训练模型（pre-trained model）</h3>
 <p>已经过训练的模型或模型组件（例如嵌套）。有时，您需要将预训练的嵌套馈送到神经网络。在其他时候，您的模型将自行训练嵌套，而不依赖于预训练的嵌套。</p>
 <h3 id="先验信念prior-belief"><a class="markdownIt-Anchor" href="#先验信念prior-belief"></a> 先验信念（prior belief）</h3>
-<p>在开始采用相应数据进行训练之前，您对这些数据抱有的信念。例如，L2 正则化依赖的先验信念是权重应该很小且应以 0 为中心呈正态分布。</p>
+<p>在开始采用相应数据进行训练之前，您对这些数据抱有的信念。例如，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 正则化依赖的先验信念是权重应该很小且应以 0 为中心呈正态分布。</p>
 <h2 id="q"><a class="markdownIt-Anchor" href="#q"></a> Q</h2>
 <h3 id="队列queue"><a class="markdownIt-Anchor" href="#队列queue"></a> 队列（queue）</h3>
 <p>一种 TensorFlow 操作，用于实现队列数据结构。通常用于 I/O 中。</p>
@@ -1000,7 +1000,7 @@ s76,-59,76,-59s76,-60,76,-60z M1001 80H40000v40H1012z"/></svg></span></span></sp
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2020/03/16/机器学习术语表/" data-id="ck7vpavwm001j6gpvtxdhdjlt" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2020/03/16/机器学习术语表/" data-id="ck7vxatl6001qakpvkyvaqndq" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/人工智能/">人工智能</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/术语表/">术语表</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/机器学习/">机器学习</a></li></ul>
