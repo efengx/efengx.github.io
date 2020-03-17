@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.ofengx.com/"/>
-  <updated>2020-03-17T13:21:23.463Z</updated>
+  <updated>2020-03-17T14:10:33.115Z</updated>
   <id>https://blog.ofengx.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.ofengx.com/2020/03/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9C%AF%E8%AF%AD%E8%A1%A8/"/>
     <id>https://blog.ofengx.com/2020/03/16/机器学习术语表/</id>
     <published>2020-03-16T09:13:30.000Z</published>
-    <updated>2020-03-17T13:21:23.463Z</updated>
+    <updated>2020-03-17T14:10:33.115Z</updated>
     
     <summary type="html">
     
@@ -45,6 +45,8 @@
     
     </summary>
     
+      <category term="AI" scheme="https://blog.ofengx.com/categories/AI/"/>
+    
     
       <category term="人工智能" scheme="https://blog.ofengx.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
@@ -59,7 +61,7 @@
     <link href="https://blog.ofengx.com/2019/10/30/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     <id>https://blog.ofengx.com/2019/10/30/人工智能/</id>
     <published>2019-10-30T03:45:15.000Z</published>
-    <updated>2019-10-30T03:55:40.182Z</updated>
+    <updated>2020-03-17T14:14:58.154Z</updated>
     
     <summary type="html">
     
@@ -72,6 +74,8 @@
       
     
     </summary>
+    
+      <category term="AI" scheme="https://blog.ofengx.com/categories/AI/"/>
     
     
       <category term="AI" scheme="https://blog.ofengx.com/tags/AI/"/>
@@ -87,13 +91,15 @@
     <link href="https://blog.ofengx.com/2019/10/17/rabbitmq%E6%B6%88%E6%81%AF%E4%B8%A2%E5%A4%B1%E6%83%85%E5%86%B5%E5%88%86%E6%9E%90%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
     <id>https://blog.ofengx.com/2019/10/17/rabbitmq消息丢失情况分析及解决方法/</id>
     <published>2019-10-17T06:07:22.000Z</published>
-    <updated>2019-10-18T00:52:28.367Z</updated>
+    <updated>2020-03-17T14:14:06.764Z</updated>
     
     <summary type="html">
     
       这是是详情内容
     
     </summary>
+    
+      <category term="MicroService" scheme="https://blog.ofengx.com/categories/MicroService/"/>
     
     
       <category term="rabbitmq" scheme="https://blog.ofengx.com/tags/rabbitmq/"/>
@@ -107,13 +113,15 @@
     <link href="https://blog.ofengx.com/2019/10/15/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%8F%8A%E5%AE%9E%E7%8E%B0/"/>
     <id>https://blog.ofengx.com/2019/10/15/设计模式及实现/</id>
     <published>2019-10-15T00:54:13.000Z</published>
-    <updated>2019-10-17T14:42:14.039Z</updated>
+    <updated>2020-03-17T14:16:00.896Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;设计模式，未完待续！！！&lt;/p&gt;
     
     </summary>
+    
+      <category term="Other" scheme="https://blog.ofengx.com/categories/Other/"/>
     
     
       <category term="设计模式" scheme="https://blog.ofengx.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
@@ -125,13 +133,15 @@
     <link href="https://blog.ofengx.com/2019/10/10/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E4%BA%8C/"/>
     <id>https://blog.ofengx.com/2019/10/10/系统架构设计学习资料二/</id>
     <published>2019-10-10T03:05:11.000Z</published>
-    <updated>2019-10-17T14:41:44.264Z</updated>
+    <updated>2020-03-17T14:15:52.999Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;学习资料，慎入！！！&lt;/p&gt;
     
     </summary>
+    
+      <category term="Other" scheme="https://blog.ofengx.com/categories/Other/"/>
     
     
       <category term="系统架构" scheme="https://blog.ofengx.com/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/"/>
@@ -143,13 +153,15 @@
     <link href="https://blog.ofengx.com/2019/07/30/%E6%90%AD%E5%BB%BA%E6%9C%80%E5%B0%8Fspringcloud/"/>
     <id>https://blog.ofengx.com/2019/07/30/搭建最小springcloud/</id>
     <published>2019-07-30T09:17:13.000Z</published>
-    <updated>2019-10-17T14:40:27.322Z</updated>
+    <updated>2020-03-17T14:15:15.542Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;快速搭建springcloud三件客&lt;/p&gt;
     
     </summary>
+    
+      <category term="MicroService" scheme="https://blog.ofengx.com/categories/MicroService/"/>
     
     
       <category term="springcloud" scheme="https://blog.ofengx.com/tags/springcloud/"/>
@@ -163,13 +175,15 @@
     <link href="https://blog.ofengx.com/2019/07/30/%E8%AF%AD%E6%B3%95/"/>
     <id>https://blog.ofengx.com/2019/07/30/语法/</id>
     <published>2019-07-30T03:50:08.000Z</published>
-    <updated>2019-10-17T14:48:51.957Z</updated>
+    <updated>2020-03-17T14:16:11.400Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;Markdown语法结构&lt;/p&gt;
     
     </summary>
+    
+      <category term="Other" scheme="https://blog.ofengx.com/categories/Other/"/>
     
     
       <category term="markdown" scheme="https://blog.ofengx.com/tags/markdown/"/>
@@ -181,13 +195,15 @@
     <link href="https://blog.ofengx.com/2019/07/30/%E4%BB%80%E4%B9%88%E6%98%AFspringcloud/"/>
     <id>https://blog.ofengx.com/2019/07/30/什么是springcloud/</id>
     <published>2019-07-30T03:21:21.000Z</published>
-    <updated>2019-10-30T03:27:54.263Z</updated>
+    <updated>2020-03-17T14:15:03.091Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;通过整个架构的演变过程来理解微服务架构springcloud&lt;/p&gt;
     
     </summary>
+    
+      <category term="MicroService" scheme="https://blog.ofengx.com/categories/MicroService/"/>
     
     
       <category term="spring cloud" scheme="https://blog.ofengx.com/tags/spring-cloud/"/>
@@ -205,13 +221,15 @@
     <link href="https://blog.ofengx.com/2019/05/14/%E7%A6%BB%E7%BA%BF%E6%90%AD%E5%BB%BAkubernetes-1-14-1/"/>
     <id>https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/</id>
     <published>2019-05-14T05:06:43.000Z</published>
-    <updated>2019-10-17T14:41:10.443Z</updated>
+    <updated>2020-03-17T14:15:25.863Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;对于私有云来讲，如何离线安装kubernetes是个关键性的问题。&lt;/p&gt;
     
     </summary>
+    
+      <category term="PAAS" scheme="https://blog.ofengx.com/categories/PAAS/"/>
     
     
       <category term="kubernetes" scheme="https://blog.ofengx.com/tags/kubernetes/"/>
@@ -225,7 +243,7 @@
     <link href="https://blog.ofengx.com/2019/03/14/prometheus-%E5%8F%82%E6%95%B0%E6%8C%87%E6%A0%87-spring-boot/"/>
     <id>https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/</id>
     <published>2019-03-14T08:43:24.000Z</published>
-    <updated>2019-10-17T14:34:06.580Z</updated>
+    <updated>2020-03-17T14:14:25.742Z</updated>
     
     <summary type="html">
     
@@ -233,6 +251,12 @@
     
     </summary>
     
+      <category term="MicroService" scheme="https://blog.ofengx.com/categories/MicroService/"/>
+    
+    
+      <category term="prometheus" scheme="https://blog.ofengx.com/tags/prometheus/"/>
+    
+      <category term="监控" scheme="https://blog.ofengx.com/tags/%E7%9B%91%E6%8E%A7/"/>
     
   </entry>
   
@@ -241,7 +265,7 @@
     <link href="https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-%E5%85%B7%E4%BD%93%E6%95%88%E6%9E%9C/"/>
     <id>https://blog.ofengx.com/2019/03/14/RequestParam-RequestBody-ResponseBody-具体效果/</id>
     <published>2019-03-14T07:30:18.000Z</published>
-    <updated>2019-10-17T14:35:56.839Z</updated>
+    <updated>2020-03-17T14:13:40.325Z</updated>
     
     <summary type="html">
     
@@ -251,6 +275,10 @@
     
     </summary>
     
+      <category term="MicroService" scheme="https://blog.ofengx.com/categories/MicroService/"/>
+    
+    
+      <category term="spring" scheme="https://blog.ofengx.com/tags/spring/"/>
     
   </entry>
   
@@ -259,13 +287,15 @@
     <link href="https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-%E5%A6%82%E4%BD%95%E8%AE%A9%E6%80%A7%E8%83%BD%E6%8F%90%E9%AB%981000/"/>
     <id>https://blog.ofengx.com/2019/03/13/Spring-cloud-zuul-如何让性能提高1000/</id>
     <published>2019-03-13T08:10:25.000Z</published>
-    <updated>2020-03-17T05:46:49.625Z</updated>
+    <updated>2020-03-17T14:13:50.301Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;zuul作为springcloud中的核心路由组件，如何更大的压榨性能一直是一个非常关键的问题。&lt;/p&gt;
     
     </summary>
+    
+      <category term="MicroService" scheme="https://blog.ofengx.com/categories/MicroService/"/>
     
     
       <category term="spring cloud" scheme="https://blog.ofengx.com/tags/spring-cloud/"/>
@@ -279,7 +309,7 @@
     <link href="https://blog.ofengx.com/2019/03/13/GitOps-%E5%9F%BA%E4%BA%8EKubernetes%E7%9A%84%E9%AB%98%E9%80%9FCI-CD%E6%96%B9%E5%BC%8F/"/>
     <id>https://blog.ofengx.com/2019/03/13/GitOps-基于Kubernetes的高速CI-CD方式/</id>
     <published>2019-03-13T07:02:38.000Z</published>
-    <updated>2019-10-17T14:32:19.482Z</updated>
+    <updated>2020-03-17T14:14:50.288Z</updated>
     
     <summary type="html">
     
@@ -288,6 +318,8 @@
 &lt;p&gt;通过GitOps，自动化的交付管道可以在对Git进行更改时对您的基础架构进行更改。它使用工具将整个应用程序的实际生产状态与源代码控制下的内容进行比较，然后它会告诉您集群何时与现实世界不匹配。&lt;/p&gt;
     
     </summary>
+    
+      <category term="Git" scheme="https://blog.ofengx.com/categories/Git/"/>
     
     
       <category term="CI/CD" scheme="https://blog.ofengx.com/tags/CI-CD/"/>
@@ -301,7 +333,7 @@
     <link href="https://blog.ofengx.com/2019/03/07/hexo-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
     <id>https://blog.ofengx.com/2019/03/07/hexo-常用插件/</id>
     <published>2019-03-07T03:55:33.000Z</published>
-    <updated>2019-10-17T14:33:06.190Z</updated>
+    <updated>2020-03-17T14:14:37.778Z</updated>
     
     <summary type="html">
     
@@ -311,6 +343,8 @@
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;feed:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;: atom&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  path: atom.xml&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;limit&lt;/span&gt;: 20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  hub:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  content:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  content_limit: 140&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  content_limit_delim: &lt;span class=&quot;string&quot;&gt;&#39; &#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  order_by: -date&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  icon: icon.png&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
+    
+      <category term="Other" scheme="https://blog.ofengx.com/categories/Other/"/>
     
     
       <category term="hexo" scheme="https://blog.ofengx.com/tags/hexo/"/>
@@ -322,7 +356,7 @@
     <link href="https://blog.ofengx.com/2019/03/06/%E5%A5%BD%E7%8E%A9%E7%9A%84live2d%E7%9C%8B%E6%9D%BF%E5%A8%98/"/>
     <id>https://blog.ofengx.com/2019/03/06/好玩的live2d看板娘/</id>
     <published>2019-03-06T15:20:27.000Z</published>
-    <updated>2019-10-17T14:39:02.183Z</updated>
+    <updated>2020-03-17T14:15:10.303Z</updated>
     
     <summary type="html">
     
@@ -330,6 +364,8 @@
 确实好玩 &amp;gt;.&amp;lt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="Other" scheme="https://blog.ofengx.com/categories/Other/"/>
     
     
       <category term="hexo" scheme="https://blog.ofengx.com/tags/hexo/"/>
@@ -343,7 +379,7 @@
     <link href="https://blog.ofengx.com/2019/03/06/%E5%B0%B1%E7%94%A8%E4%B8%80%E4%B8%AA%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAHexo%E4%B8%BA%E5%BC%80%E5%A7%8B%E5%90%A7/"/>
     <id>https://blog.ofengx.com/2019/03/06/就用一个如何搭建Hexo为开始吧/</id>
     <published>2019-03-06T13:40:31.000Z</published>
-    <updated>2020-03-17T00:50:56.120Z</updated>
+    <updated>2020-03-17T14:13:02.423Z</updated>
     
     <summary type="html">
     
@@ -353,6 +389,8 @@
 今天偶然在网上看到一个live2dw的看板萌娘，戳中了要害&amp;gt;.&amp;lt;   之前一直也想基于github搭建一个blog毕竟被微软收购了，应该不会被关闭吧（为之前的博客默哀3秒…）刚好顺这股干劲走一个。&lt;/p&gt;
     
     </summary>
+    
+      <category term="Other" scheme="https://blog.ofengx.com/categories/Other/"/>
     
     
       <category term="hexo" scheme="https://blog.ofengx.com/tags/hexo/"/>
