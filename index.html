@@ -71,6 +71,262 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-git代码分支管理规范" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/07/git代码分支管理规范/" class="article-date">
+  <time datetime="2020-08-07T02:20:38.000Z" itemprop="datePublished">2020-08-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/07/git代码分支管理规范/">git代码分支管理规范</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+                  
+
+        <h2 id="git代码提交规范"><a class="markdownIt-Anchor" href="#git代码提交规范"></a> GIT代码提交规范</h2>
+<p>初始化 Git 仓库</p>
+<ol>
+<li>克隆远程仓库</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;仓库地址&gt;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>提交并推送初始版本到master</li>
+</ol>
+<p><img src="git-master.jpg" alt="git-master"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 提交本地修改:</span></span><br><span class="line">git add .</span><br><span class="line">git commit –m “提交日志”</span><br><span class="line"><span class="comment"># 推送 master 分支:</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<h2 id="创建开发分支"><a class="markdownIt-Anchor" href="#创建开发分支"></a> 创建开发分支</h2>
+<p>. 克隆master分支到 develop分支，用于开发</p>
+<p><img src="git-develop.jpg" alt="git-develop"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 从 master 分支上创建 develop 分支:</span></span><br><span class="line">git checkout –b develop master</span><br><span class="line"><span class="comment"># 推送 develop 分支:</span></span><br><span class="line">git push origin develop</span><br></pre></td></tr></table></figure>
+<h2 id="开发新功能"><a class="markdownIt-Anchor" href="#开发新功能"></a> 开发新功能</h2>
+<p>. 在 develop 分支上实现新功能，包括：新特性与Bug修复</p>
+<p><img src="git-bug.jpg" alt="git-bug"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 切换到 develop 分支:</span></span><br><span class="line">git checkout develop</span><br><span class="line"><span class="comment"># 提交本地修改:</span></span><br><span class="line">git add .</span><br><span class="line">git commit –m “提交日志”</span><br><span class="line"><span class="comment"># 推送 develop 分支:</span></span><br><span class="line">git push origin develop</span><br></pre></td></tr></table></figure>
+<p>. 若存在多个新特性可以并行开发，可创建一个或多个 feature 分支(特性分支)，命名规范:feature-分支创建日期-新特性关键字，例如:feature-20190919-i18n</p>
+<p><img src="git-bug-1.jpg" alt="git-bug-1"></p>
+<p>. 新特性开发完毕后，需将 feature 分支合并到 develop 分支，最后需删除 feature 分支</p>
+<h2 id="准备发布新版本"><a class="markdownIt-Anchor" href="#准备发布新版本"></a> 准备发布新版本</h2>
+<ol>
+<li>
+<p>确定 develop 分支是否开发完毕</p>
+</li>
+<li>
+<p>若开发完毕，则创建 release 分支，命名规则:release-分支创建日期-待发布版本号</p>
+</li>
+<li>
+<p>首先在 release 分支中升级 Maven 版本号，例如:1.0.0-SNAPSHOT，然后修改 version.ini 文件(便于在部署时查看当前版本号)，最后在 release 分支上做一次提交</p>
+</li>
+<li>
+<p>通知测试可对 release 分支进行测试</p>
+</li>
+</ol>
+<p><img src="git-release.jpg" alt="git-release"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 从 develop 分支上创建 release 分支:</span></span><br><span class="line">git checkout –b release-20190919-v1.0.0 develop</span><br></pre></td></tr></table></figure>
+<h2 id="修复待发布版本的bug"><a class="markdownIt-Anchor" href="#修复待发布版本的bug"></a> 修复待发布版本的Bug</h2>
+<p>开发人员在 release 分支上修复测试人员提交给自己的 Bug</p>
+<p><img src="git-fix.jpg" alt="git-fix"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 切换到 release 分支:</span></span><br><span class="line">git checkout release-20190919-v1.0.0</span><br><span class="line"><span class="comment"># 提交本地修改:</span></span><br><span class="line">git add .</span><br><span class="line">git commit –m “提交日志”</span><br><span class="line"><span class="comment"># 推送 release 分支:</span></span><br><span class="line">git push origin release-20190919-v1.0.0</span><br></pre></td></tr></table></figure>
+<h2 id="发布新版本"><a class="markdownIt-Anchor" href="#发布新版本"></a> 发布新版本</h2>
+<ol>
+<li>
+<p>集成测试</p>
+</li>
+<li>
+<p>冒烟测试</p>
+</li>
+<li>
+<p>发布新版本</p>
+</li>
+</ol>
+<p><img src="git-release-1.jpg" alt="git-release-1"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 合并 release 分支到 master 分支:</span></span><br><span class="line">git checkout master</span><br><span class="line">git merge --no-ff release-20190919-v1.0.0</span><br><span class="line"><span class="comment"># 合并 release 分支到 develop 分支:</span></span><br><span class="line">git checkout develop</span><br><span class="line">git merge --no-ff release-20190919-v1.0.0</span><br><span class="line"><span class="comment"># 在 master 分支上创建标签:</span></span><br><span class="line">git tag tag-20190919-v1.0.0</span><br><span class="line"><span class="comment"># 删除本地 release 分支:</span></span><br><span class="line">git branch –d release-20190919-v1.0.0</span><br><span class="line"><span class="comment"># 删除远程 release 分支:</span></span><br><span class="line">git push origin :release-20190919-v1.0.0</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>修复线上Bug</li>
+</ol>
+<ul>
+<li>第一步: 创建hotfix分支:</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 从某个标签上创建 hotfix 分支:</span></span><br><span class="line">git branch hotfix-20190919-v1.0.1 tag-20190919-v1.0.0</span><br></pre></td></tr></table></figure>
+<ul>
+<li>
+<p>第二步: 验证Bug是否修复</p>
+</li>
+<li>
+<p>第三步: 创建标签并发布新版本</p>
+</li>
+</ul>
+<p><img src="git-bug-2.jpg" alt="git-bug-2"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 合并 hotfix 分支到 master 分支:</span></span><br><span class="line">git checkout master</span><br><span class="line">git merge --no-ff hotfix-20190919-v1.0.1</span><br><span class="line"><span class="comment"># 合并 hotfix 分支到 develop 分支:</span></span><br><span class="line">git checkout develop</span><br><span class="line">git merge --no-ff hotfix-20190919-v1.0.1</span><br><span class="line"><span class="comment"># 在 master 分支上创建标签:</span></span><br><span class="line">git checkout master</span><br><span class="line">git tag tag-20190919-v1.0.1</span><br><span class="line"><span class="comment"># 删除本地 hotfix 分支:</span></span><br><span class="line">git branch –d hotfix-20190919-v1.0.1</span><br><span class="line"><span class="comment"># 删除远程 hotfix 分支:</span></span><br><span class="line">git push origin :hotfix-20190919-v1.0.1</span><br></pre></td></tr></table></figure>
+<h3 id="若无法将hotfix-分支合并到-master-与-develop-分支时应该如何发布"><a class="markdownIt-Anchor" href="#若无法将hotfix-分支合并到-master-与-develop-分支时应该如何发布"></a> (若无法将hotfix 分支合并到 master 与 develop 分支时，应该如何发布？)</h3>
+<p>比如:现在 master 分支已经发布了 2.0.0 版本(代码结构发生了很大的变化)，但线上发现了一个 1.0.0 版 本的 Bug，当修改了 Bug后，是无法再合并到 master 与 develop 分支的，开发主管需完成以下任务:</p>
+<ol>
+<li>直接在 hotfix 分支上创建标签</li>
+<li>删除 hotfix 分支(分支删除了，只要标签还在，版本就可以找得回来)</li>
+<li>手工修改 develop 分支中的代码(在后续发布时再合并到 master 分支中)</li>
+</ol>
+<h2 id="定制化项目"><a class="markdownIt-Anchor" href="#定制化项目"></a> 定制化项目</h2>
+<p>当需要对某项目进行定制化时，可从源项目的 Git 仓库 fork 出一个新的 Git 仓库:</p>
+<p><img src="git-made.jpg" alt="git-made"></p>
+<p>当 fork 后，对 repo1 做出的任何修改，都不会影响到 repo2<br>
+在 repo2 中修复了 Bug，可通过 Merge Request 的方式提交给 repo1<br>
+在 repo2 中可随时拉取 repo1 中的提交，但 repo1 不能拉取 repo2 中的提交</p>
+<h2 id="maven-版本号命名规范"><a class="markdownIt-Anchor" href="#maven-版本号命名规范"></a> Maven 版本号命名规范</h2>
+<p>Maven 版本号命名规范<br>
+格式:Major.Minor.Micro</p>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Major 版本</td>
+<td>架构调整</td>
+</tr>
+<tr>
+<td>Minor 版本</td>
+<td>新特性</td>
+</tr>
+<tr>
+<td>Micro 版本</td>
+<td>Bug 修复、优化</td>
+</tr>
+</tbody>
+</table>
+<p>Git 分支类型</p>
+<table>
+<thead>
+<tr>
+<th>分支</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>master 分支(主分支)</td>
+<td>稳定版本</td>
+</tr>
+<tr>
+<td>develop 分支(开发分支)</td>
+<td>最新版本</td>
+</tr>
+<tr>
+<td>release 分支(发布分支)</td>
+<td>发布新版本</td>
+</tr>
+<tr>
+<td>hotfix 分支(热修复分支)</td>
+<td>修复线上 Bug</td>
+</tr>
+<tr>
+<td>feature 分支(特性分支)</td>
+<td>实现新特性</td>
+</tr>
+</tbody>
+</table>
+<p><img src="git-fix-1.jpg" alt="git-fix-1"></p>
+<h2 id="参考资料"><a class="markdownIt-Anchor" href="#参考资料"></a> 参考资料</h2>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://blog.ofengx.com/2020/08/07/git代码分支管理规范/" data-id="ckdjn9mpi000auvpvq4g9cbxq" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git分支管理/">git分支管理</a></li></ul>
+
+    </footer>
+  </div>
+  
+  
+  
+</article>
+
+
+  
+    <article id="post-Python深度学习资料" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/25/Python深度学习资料/" class="article-date">
+  <time datetime="2020-03-25T07:02:26.000Z" itemprop="datePublished">2020-03-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/25/Python深度学习资料/">Python深度学习资料</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+                  
+
+        <h2 id="机器学习发展历程"><a class="markdownIt-Anchor" href="#机器学习发展历程"></a> 机器学习发展历程</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">20世纪50年代 - 概率建模（朴素贝叶斯）｜logistic（回归）</span><br><span class="line"></span><br><span class="line">20世纪90年代 - 核方法：支持向量机（SVM）</span><br><span class="line"></span><br><span class="line">21世纪前叶 - 决策树 ｜ 随机森林 ｜ 梯度提升机（目前处理非感知数据最好的算法之一）</span><br><span class="line"></span><br><span class="line">自2012年 - 深度卷积神经网络（convnet）(完全取代了SVM)</span><br><span class="line"></span><br><span class="line">（</span><br><span class="line">2016年kaggle最流行的两大方法：梯度提升机和深度学习</span><br><span class="line">梯度提升机：用于处理结构化数据问题（XGBoost）</span><br><span class="line">深度学习：用于图像分类等感知问题（Keras）</span><br><span class="line">）</span><br></pre></td></tr></table></figure>
+<h2 id="推进机器学习的三要素"><a class="markdownIt-Anchor" href="#推进机器学习的三要素"></a> 推进机器学习的三要素</h2>
+<ol>
+<li>硬件</li>
+<li>数据集和基准</li>
+<li>算法上的改进</li>
+</ol>
+<h2 id="人脸数据集"><a class="markdownIt-Anchor" href="#人脸数据集"></a> 人脸数据集</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 人脸数据集</span></span><br><span class="line">LFW MegaFace</span><br></pre></td></tr></table></figure>
+<h2 id="深度学习要素"><a class="markdownIt-Anchor" href="#深度学习要素"></a> 深度学习要素</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 深度学习要素</span></span><br><span class="line">1，尽可能的减小模型的大小会使模型在前所为见的数字样本上有更好的表现（真正的挑战使泛化，而不是拟合）需要学会具有强预测的压缩表示方法，如果网络资源不够也无法学会这些所以模型的大小需要在尽可能小之间找到一个平衡点。</span><br><span class="line">2，简单模型比复杂模型更不容易过拟合</span><br></pre></td></tr></table></figure>
+<h2 id="防止神经网络过拟合的方法包括"><a class="markdownIt-Anchor" href="#防止神经网络过拟合的方法包括"></a> 防止神经网络过拟合的方法包括</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1，获取更多的训练数据</span><br><span class="line">2，减小网络容量</span><br><span class="line">3，添加权重正则化</span><br><span class="line">4，添加 dropout</span><br></pre></td></tr></table></figure>
+<h2 id="解决机器学习问题的通用模版"><a class="markdownIt-Anchor" href="#解决机器学习问题的通用模版"></a> 解决机器学习问题的通用模版</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">问题定义 -&gt; 评估 -&gt; 特征工程 -&gt; 解决过拟合</span><br><span class="line"></span><br><span class="line">1，数据可用性</span><br><span class="line">2，面对的问题类型？（是二分类、多分类问题、标量回归问题、向量回归问题、还是多分类、多标签问题？或者其他问题，比如聚类、生产或强化学习？确定问题类型有助于你选择模型架构、损失函数等）</span><br><span class="line">3，假设输出是可以根据输入进行预测的；假设可用数据包含足够多的信息，足以学习输入和输出之间的关系。（需要注意非平稳问题）(机器学习预测未来存在一个假设，就是未来的规律与过去相同，但事实往往并非如此)</span><br><span class="line">4，衡量成功的指标？要取得成功，就必须给出成功的定义：精度？准确率？召回率？客户保留率？衡量成功的指标将指引你选择损失函数，即模型要优化什么。它应该直接与你的目标（如业务成功）保存一致。平衡分类问题（每个类别的可能性相同），精度和接收者操作特征曲线下面积是常用指标。对于类别不平衡的问题，你可以使用准确率和召回率。对于排序问题或多标签分类，你可以使用平均准确率均值。自定义衡量成功的指标也很常见。（通过 Kaggle 网站上的数据科学竞赛，可以查看各种各样的问题和评估指标）</span><br><span class="line">5，确定评估方法：留出验证集、K折交叉验证、重复的K折验证（大多数情况下，第一种方法足以满足要求。）</span><br><span class="line">6，准备数据？需要将数据格式化为张量，张量的取值通常应该缩放为较小的值，比如在[-1,1]区间或[0,1]区间。如果不同的特征具有不同的取值范围（异质数据），那么应该做数据标准化。你可能需要做特征工程，尤其是对于小数据问题。</span><br><span class="line">7，开发比基准更好的模型？即开发一个小型模型，它能够打败纯随机的基准。在MNIST数字分类的例子中，任何精度大于0.1的模型都可以说具有统计功效；在IMDB的例子中，任何精度大于0.5的模型都可以说具有统计功效。但是不一定总是能获得统计功效，原因可能是问题的答案并不在输入数据中（1，假设输出是可以根据输入进行预测的；2，假设可用的数据包含足够多的信息，足以学习输入和输出之间的关系。）还需要以下三个参数来构建第一个工作模型：最后一层的激活、损失函数、优化配置。</span><br><span class="line">8，扩大模型规模：开发过拟合的模型。以寻找欠拟合和过拟合的界限。开发过拟合很简单只需要，添加更多的层、让每一层变的更大、训练更多的轮次。要始终监控训练损失和验证损失，以及你所关心的指标的训练值和验证值。如果你发现模型在验证数据上的性能开发下降，那么就出现了过拟合。</span><br><span class="line">9，模型正则化与调节超参数：需要不断第调节模型、训练、在验证数据上评估（这里不是测试数据）、再次调节模型，然后重复这一过程，直到模型达到最佳性能。你应该尝试以下几项（添加dropout、尝试不同的架构、增加或减少层数、添加L1和L2正则化、尝试不同的超参数（比如每层的单元个数或优化器的学习率），以找到最佳配置）、反复做特征工程：添加新特征或删除没有信息量的特征。</span><br></pre></td></tr></table></figure>
+<h2 id="卷积神经网络特性"><a class="markdownIt-Anchor" href="#卷积神经网络特性"></a> 卷积神经网络特性</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">密集连接层和卷积层的区别，密集连接层从输入特征空间中学到的是全局模式，而卷积层学到的是局部模式。</span><br><span class="line"></span><br><span class="line">1. 具有平移不变性。该特性使卷积网络具有泛化效果。真正的3维空间的事物就是可以随意平移。</span><br><span class="line"></span><br><span class="line">2. 学到模式的空间层次结构。使得卷积神经网络科技在局部上对事物进行幻化匹配。</span><br><span class="line"></span><br><span class="line">卷积核（是一个固定的张量，卷积核比较小）- 提取特征</span><br><span class="line"></span><br><span class="line">池化层（降低数据的维度，下采样）-  数据降维，避免过拟合</span><br><span class="line"></span><br><span class="line">全连接层（根据不同任务输出我们想要的结果）</span><br></pre></td></tr></table></figure>
+<h2 id="理解卷积神经网络"><a class="markdownIt-Anchor" href="#理解卷积神经网络"></a> 理解卷积神经网络</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1. 将复杂问题简单化，把大量参数降维成少量参数在做处理。</span><br><span class="line"></span><br><span class="line">2. 数据增强将会极大降低过拟合。</span><br><span class="line"></span><br><span class="line">3. 用预训练的网络做特征提取。对预训练的网络进行微调。</span><br><span class="line"></span><br><span class="line">4. 数据增强，从现有样本中生成更多的训练数据。其方法是利用多种能够生成可信图像的随机变换来增加样本。</span><br><span class="line"></span><br><span class="line">5. 变化趋势</span><br><span class="line">- 网络中特征图的深度在逐渐增大（从32增大到128）</span><br><span class="line">- 而特征图的尺寸在逐渐减小（从150x150减小到7x7）</span><br></pre></td></tr></table></figure>
+<h2 id="keras-算法层"><a class="markdownIt-Anchor" href="#keras-算法层"></a> keras 算法层</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 卷积层</span></span><br><span class="line">layers.Conv2D</span><br><span class="line"><span class="comment"># 池化层</span></span><br><span class="line">layers.MaxPooling2D</span><br><span class="line"><span class="comment"># 用来将多维数组转换成一维数组，将数据压平</span></span><br><span class="line">layers.Flatten</span><br><span class="line"><span class="comment"># 忽略一半的特征检测器防止过拟合</span></span><br><span class="line">layers.Dropout</span><br><span class="line"><span class="comment"># 密集连接层</span></span><br><span class="line">layers.Dense</span><br></pre></td></tr></table></figure>
+<h2 id="参考资料"><a class="markdownIt-Anchor" href="#参考资料"></a> 参考资料</h2>
+<p><a href="https://www.kubeflow.org/docs/started/k8s/kfctl-istio-dex/" target="_blank" rel="noopener">kubeflow 多租户安装</a><br>
+<a href="https://easyai.tech/ai-definition/cnn/" target="_blank" rel="noopener">CNN 网络</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://blog.ofengx.com/2020/03/25/Python深度学习资料/" data-id="ckdjn9mp60004uvpv7ekejauw" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Deeping-Learning-with-Python/">Deeping Learning with Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+    </footer>
+  </div>
+  
+  
+  
+</article>
+
+
+  
     <article id="post-机器学习术语表" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/16/机器学习术语表/" class="article-date">
@@ -122,7 +378,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2020/03/16/机器学习术语表/" data-id="ck86mjtyp002fcypv0dpcb4fa" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2020/03/16/机器学习术语表/" data-id="ckdjn9mql002quvpvn3rbqcgo" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/人工智能/">人工智能</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/术语表/">术语表</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/机器学习/">机器学习</a></li></ul>
@@ -176,13 +432,19 @@
 <li>GANS 生成对抗网络</li>
 <li>RL 深度强化学习</li>
 </ul>
+<h2 id="深度学习流程"><a class="markdownIt-Anchor" href="#深度学习流程"></a> 深度学习流程</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 前向传播 - 深度学习的一个基本训练过程</span></span><br><span class="line">输入数据 -&gt; 在网络中进行张量运算 -&gt; 输出数据 -&gt; 调整网络权重（通过计算输出数据的损失值）</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过 可微/梯度 的原理快速确定权重的调整方向</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 层构成的网络（神经网络架构师）</span></span><br><span class="line">双头（two-branch）网络</span><br><span class="line">多头（multihead）网络</span><br><span class="line">Inception 网络</span><br><span class="line"></span><br><span class="line"><span class="comment"># 深度学习网络模型定义方法</span></span><br><span class="line"><span class="comment">## 用于层的线性堆叠</span></span><br><span class="line">Sequential  </span><br><span class="line"></span><br><span class="line"><span class="comment">## 函数式API，用于层组成的有向无环图</span></span><br><span class="line">functional API</span><br><span class="line"></span><br><span class="line"><span class="comment">## 二分类问题，将路面图片分为，有病害和无病害图片</span></span><br></pre></td></tr></table></figure>
+<h2 id="机器学习分类"><a class="markdownIt-Anchor" href="#机器学习分类"></a> 机器学习分类</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1, 监督学习</span><br><span class="line">   1.1, 序列生成</span><br><span class="line">   1.2, 语法树预测</span><br><span class="line">   1.3, 目标检测</span><br><span class="line">   1.4, 图像分割</span><br><span class="line"></span><br><span class="line">2, 无监督学习</span><br><span class="line"></span><br><span class="line">3, 自监督学习</span><br><span class="line"></span><br><span class="line">4, 强化学习</span><br></pre></td></tr></table></figure>
+<h2 id="文件清单"><a class="markdownIt-Anchor" href="#文件清单"></a> 文件清单</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 编码方式</span></span><br><span class="line">one-hot 编码</span><br><span class="line"><span class="comment"># 分类说明</span></span><br><span class="line">categorical_crossentropy</span><br></pre></td></tr></table></figure>
 <h2 id="参考资料"><a class="markdownIt-Anchor" href="#参考资料"></a> 参考资料</h2>
 <p><a href="https://easyai.tech/ai-definition/deep-learning/" target="_blank" rel="noopener">深度学习 DL</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/30/人工智能/" data-id="ck86mjtxo000bcypvl7poxb7i" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/30/人工智能/" data-id="ckdjn9mpm000guvpvzpcgvy5k" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI/">AI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/人工智能/">人工智能</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/深度学习/">深度学习</a></li></ul>
@@ -231,7 +493,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/17/rabbitmq消息丢失情况分析及解决方法/" data-id="ck86mjtxl000acypvebezys0v" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/17/rabbitmq消息丢失情况分析及解决方法/" data-id="ckdjn9mpl000fuvpvb26qz2g4" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rabbitmq/">rabbitmq</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/高可用/">高可用</a></li></ul>
@@ -280,7 +542,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/15/设计模式及实现/" data-id="ck86mjtyn002ecypvjz3uuapl" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/15/设计模式及实现/" data-id="ckdjn9mpu0014uvpvchsjrsgv" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/设计模式/">设计模式</a></li></ul>
@@ -329,7 +591,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/10/10/系统架构设计学习资料二/" data-id="ck86mjtxz000tcypv77lf5rri" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/10/10/系统架构设计学习资料二/" data-id="ckdjn9mpt0010uvpvbplutn6e" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统架构/">系统架构</a></li></ul>
@@ -378,7 +640,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/搭建最小springcloud/" data-id="ck86mjtxy000ocypv1pteq5vo" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/搭建最小springcloud/" data-id="ckdjn9mpr000uuvpveuggdvq7" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/simple/">simple</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/springcloud/">springcloud</a></li></ul>
@@ -427,7 +689,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="ck86mjty0000wcypv66jkcln8" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/语法/" data-id="ckdjn9mqk002puvpv6axeld4d" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
@@ -476,108 +738,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="ck86mjtxr000fcypv63wc1g5u" class="article-share-link">分享</a>
+      <a data-url="https://blog.ofengx.com/2019/07/30/什么是springcloud/" data-id="ckdjn9mpo000kuvpvg9i1m6kp" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SOA/">SOA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微服务/">微服务</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/架构/">架构</a></li></ul>
-
-    </footer>
-  </div>
-  
-  
-  
-</article>
-
-
-  
-    <article id="post-离线搭建kubernetes-1-14-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/05/14/离线搭建kubernetes-1-14-1/" class="article-date">
-  <time datetime="2019-05-14T05:06:43.000Z" itemprop="datePublished">2019-05-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/PAAS/">PAAS</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/14/离线搭建kubernetes-1-14-1/">离线搭建kubernetes 1.14.1</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>对于私有云来讲，如何离线安装kubernetes是个关键性的问题。</p>
-        
-          <p class="article-more-link">
-            <a href="/2019/05/14/离线搭建kubernetes-1-14-1/#more">阅读更多</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/05/14/离线搭建kubernetes-1-14-1/" data-id="ck86mjty1000ycypvt24btnc5" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/kubernetes/">kubernetes</a></li></ul>
-
-    </footer>
-  </div>
-  
-  
-  
-</article>
-
-
-  
-    <article id="post-prometheus-参数指标-spring-boot" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/14/prometheus-参数指标-spring-boot/" class="article-date">
-  <time datetime="2019-03-14T08:43:24.000Z" itemprop="datePublished">2019-03-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/MicroService/">MicroService</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/14/prometheus-参数指标-spring-boot/">prometheus 参数指标 spring boot</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>springboot的prometheus参数指标说明</p>
-        
-          <p class="article-more-link">
-            <a href="/2019/03/14/prometheus-参数指标-spring-boot/#more">阅读更多</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://blog.ofengx.com/2019/03/14/prometheus-参数指标-spring-boot/" data-id="ck86mjtxd0005cypvskf3tpnu" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/prometheus/">prometheus</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/监控/">监控</a></li></ul>
 
     </footer>
   </div>
@@ -613,7 +777,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/CI-CD/" style="font-size: 10px;">CI/CD</a> <a href="/tags/GitOps/" style="font-size: 10px;">GitOps</a> <a href="/tags/SOA/" style="font-size: 10px;">SOA</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/kubernetes/" style="font-size: 10px;">kubernetes</a> <a href="/tags/live2d/" style="font-size: 10px;">live2d</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/prometheus/" style="font-size: 10px;">prometheus</a> <a href="/tags/rabbitmq/" style="font-size: 10px;">rabbitmq</a> <a href="/tags/simple/" style="font-size: 10px;">simple</a> <a href="/tags/spring/" style="font-size: 10px;">spring</a> <a href="/tags/spring-cloud/" style="font-size: 15px;">spring cloud</a> <a href="/tags/springcloud/" style="font-size: 10px;">springcloud</a> <a href="/tags/zuul/" style="font-size: 10px;">zuul</a> <a href="/tags/人工智能/" style="font-size: 15px;">人工智能</a> <a href="/tags/微服务/" style="font-size: 10px;">微服务</a> <a href="/tags/术语表/" style="font-size: 10px;">术语表</a> <a href="/tags/机器学习/" style="font-size: 10px;">机器学习</a> <a href="/tags/架构/" style="font-size: 10px;">架构</a> <a href="/tags/深度学习/" style="font-size: 10px;">深度学习</a> <a href="/tags/监控/" style="font-size: 10px;">监控</a> <a href="/tags/系统架构/" style="font-size: 10px;">系统架构</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a> <a href="/tags/高可用/" style="font-size: 10px;">高可用</a>
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/CI-CD/" style="font-size: 10px;">CI/CD</a> <a href="/tags/Deeping-Learning-with-Python/" style="font-size: 10px;">Deeping Learning with Python</a> <a href="/tags/GitOps/" style="font-size: 10px;">GitOps</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SOA/" style="font-size: 10px;">SOA</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/git分支管理/" style="font-size: 10px;">git分支管理</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/kubernetes/" style="font-size: 10px;">kubernetes</a> <a href="/tags/live2d/" style="font-size: 10px;">live2d</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/prometheus/" style="font-size: 10px;">prometheus</a> <a href="/tags/rabbitmq/" style="font-size: 10px;">rabbitmq</a> <a href="/tags/simple/" style="font-size: 10px;">simple</a> <a href="/tags/spring/" style="font-size: 10px;">spring</a> <a href="/tags/spring-cloud/" style="font-size: 15px;">spring cloud</a> <a href="/tags/springcloud/" style="font-size: 10px;">springcloud</a> <a href="/tags/zuul/" style="font-size: 10px;">zuul</a> <a href="/tags/人工智能/" style="font-size: 15px;">人工智能</a> <a href="/tags/微服务/" style="font-size: 10px;">微服务</a> <a href="/tags/术语表/" style="font-size: 10px;">术语表</a> <a href="/tags/机器学习/" style="font-size: 10px;">机器学习</a> <a href="/tags/架构/" style="font-size: 10px;">架构</a> <a href="/tags/深度学习/" style="font-size: 10px;">深度学习</a> <a href="/tags/监控/" style="font-size: 10px;">监控</a> <a href="/tags/系统架构/" style="font-size: 10px;">系统架构</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a> <a href="/tags/高可用/" style="font-size: 10px;">高可用</a>
     </div>
   </div>
 
@@ -622,7 +786,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li></ul>
     </div>
   </div>
 
@@ -635,6 +799,14 @@
       <ul>
         
           <li>
+            <a href="/2020/08/07/git代码分支管理规范/">git代码分支管理规范</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/25/Python深度学习资料/">Python深度学习资料</a>
+          </li>
+        
+          <li>
             <a href="/2020/03/16/机器学习术语表/">机器学习术语表</a>
           </li>
         
@@ -644,14 +816,6 @@
         
           <li>
             <a href="/2019/10/17/rabbitmq消息丢失情况分析及解决方法/">rabbitmq消息丢失情况分析及解决方法</a>
-          </li>
-        
-          <li>
-            <a href="/2019/10/15/设计模式及实现/">设计模式及实现</a>
-          </li>
-        
-          <li>
-            <a href="/2019/10/10/系统架构设计学习资料二/">系统架构设计学习资料二</a>
           </li>
         
       </ul>
