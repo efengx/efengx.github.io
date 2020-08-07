@@ -1,6 +1,7 @@
 ---
 title: rabbitmq消息丢失情况分析及解决方法
 date: 2019-10-17 14:07:22
+categories: MicroService
 tags: [rabbitmq,'高可用']
 description: "这是是详情内容"
 ---

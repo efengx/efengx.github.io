@@ -1,6 +1,7 @@
 ---
 title: 'GitOps: 基于Kubernetes的高速CI/CD方式'
 date: 2019-03-13 15:02:38
+categories: Git
 tags: [CI/CD, GitOps]
 ---
 

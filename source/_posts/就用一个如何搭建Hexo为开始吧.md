@@ -1,6 +1,15 @@
 ---
+# 标题
 title: 就用一个如何搭建Hexo为开始吧
+# 时间
 date: 2019-03-06 21:40:31
+# 是否开启katex数学公式 
+math: false
+# 是否开始目录
+toc: false
+# 分类
+categories: Other
+# 标签
 tags: [blog,hexo]
 ---
 经历了很多，之前开过很多的blog，基本上都是自己购买服务器搭建的，大部分是基于php的产品。
@@ -172,6 +181,60 @@ markdown_it_plus:
 -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" rel="stylesheet" type="text/css">
 </head>
+```
+
+```md
+# 使用，在 post/xx.md 文件中 --- 符合之间添加 math: true, true 为开启公式, false 为关闭公式
+```
+
+## hexo 开启 contents
+
+```html
+<!-- 
+  就在/themes/landscape/layout/_partial/article.ejs里修改。将下面代码放在<%- post.content %>之上
+-->
+<% if(post.toc == true){ %>
+<div id="toc" class="toc-article">
+  <strong class="toc-title">文章目录</strong>
+<%- toc(post.content, {list_number: false}) %>
+</div>
+<% } %>
+```
+
+```css
+/**
+ * 添加文章样式
+ */
+.toc-article {
+    background: #eee;
+    margin: 0 0 0 .5em;
+    padding: 1em
+}
+.toc-article strong {
+    padding: .3em 0
+}
+
+#toc {
+    line-height: 1.6em;
+    font-size: .8em;
+    float: right
+}
+#toc .toc {
+    padding: 0
+}
+#toc .toc li {
+    list-style-type: none
+}
+#toc ol {
+    margin-left: 0
+}
+#toc .toc-child {
+    padding-left: 1.5em
+}
+```
+
+```bash
+# toc: true 当为 true 时，开启 contents, 默认为: false
 ```
 
 ## 访问

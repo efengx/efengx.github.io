@@ -1,6 +1,7 @@
 ---
 title: 什么是springcloud
 date: 2019-07-30 11:21:21
+categories: MicroService
 tags: ['spring cloud','SOA','微服务','架构']
 ---
 

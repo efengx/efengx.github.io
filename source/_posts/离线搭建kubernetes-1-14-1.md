@@ -1,6 +1,7 @@
 ---
 title: 离线搭建kubernetes 1.14.1
 date: 2019-05-14 13:06:43
+categories: PAAS
 tags: [kubernetes,docker]
 ---
 

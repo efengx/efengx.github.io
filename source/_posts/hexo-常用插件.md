@@ -1,6 +1,7 @@
 ---
 title: hexo 必备的插件
 date: 2019-03-07 11:55:33
+categories: Other
 tags: [hexo]
 ---
 

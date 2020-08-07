@@ -1,6 +1,7 @@
 ---
 title: 搭建最小springcloud
 date: 2019-07-30 17:17:13
+categories: MicroService
 tags: [springcloud, simple]
 ---
 

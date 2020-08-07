@@ -19,6 +19,14 @@
           </p>
         <% } %>
       <% } else { %>
+        
+        <% if(post.toc == true){ %>
+          <div id="toc" class="toc-article">
+            <strong class="toc-title">文章目录</strong>
+          <%- toc(post.content, {list_number: false}) %>
+          </div>
+        <% } %>          
+
         <%- post.content %>
       <% } %>
     </div>
@@ -36,7 +44,7 @@
   
   <% if (!index && post.math){ %>
     <script>
-      var assetsString = '<link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" rel="stylesheet" type="text/css">'
+      var assetsString = '<link href="/css/katex.min.css" rel="stylesheet" type="text/css">'
       var pHead = document.getElementsByTagName('head')[0];
       pHead.innerHTML = pHead.innerHTML + assetsString;
     </script>

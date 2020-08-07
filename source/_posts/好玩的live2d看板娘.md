@@ -1,6 +1,7 @@
 ---
 title: 好玩的live2d看板娘
 date: 2019-03-06 23:20:27
+categories: Other
 tags: [hexo,live2d]
 ---
 
@@ -56,6 +57,7 @@ live2d:
 packagename 中的可选资源本站采用的是以下资源
 
 - live2d-widget-model-shizuku
+- live2d-widget-model-sagiri
 [点我查看其他跟多看板娘资源](https://github.com/xiazeyu/live2d-widget-models/tree/master/packages)
 [点我查看模块与看板娘实际对照表, 名字在上图片在下](https://huaji8.top/post/live2d-plugin-2.0/)
 (注意安装之后需要重启运行 hexo server 命令之后看板娘才会加载出来)

@@ -1,7 +1,9 @@
 ---
 title: '@RequestParam @RequestBody @ResponseBody 具体效果'
 date: 2019-03-14 15:30:18
-tags:
+# 标签
+categories: MicroService
+tags: ['spring']
 ---
 
 REST API是最基本的接口调用规范，使用频率是非常之高。

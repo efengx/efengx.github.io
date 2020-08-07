@@ -1,7 +1,8 @@
 ---
 title: prometheus 参数指标 spring boot
 date: 2019-03-14 16:43:24
-tags:
+categories: MicroService
+tags: ['prometheus','监控']
 ---
 
 springboot的prometheus参数指标说明
