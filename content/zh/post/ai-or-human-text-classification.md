@@ -3,7 +3,7 @@ title: "Ai or Human Text Classification"
 date: 2023-04-26T12:57:39+08:00
 draft: flase
 ---
-## 模型的下一步演变方向
+## 未来展望
 
 1、更好的泛化性
 
