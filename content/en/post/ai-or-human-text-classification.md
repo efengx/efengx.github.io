@@ -11,6 +11,8 @@ Finetuning language models on a collection of datasets phrased as instructions h
 
 Next, by modifying the classification instructions of the Chinese data set, further instruction tuning is performed in the mixed task model to improve the performance of the model on unknown content.
 
+<!--more-->
+
 2、A model more in line with human expectations-RLHF
 
 Reinforcement Learning From Human Feedback (RLHF) is an advanced approach to training AI systems that combines reinforcement learning with human feedback. It is a way to create a more robust learning process by incorporating the wisdom and experience of human trainers in the model training process. The technique involves using human feedback to create a reward signal, which is then used to improve the model’s behavior through reinforcement learning.
