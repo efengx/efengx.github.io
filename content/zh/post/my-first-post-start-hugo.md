@@ -7,6 +7,8 @@ draft: false
 
 记录常用的Hugo指令，用于快速start
 
+<!--more-->
+
 ## 在Github上托管
 
 No1. 创建Github账号
