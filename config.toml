@@ -1,0 +1,4 @@
+baseURL = 'https://blog.ofengx.com/'
+languageCode = 'en-us'
+title = 'fengx blog'
+theme = 'ananke'
