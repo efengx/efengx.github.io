@@ -11,6 +11,7 @@ This model is a fine-tuned version of **xlm-roberta-base** on the **rjxdataset-t
 
 ## Dataset
 
+```json
 DatasetDict({
     train: Dataset({
         features: ['label', 'text', 'input_ids', 'token_type_ids', 'attention_mask'],
@@ -25,6 +26,7 @@ DatasetDict({
         num_rows: 4600
     })
 })
+```
 
 ## Training hyperparameters
 
@@ -42,7 +44,7 @@ The following hyperparameters were used during training:
 
 ![1682579877328](image/ai-or-human-xml-roberta-model-card/1682579877328.png)
 
-## Test dataset results
+## eval dataset results
 
 {'accuracy': 0.9995652173913043}
 

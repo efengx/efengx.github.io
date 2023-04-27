@@ -11,6 +11,7 @@ This model is a fine-tuned version of **albert-base-chinese** on the **rjxdatase
 
 ## Dataset
 
+```json
 DatasetDict({
     train: Dataset({
         features: ['label', 'text', 'input_ids', 'token_type_ids', 'attention_mask'],
@@ -25,6 +26,7 @@ DatasetDict({
         num_rows: 4600
     })
 })
+```
 
 ## Training hyperparameters
 
@@ -42,7 +44,7 @@ The following hyperparameters were used during training:
 
 ![1682582301064](image/ai-or-human-albert-model-cardcopy/1682582301064.png)
 
-## Test dataset results
+## eval dataset results
 
 {'accuracy': 1.0}
 

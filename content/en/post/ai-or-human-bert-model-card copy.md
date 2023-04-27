@@ -11,6 +11,7 @@ This model is a fine-tuned version of **bert-base-chinese** on the **rjxdataset-
 
 ## Dataset
 
+```json
 DatasetDict({
     train: Dataset({
         features: ['label', 'text', 'input_ids', 'token_type_ids', 'attention_mask'],
@@ -25,6 +26,7 @@ DatasetDict({
         num_rows: 4600
     })
 })
+```
 
 ## Training hyperparameters
 
