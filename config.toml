@@ -2,7 +2,7 @@ title = 'fengx blog'
 baseURL = 'https://blog.ofengx.com/'
 languageCode = "zh-cn"
 theme = 'ananke'
-resourceDir = "../resources"
+resourceDir = "resources"
 
 DefaultContentLanguage = "zh"
 SectionPagesMenu = "main"

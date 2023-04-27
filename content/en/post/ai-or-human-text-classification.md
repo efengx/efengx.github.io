@@ -19,6 +19,6 @@ Reinforcement Learning From Human Feedback (RLHF) is an advanced approach to tra
 
 Reinforcement learning, in simple terms, is a process where an AI agent learns to make decisions by interacting with an environment and receiving feedback in the form of rewards or penalties. The agent’s goal is to maximize the cumulative reward over time. RLHF enhances this process by replacing, or supplementing, the predefined reward functions with human-generated feedback, thus allowing the model to better capture complex human preferences and understandings.
 
-3、Ongoing Model MaintenancePersistence mode
+3、Ongoing Model MaintenancePersistence model
 
 Regularly update and retrain your model with new data to ensure it stays accurate and up-to-date with the latest AI-generated content. Monitor its performance, and fine-tune the model as needed to maintain optimal performance.
