@@ -42,7 +42,7 @@ The following hyperparameters were used during training:
 
 ![1682573568161](image/ai-or-human-bert-model-card/1682573568161.png)
 
-## Test dataset results
+## eval dataset results
 
 {'accuracy': 0.9997826086956522}
 
