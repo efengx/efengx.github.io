@@ -1,7 +1,7 @@
 ---
 title: "feng xiang"
 
-description: "Knowledge as actio"
+description: "Knowledge as action"
 theme_version: '2.8.2'
 cascade:
   featured_image: '/images/fengx-blog-main-image.jpeg'

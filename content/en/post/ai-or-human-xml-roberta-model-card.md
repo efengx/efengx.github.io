@@ -42,7 +42,7 @@ The following hyperparameters were used during training:
 
 ## Training results
 
-![1682579877328](image/ai-or-human-xml-roberta-model-card/1682579877328.png)
+![1682579877328](/en/post/image/ai-or-human-xml-roberta-model-card/1682579877328.png)
 
 ## eval dataset results
 

@@ -1,11 +1,11 @@
 ---
-title: "rjxai-bert model card"
+title: "rjxai-albert model card"
 date: 2023-04-27T12:57:39+08:00
 draft: flase
 ---
 ## Overview
 
-This model is a fine-tuned version of **bert-base-chinese** on the **rjxdataset-textclassification-chinese-46000** dataset.
+This model is a fine-tuned version of **albert-base-chinese** on the **rjxdataset-textclassification-chinese-46000** dataset.
 
 <!--more-->
 
@@ -42,12 +42,12 @@ The following hyperparameters were used during training:
 
 ## Training results
 
-![1682573568161](image/ai-or-human-bert-model-card/1682573568161.png)
+![1682582301064](/en/post/image/ai-or-human-albert-model-card/1682582301064.png)
 
 ## eval dataset results
 
-{'accuracy': 0.9997826086956522}
+{'accuracy': 1.0}
 
 ## Training time return
 
-Training seconds: 4017
+Training seconds: 3591
