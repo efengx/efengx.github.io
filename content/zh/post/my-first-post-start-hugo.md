@@ -45,3 +45,7 @@ No6. 更新hugo.yaml文件内容，[内容详情](https://gohugo.io/hosting-and-
 查看主题 [Ananke](https://github.com/theNewDynamic/gohugo-theme-ananke "github")
 
 多语言支持 [创建文章](https://gohugo.io/content-management/multilingual/)
+
+## 好用的工具记录
+
+HF数据集处理工具 [process](https://huggingface.co/docs/datasets/process)
