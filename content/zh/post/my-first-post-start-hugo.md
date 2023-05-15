@@ -56,6 +56,16 @@ vim ~/.streamlit/secrets.toml
 "read_key"=""
 ```
 
+## hugo 文章操作
+
+创建新的文章
+
+```base
+hugo new post/rjxai-model-card.md
+```
+
+## 快速参考
+
 查看手册 [Hugo docs](https://gohugo.io/getting-started/quick-start "start hugo")
 
 查看主题 [Ananke](https://github.com/theNewDynamic/gohugo-theme-ananke "github")
