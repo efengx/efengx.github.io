@@ -63,12 +63,12 @@ LoraConfig(
 
 ## Running training
 
-![1684115796058](/en/post/image/ajxai-model-card/1684115796058.png)
+![1684115796058](/en/post/image/rjxai-model-card/1684115796058.png)
 
 ## Train metrics
 
-![1684115897402](/en/post/image/ajxai-model-card/1684115897402.png)
+![1684115897402](/en/post/image/rjxai-model-card/1684115897402.png)
 
 ## Running Evaluation
 
-![1684115758469](/en/post/image/ajxai-model-card/1684115758469.png)
+![1684115758469](/en/post/image/rjxai-model-card/1684115758469.png)
