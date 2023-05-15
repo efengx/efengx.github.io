@@ -1,7 +1,7 @@
 ---
 title: "Ai or Human Text Classification"
 date: 2023-04-26T12:57:39+08:00
-draft: flase
+draft: false
 ---
 ## 未来展望
 
