@@ -40,6 +40,22 @@ No5. 在本地存储库中创建一个空的文件
 
 No6. 更新hugo.yaml文件内容，[内容详情](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 
+## huggingface space 使用
+
+No1. streamlit本地启动命令
+
+```base
+streamlit run app.py
+```
+
+No2. 本地配置secrets
+
+```
+vim ~/.streamlit/secrets.toml
+# 添加以下内容
+"read_key"=""
+```
+
 查看手册 [Hugo docs](https://gohugo.io/getting-started/quick-start "start hugo")
 
 查看主题 [Ananke](https://github.com/theNewDynamic/gohugo-theme-ananke "github")
