@@ -1,7 +1,7 @@
 ---
 title: "rjxai-bert model card"
 date: 2023-04-27T12:57:39+08:00
-draft: flase
+draft: false
 ---
 ## Overview
 
