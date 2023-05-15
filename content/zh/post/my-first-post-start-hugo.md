@@ -22,6 +22,7 @@ git remote add origin https://github.com/efengx/efengx.github.io.git
 git add .
 git commit -m "update blog post"
 # 将本地当前分支推送到远程main分支
+## --force 表示强制提交，本地文件强制覆盖远程仓库内容
 git push origin main --force
 
 # (可选)删除远程分支
