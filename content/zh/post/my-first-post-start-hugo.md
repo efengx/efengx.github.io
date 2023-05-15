@@ -64,6 +64,14 @@ vim ~/.streamlit/secrets.toml
 hugo new post/rjxai-model-card.md
 ```
 
+启动本地环境
+
+-D 表示可以查看 draft=true 的文章（否则只能查看 draft=false 的文章）
+
+```base
+hugo server -D 
+```
+
 ## 快速参考
 
 查看手册 [Hugo docs](https://gohugo.io/getting-started/quick-start "start hugo")
