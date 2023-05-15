@@ -1,7 +1,7 @@
 ---
 title: "My First Post Start Hugo"
 date: 2023-04-26T09:56:23+08:00
-draft: false
+draft: true
 ---
 ## Introduction
 

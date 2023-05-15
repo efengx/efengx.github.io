@@ -3,7 +3,7 @@ title: "rjxai Model Card"
 date: 2023-05-15T09:40:06+08:00
 tags: [rjxai]
 description: "rjxai"
-draft: true
+draft: false
 ---
 ## overview
 
