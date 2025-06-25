@@ -1,6 +1,6 @@
 ---
 title: "Xiang"
-
+type: docs
 description: "知行合一"
 # 1. 为了确保 Netlify 在我们的 exampleSite 实例上触发构建，我们需要更改 exampleSite 目录中的文件.
 theme_version: '2.8.2'
