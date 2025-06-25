@@ -6,9 +6,15 @@ resourceDir = "resources"
 
 DefaultContentLanguage = "zh"
 SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = ""
 enableRobotsTXT = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/theNewDynamic/gohugo-theme-ananke/v2"
+
+[pagination]
+  pagerSize = 10
 
 [languages]
   [languages.zh]
