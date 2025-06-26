@@ -8,7 +8,7 @@ draft: false
 ---
 ## Total framework
 
-![1689475808532](image/total-framework-of-the-ai-agent/1689475808532.png)
+![1689475808532](https://blog.ofengx.com/post/image/total-framework-of-the-ai-agent/1689475808532.png)
 
 <!--more-->
 
